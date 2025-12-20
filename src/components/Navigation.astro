@@ -1,20 +1,136 @@
-<header class="border-b border-neutral-300/70 bg-white/80 backdrop-blur-sm">
-	<nav
-		class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 text-[13px] text-neutral-800 lg:px-8"
-	>
-		<a href="/" class="font-semibold tracking-[0.18em] text-neutral-900">
-			PRESTON MAGOUIRK
+---
+// Navigation component with mobile hamburger menu
+---
+
+<header class="sticky top-0 z-50 bg-white shadow-sm">
+	<nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 lg:px-8">
+		<!-- Name/Logo - acts as Home button -->
+		<a
+			href="/"
+			class="text-lg font-bold tracking-[0.12em] text-neutral-900 transition-colors hover:text-primary lg:text-xl"
+		>
+			Preston Magouirk
 		</a>
 
-		<div class="flex items-center gap-6">
-			<a href="/" class="hover:text-primary transition-colors">Home</a>
-			<a href="/about" class="hover:text-primary transition-colors">About</a>
-			<a href="/experience" class="hover:text-primary transition-colors">Experience</a>
-			<a href="/projects" class="hover:text-primary transition-colors">Projects</a>
-			<a href="/consulting" class="hover:text-primary transition-colors">Consulting</a>
-			<a href="/coaching" class="hover:text-primary transition-colors">Coaching</a>
+		<!-- Desktop Navigation Links -->
+		<div class="hidden items-center gap-8 text-sm text-neutral-700 md:flex">
+			<a href="/about" class="transition-colors hover:text-primary">About</a>
+			<a href="/experience" class="transition-colors hover:text-primary">Experience</a>
+			<a href="/projects" class="transition-colors hover:text-primary">Projects</a>
+			<a href="/consulting" class="transition-colors hover:text-primary">Consulting</a>
+			<a href="/coaching" class="transition-colors hover:text-primary">Coaching</a>
 		</div>
+
+		<!-- Mobile Hamburger Button -->
+		<button
+			id="mobile-menu-button"
+			class="flex flex-col gap-1.5 p-2 md:hidden"
+			aria-label="Toggle menu"
+			aria-expanded="false"
+		>
+			<span
+				id="hamburger-line-1"
+				class="h-0.5 w-6 bg-neutral-900 transition-all duration-300"
+			></span>
+			<span
+				id="hamburger-line-2"
+				class="h-0.5 w-6 bg-neutral-900 transition-all duration-300"
+			></span>
+			<span
+				id="hamburger-line-3"
+				class="h-0.5 w-6 bg-neutral-900 transition-all duration-300"
+			></span>
+		</button>
 	</nav>
+
+	<!-- Mobile Menu (hidden by default) -->
+	<div
+		id="mobile-menu"
+		class="hidden border-t border-neutral-200 bg-white md:hidden"
+		data-open="false"
+	>
+		<div class="flex flex-col px-6 py-4">
+			<a
+				href="/about"
+				class="py-3 text-sm text-neutral-700 transition-colors hover:text-primary"
+			>
+				About
+			</a>
+			<a
+				href="/experience"
+				class="py-3 text-sm text-neutral-700 transition-colors hover:text-primary"
+			>
+				Experience
+			</a>
+			<a
+				href="/projects"
+				class="py-3 text-sm text-neutral-700 transition-colors hover:text-primary"
+			>
+				Projects
+			</a>
+			<a
+				href="/consulting"
+				class="py-3 text-sm text-neutral-700 transition-colors hover:text-primary"
+			>
+				Consulting
+			</a>
+			<a
+				href="/coaching"
+				class="py-3 text-sm text-neutral-700 transition-colors hover:text-primary"
+			>
+				Coaching
+			</a>
+		</div>
+	</div>
 </header>
 
+<script>
+	const menuButton = document.getElementById('mobile-menu-button');
+	const mobileMenu = document.getElementById('mobile-menu');
+	const line1 = document.getElementById('hamburger-line-1');
+	const line2 = document.getElementById('hamburger-line-2');
+	const line3 = document.getElementById('hamburger-line-3');
 
+	if (menuButton && mobileMenu) {
+		menuButton.addEventListener('click', () => {
+			const isOpen = mobileMenu.dataset.open === 'true';
+
+			if (isOpen) {
+				// Close menu
+				mobileMenu.classList.add('hidden');
+				mobileMenu.dataset.open = 'false';
+				menuButton.setAttribute('aria-expanded', 'false');
+
+				// Reset hamburger icon
+				line1?.classList.remove('rotate-45', 'translate-y-2');
+				line2?.classList.remove('opacity-0');
+				line3?.classList.remove('-rotate-45', '-translate-y-2');
+			} else {
+				// Open menu
+				mobileMenu.classList.remove('hidden');
+				mobileMenu.dataset.open = 'true';
+				menuButton.setAttribute('aria-expanded', 'true');
+
+				// Transform hamburger to X
+				line1?.classList.add('rotate-45', 'translate-y-2');
+				line2?.classList.add('opacity-0');
+				line3?.classList.add('-rotate-45', '-translate-y-2');
+			}
+		});
+
+		// Close menu when clicking a link
+		const mobileLinks = mobileMenu.querySelectorAll('a');
+		mobileLinks.forEach((link) => {
+			link.addEventListener('click', () => {
+				mobileMenu.classList.add('hidden');
+				mobileMenu.dataset.open = 'false';
+				menuButton.setAttribute('aria-expanded', 'false');
+
+				// Reset hamburger icon
+				line1?.classList.remove('rotate-45', 'translate-y-2');
+				line2?.classList.remove('opacity-0');
+				line3?.classList.remove('-rotate-45', '-translate-y-2');
+			});
+		});
+	}
+</script>
