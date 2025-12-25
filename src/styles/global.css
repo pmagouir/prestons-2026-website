@@ -1,10 +1,10 @@
+/* Load Google Fonts for headings and body text */
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
+
 @import "tailwindcss";
 
 /* Use explicit Tailwind config (v4) */
 @config "../../tailwind.config.mjs";
-
-/* Load Google Fonts for headings and body text */
-@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap");
 
 @layer base {
   html {
