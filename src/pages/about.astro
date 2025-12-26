@@ -3,9 +3,104 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main class="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24">
-		<h1 class="text-3xl font-semibold text-neutral-900 sm:text-4xl">About Me</h1>
+	<main class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+		<!-- Headline -->
+		<h1
+			class="mb-12 text-4xl font-semibold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl"
+		>
+			Strategy. Execution. Impact.
+		</h1>
+
+		<!-- Two-column layout -->
+		<div class="grid grid-cols-1 gap-12 lg:grid-cols-3 lg:gap-16">
+			<!-- Main narrative content -->
+			<article class="lg:col-span-2">
+				<div class="space-y-6 text-base leading-relaxed text-neutral-700 sm:text-lg">
+					<p>
+						My professional path began with a personal realization: access to opportunity changes
+						lives. My own trajectory shifted because a high school teacher saw potential in me,
+						opening the door to college and a future I had not imagined.
+					</p>
+
+					<p>
+						I dedicate my career to scaling that access to opportunity for others. This mission
+						demands respect for and understanding of evidence, high-level strategic direction, and
+						technical precision to execute. I pursued rigorous training in causal inference and
+						data science to personally build the systems that measure and drive impact.
+					</p>
+
+					<p>
+						I operate as both a strategist and a technician. I design organizational roadmaps and
+						execute the technical infrastructure required to achieve them. Whether engineering
+						predictive models, designing Salesforce environments, or restructuring large-dollar
+						financial partnerships and program operations, I bridge the gap between abstract
+						strategy and operational reality. I solve complex fragmentation problems by building
+						cohesive, evidence-based systems, and the extraordinary teams required to maintain
+						them.
+					</p>
+
+					<p>
+						I live in Washington, D.C. I am fortunate to have married my best friend and favorite
+						person, adopted the greatest rescue on the planet over 12 years ago, and spent the
+						last two years with George, the coolest kid in The District who makes me the proudest
+						dad alive.
+					</p>
+				</div>
+			</article>
+
+			<!-- Right sidebar -->
+			<aside class="lg:col-span-1">
+				<div
+					class="border-t border-neutral-300/70 bg-white/60 p-8 shadow-sm backdrop-blur-sm lg:border-l lg:border-t-0 lg:pl-8"
+				>
+					<div class="space-y-8">
+						<!-- Role -->
+						<div>
+							<p class="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+								Role
+							</p>
+							<p class="mt-2 text-lg font-semibold text-neutral-900">
+								Chief Strategy & Analytics Officer
+							</p>
+						</div>
+
+						<!-- Focus -->
+						<div>
+							<p class="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+								Focus
+							</p>
+							<ul class="mt-2 space-y-1.5 text-base text-neutral-700">
+								<li>Technical Strategy</li>
+								<li>System Architecture</li>
+								<li>Execution</li>
+							</ul>
+						</div>
+
+						<!-- Toolkit -->
+						<div>
+							<p class="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+								Toolkit
+							</p>
+							<ul class="mt-2 space-y-1.5 text-base text-neutral-700">
+								<li>R (tidyverse)</li>
+								<li>Salesforce Education Cloud</li>
+								<li>Python</li>
+								<li>SQL</li>
+							</ul>
+						</div>
+
+						<!-- Edge -->
+						<div>
+							<p class="text-xs font-medium uppercase tracking-[0.2em] text-neutral-500">
+								Edge
+							</p>
+							<p class="mt-2 text-base text-neutral-700">
+								Certified CrossFit Trainer (CF-L3)
+							</p>
+						</div>
+					</div>
+				</div>
+			</aside>
+		</div>
 	</main>
 </Layout>
-
-

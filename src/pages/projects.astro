@@ -1,11 +1,209 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Project data structure
+const projects = [
+	{
+		title: 'DC College Access Program (DC-CAP)',
+		context: 'Senior Leadership: Strategy, Data & Partnerships',
+		description:
+			'Leading the programmatic and data strategy for a major college access organization. Spearheaded a digital transformation saving over $500k/annually and reducing admin time by >75%. Directed the shift toward a partnership-based support model to align with the "2050 Moonshot Goal" (80% college completion). Designed the disbursement process for $5.4M in annual scholarships and developed financial modeling tools for strategic planning.',
+		tags: [
+			'Digital Transformation',
+			'Strategic Planning',
+			'Financial Modeling',
+			'Partnership Management',
+		],
+		mainLink: {
+			url: 'https://www.dccap.org/',
+			label: 'View Organization',
+		},
+		resources: [
+			{
+				label: '2025 Impact Report & Strategy',
+				url: 'https://cdn.prod.website-files.com/68c993ef1e7453083a638769/68fbb6cd587db08fc8695f46_DC%20CAP%20Impact%20Report_Updated_10242025.pdf',
+			},
+		],
+		hasCategorizedResources: false,
+	},
+	{
+		title: 'Data Analytics & Research at Common App',
+		context: 'Founding Leader, Data Analytics and Research',
+		description:
+			"Architected the analytics environment for the world's largest source of college application data. Transformed the platform into a public good by establishing a dual-engine approach: building internal capacity for rapid public-facing reporting and cultivating external partnerships for rigorous intervention science. Led RCTs on direct admissions and partnered with NBER/Brookings to study equity gaps.",
+		tags: [
+			'Data Architecture',
+			'RCTs',
+			'Public Reporting',
+			'Strategic Partnerships',
+			'Higher Ed Policy',
+		],
+		mainLink: {
+			url: 'https://www.commonapp.org/about/reports-and-insights',
+			label: 'View Research Hub',
+		},
+		resources: [
+			{
+				category: 'Internal Reports',
+				items: [
+					{
+						label: 'Pandemic Patterns: First-Year Applications',
+						url: 'https://www.commonapp.org/about/reports-and-insights/pandemic-patterns-first-year-applications',
+					},
+					{
+						label: 'The Test-Optional Landscape',
+						url: 'https://www.commonapp.org/about/reports-and-insights/applying-college-test-optional-landscape',
+					},
+					{
+						label: 'Early Admission Trends',
+						url: 'https://www.commonapp.org/about/reports-and-insights/early-admission-deadlines-student-trends-and-implications',
+					},
+				],
+			},
+			{
+				category: 'External Partnerships',
+				items: [
+					{
+						label: 'Brookings: Direct Admissions',
+						url: 'https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/',
+					},
+					{
+						label: 'NBER: Test-Optional Admissions',
+						url: 'https://www.nber.org/papers/w34260',
+					},
+					{
+						label: 'EdWorkingPapers: Non-Submitters',
+						url: 'https://edworkingpapers.com/ai23-819',
+					},
+				],
+			},
+		],
+		hasCategorizedResources: true,
+	},
+	{
+		title: 'Systemwide Quality Improvement in Louisiana',
+		context: 'University of Virginia / SEELA (2015–2020)',
+		description:
+			'Partnered with the Louisiana Department of Education to evaluate a massive statewide reform unifying fragmented early childhood sectors. Led survey development, validation studies of the QRIS, and longitudinal analysis. This study provides the first statewide exploration of ECE quality, improvement, and variability by key program characteristics, highlighting how detailed data collected in a mandatory QRIS can enhance understanding of quality improvement.',
+		tags: ['Survey Design', 'Validation Studies', 'Longitudinal Analysis', 'Stata/R'],
+		mainLink: {
+			url: 'https://www.see-partnerships.com/seela-projects.html',
+			label: 'View SEELA Partnership',
+		},
+		resources: [
+			{
+				label: 'AERA Open: Systemwide Quality Improvement',
+				url: 'https://journals.sagepub.com/doi/10.1177/23328584211011610',
+			},
+			{
+				label: 'ECRQ: Parent Search & Preferences',
+				url: 'https://doi.org/10.1016/j.ecresq.2018.01.006',
+			},
+			{
+				label: 'Policy Brief: Unifying Early Childhood Networks',
+				url: 'https://www.see-partnerships.com/seela-projects.html',
+			},
+			{
+				label: 'Policy Brief: Leader Experiences',
+				url: 'https://www.see-partnerships.com/seela-projects.html',
+			},
+		],
+		hasCategorizedResources: false,
+	},
+];
 ---
 
 <Layout>
-	<main class="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24">
-		<h1 class="text-3xl font-semibold text-neutral-900 sm:text-4xl">Projects</h1>
+	<main class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+		<h1
+			class="mb-16 text-4xl font-semibold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl"
+		>
+			Portfolio
+		</h1>
+
+		<div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+			{projects.map((project) => (
+				<article
+					class="flex flex-col rounded-lg bg-white p-6 shadow-sm transition-shadow hover:shadow-md"
+				>
+					<!-- Context -->
+					<p class="mb-2 text-sm font-medium text-neutral-500">{project.context}</p>
+
+					<!-- Title -->
+					<h2 class="mb-4 text-2xl font-bold text-neutral-900">{project.title}</h2>
+
+					<!-- Description -->
+					<p class="mb-6 flex-grow text-base leading-relaxed text-neutral-700">
+						{project.description}
+					</p>
+
+					<!-- Tags -->
+					<div class="mb-6 flex flex-wrap gap-2">
+						{project.tags.map((tag) => (
+							<span
+								class="rounded-full bg-blue-100 px-3 py-1 text-xs font-medium text-blue-800"
+							>
+								{tag}
+							</span>
+						))}
+					</div>
+
+					<!-- Resources Section -->
+					<div class="mb-6 border-t border-neutral-200 pt-4">
+						<p class="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-600">
+							Key Resources
+						</p>
+						<ul class="space-y-2">
+							{project.hasCategorizedResources ? (
+								project.resources.map((category) => (
+									<li>
+										<p class="mb-2 text-xs font-semibold text-neutral-700">
+											{category.category}
+										</p>
+										<ul class="ml-4 space-y-1.5">
+											{category.items.map((resource) => (
+												<li>
+													<a
+														href={resource.url}
+														target="_blank"
+														rel="noopener noreferrer"
+														class="text-sm text-primary underline underline-offset-2 transition-colors hover:text-primary/80"
+													>
+														{resource.label}
+													</a>
+												</li>
+											))}
+										</ul>
+									</li>
+								))
+							) : (
+								project.resources.map((resource) => (
+									<li>
+										<a
+											href={resource.url}
+											target="_blank"
+											rel="noopener noreferrer"
+											class="text-sm text-primary underline underline-offset-2 transition-colors hover:text-primary/80"
+										>
+											{resource.label}
+										</a>
+									</li>
+								))
+							)}
+						</ul>
+					</div>
+
+					<!-- Main Link Button -->
+					<a
+						href={project.mainLink.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="mt-auto inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 text-base font-semibold text-white transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+					>
+						{project.mainLink.label}
+					</a>
+				</article>
+			))}
+		</div>
 	</main>
 </Layout>
-
-
