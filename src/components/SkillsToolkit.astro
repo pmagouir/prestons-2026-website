@@ -1,97 +1,62 @@
 ---
-// Skills & Toolkit component - reusable across pages
+// src/components/SkillsToolkit.astro
+
+const skillCategories = [
+    {
+        title: "Data Science & Analysis",
+        skills: [
+            "R (tidyverse)",
+            "Stata",
+            "Python (Pandas/NumPy)",
+            "SQL",
+            "Causal Inference",
+            "Survey Design"
+        ]
+    },
+    {
+        title: "Engineering & Web",
+        skills: [
+            "Astro",
+            "React",
+            "Tailwind CSS",
+            "Git / GitHub",
+            "VS Code + Cursor"
+        ]
+    },
+    {
+        title: "Platforms & Strategy",
+        skills: [
+            "Salesforce Education Cloud",
+            "Tableau",
+            "Financial Modeling",
+            "Strategic Planning"
+        ]
+    }
+];
 ---
 
-<section class="bg-neutral-50 py-16 lg:py-24">
-	<div class="mx-auto max-w-5xl px-6 lg:px-8">
-		<h2
-			class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl lg:text-5xl"
-		>
-			Skills & Toolkit
-		</h2>
+<section class="py-12 border-t border-neutral-100 bg-neutral-50/30">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-10 max-w-2xl">
+            <h2 class="text-2xl font-bold tracking-tight text-neutral-900">Technical Toolkit</h2>
+            <p class="mt-2 text-neutral-600">The languages, frameworks, and platforms I use to build systems.</p>
+        </div>
 
-		<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
-			<!-- Category 1: Analytics & Engineering -->
-			<div>
-				<h3
-					class="mb-6 text-xl font-bold text-neutral-900 sm:text-2xl"
-				>
-					Analytics & Engineering
-				</h3>
-				<div class="flex flex-wrap gap-3">
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						R (tidyverse, ggplot2)
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Salesforce Education Cloud
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Python (NLP, Predictive Modeling)
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						SQL
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Shiny Dashboards
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Causal Inference & RCTs
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Experimental Design
-					</span>
-				</div>
-			</div>
-
-			<!-- Category 2: Strategy & Operations -->
-			<div>
-				<h3
-					class="mb-6 text-xl font-bold text-neutral-900 sm:text-2xl"
-				>
-					Strategy & Operations
-				</h3>
-				<div class="flex flex-wrap gap-3">
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Strategic Planning
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Organizational Turnaround
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Financial Forecasting & Modeling
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Partnership Portfolio Management
-					</span>
-					<span
-						class="rounded-full bg-slate-100 px-4 py-2 text-sm font-medium text-slate-800"
-					>
-						Grant Development ($20M+ secured)
-					</span>
-				</div>
-			</div>
-		</div>
-	</div>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+            {skillCategories.map((category) => (
+                <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-200">
+                    <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+                        {category.title}
+                    </h3>
+                    <ul class="flex flex-wrap gap-2">
+                        {category.skills.map((skill) => (
+                            <li class="inline-flex items-center rounded-md bg-neutral-100 px-2.5 py-1.5 text-sm font-medium text-neutral-700 hover:bg-neutral-200 transition-colors cursor-default">
+                                {skill}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            ))}
+        </div>
+    </div>
 </section>
