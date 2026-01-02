@@ -17,15 +17,46 @@ import ProjectGrid from '../components/ProjectGrid.astro';
             </h2>
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
                 {[
-                    { outlet: 'NPR Marketplace', title: "Some colleges opt for 'direct admissions'", url: '#' },
-                    { outlet: 'CNBC', title: 'College admission applications spike', url: '#' },
-                    { outlet: 'The Brookings Institution', title: 'Complex applications create barriers to college', url: '#' },
-                    { outlet: 'Slate', title: 'I Have a Simple Solution to the College Essay Problem', url: '#' },
-                    { outlet: 'Inside Higher Ed', title: 'Common App Sees Rise in Minority Applicants', url: '#' },
-                    { outlet: 'The 74 Million', title: 'The Path to Quality Child Care Just Became a Little Less Elusive', url: '#' },
+                    {
+                        outlet: 'NPR Marketplace',
+                        title: "Some colleges opt for 'direct admissions'",
+                        url: 'https://www.marketplace.org/2022/08/15/automatic-college-admissions-can-be-a-boon-to-students-and-schools-alike/',
+                    },
+                    { 
+                        outlet: 'CNBC', 
+                        title: 'College admission applications spike', 
+                        url: 'https://www.cnbc.com/2023/03/23/college-admissions-application-volume-rises-30percent-since-pre-pandemic.html' 
+                    },
+                    {
+                        outlet: 'The Brookings Institution',
+                        title: 'Complex applications create barriers to college',
+                        url: 'https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/',
+                    },
+                    {
+                        outlet: 'Slate',
+                        title: 'I Have a Simple Solution to the College Essay Problem',
+                        url: 'https://slate.com/human-interest/2023/09/college-essay-personal-statement-narrative-common-app.html',
+                    },
+                    {
+                        outlet: 'Inside Higher Ed',
+                        title: 'Common App Sees Rise in Minority Applicants',
+                        url: 'https://www.insidehighered.com/admissions/article/2021/11/15/common-app-sees-increase-minority-applicants',
+                    },
+                    {
+                        outlet: 'The 74 Million / Early Learning Nation',
+                        title: 'The Path to Quality Child Care Just Became a Little Less Elusive',
+                        url: 'https://earlylearningnation.com/2021/06/the-path-to-quality-child-care-just-became-a-little-less-elusive-new-research-shows-star-rating-systems-can-drive-improvement-at-scale/',
+                    },
                 ].map((item) => (
-                    <a href={item.url} class="group block rounded-lg border border-neutral-200 p-6 hover:border-primary/50 hover:shadow-sm transition-all">
-                        <strong class="block text-sm font-semibold text-neutral-900 mb-1">{item.outlet}</strong>
+                    <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="group block rounded-lg border border-neutral-200 p-6 hover:border-primary/50 hover:shadow-sm transition-all"
+                    >
+                        <strong class="block text-sm font-semibold text-neutral-900 mb-1"
+                            >{item.outlet}</strong
+                        >
                         <span class="text-base text-neutral-600 group-hover:text-primary transition-colors">
                             {item.title} ↗
                         </span>
