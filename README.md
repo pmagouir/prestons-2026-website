@@ -1,46 +1,38 @@
-# Astro Starter Kit: Basics
+# Personal Portfolio & Professional Hub
 
-```sh
-npm create astro@latest -- --template basics
-```
+> **"Building the systems that scale opportunity."**
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+This is the source code for my personal portfolio website. It serves as a digital headquarters for my work in executive leadership, data strategy, and social impact. The site is designed to bridge the gap between "Executive Resume" and "Technical Portfolio," showcasing both high-level strategy and hands-on technical execution.
 
-## 🚀 Project Structure
+## 🚀 The Tech Stack
 
-Inside of your Astro project, you'll see the following folders and files:
+This project was built using a modern, performance-first architecture:
+
+* **Framework:** [Astro](https://astro.build) (v5.0) - For zero-JS default performance and static site generation.
+* **Styling:** [Tailwind CSS](https://tailwindcss.com) - For utility-first, responsive design.
+* **UI Components:** React - For interactive elements where needed.
+* **Deployment:** [Vercel](https://vercel.com) - For continuous integration and edge deployment.
+* **Development:** Built using **Cursor** (AI-assisted "Vibe Coding" workflow).
+
+## 📂 Project Structure
+
+The project follows a standard Astro architecture with a focus on component reusability:
 
 ```text
 /
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+├── public/             # Static assets (images, PDFs, reports)
+├── src/
+│   ├── components/     # Reusable UI blocks
+│   │   ├── Hero.astro          # Landing page hook
+│   │   ├── ProjectGrid.astro   # The data-driven portfolio card system
+│   │   ├── SkillsToolkit.astro # Visual tech stack display
+│   │   └── Navigation.astro    # Site-wide nav
+│   ├── layouts/        # Shared page shells (Head, Footer, SEO)
+│   └── pages/          # Route definitions
+│       ├── index.astro         # Home / Landing
+│       ├── about.astro         # Narrative & Values
+│       ├── experience.astro    # Professional Timeline
+│       ├── projects.astro      # Full Portfolio & Media
+│       ├── consulting.astro    # Services & Advisory
+│       └── fitness.astro       # Discipline & Credentials
+└── astro.config.mjs    # Configuration
