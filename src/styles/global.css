@@ -3,16 +3,25 @@
 
 @import "tailwindcss";
 
-/* Use explicit Tailwind config (v4) */
-@config "../../tailwind.config.mjs";
+@theme {
+  --font-heading: "Lora", Georgia, serif;
+  --font-body: Inter, system-ui, sans-serif;
+  --color-primary: #1F3D2B;
+  --color-secondary: #7A1E2C;
+  --color-background: #F5F5F4;
+}
 
 @layer base {
   html {
-    @apply font-body bg-background text-neutral-900 antialiased;
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: rgb(23 23 23);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
   body {
-    @apply min-h-screen;
+    min-height: 100vh;
   }
 
   h1,
@@ -21,6 +30,6 @@
   h4,
   h5,
   h6 {
-    @apply font-heading;
+    font-family: var(--font-heading);
   }
 }
