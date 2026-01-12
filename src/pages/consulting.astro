@@ -3,160 +3,345 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<main class="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24">
-		<div class="mb-16">
+	<main class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+		<!-- Hero Section -->
+		<div class="mb-24">
+			<p class="mb-4 font-bold uppercase tracking-widest text-primary text-sm">
+				Strategic Consulting
+			</p>
 			<h1 class="mb-6 text-4xl font-semibold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl">
-				Consulting & Advisory Services
+				Data, strategy, and execution for mission-driven organizations.
 			</h1>
-			<p class="text-lg leading-relaxed text-neutral-700 sm:text-xl">
-				I help organizations and leaders build systems that scale opportunity. Whether you need to transform how you use data, navigate strategic change, secure funding, or build high-performance teams, I bring evidence-based approaches and hands-on execution.
+			<p class="mb-6 max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
+				I help nonprofits and education organizations build the analytic infrastructure, secure the funding, and navigate the transitions that turn ambitious goals into measurable outcomes.
 			</p>
+			<p class="mb-8 max-w-3xl text-base leading-relaxed text-neutral-700">
+				With experience leading strategy at DC-CAP Scholars, building the analytics, internal R&D, and public-facing research and reporting functions at Common App, and building and managing key relationships with both partner organizations and grant funding institutions, I bring both strategic rigor and operational background for a variety of engagements.
+			</p>
+			<a
+				href="mailto:pmagouir@gmail.com"
+				class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+			>
+				Start a Conversation
+				<svg
+					class="ml-2 h-4 w-4"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M17 8l4 4m0 0l-4 4m4-4H3"
+					></path>
+				</svg>
+			</a>
 		</div>
 
-		<div class="mb-16 space-y-12">
-			<section class="border-t border-neutral-200 pt-12">
-				<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-					Data & Analytics
-				</h2>
-				<p class="mb-6 text-base leading-relaxed text-neutral-700">
-					Transform raw data into actionable insights. I help organizations build analytics capacity, design evaluation frameworks, and use evidence to drive decision-making. From survey design and validation to longitudinal analysis and causal inference, I bring rigorous methods to complex problems.
-				</p>
-				<ul class="space-y-2 text-sm text-neutral-600">
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Data architecture and analytics infrastructure</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Program evaluation and impact measurement</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Survey design and validation studies</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>RCT design and causal inference methods</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Strategic reporting and data visualization</span>
-					</li>
-				</ul>
-			</section>
-
-			<section class="border-t border-neutral-200 pt-12">
-				<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-					Organizational Strategy & Change Management
-				</h2>
-				<p class="mb-6 text-base leading-relaxed text-neutral-700">
-					Navigate complex transitions with clarity and purpose. I help leaders design strategic plans, manage digital transformations, and build the capacity needed to execute ambitious goals. My approach combines data-driven strategy with servant leadership principles.
-				</p>
-				<ul class="space-y-2 text-sm text-neutral-600">
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Strategic planning and goal-setting frameworks</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Digital transformation and technology selection</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Change management and stakeholder alignment</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Partnership development and relationship management</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Financial modeling and strategic finance</span>
-					</li>
-				</ul>
-			</section>
-
-			<section class="border-t border-neutral-200 pt-12">
-				<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-					Grant Writing & Development
-				</h2>
-				<p class="mb-6 text-base leading-relaxed text-neutral-700">
-					Secure funding with compelling narratives backed by evidence. I help organizations craft grant proposals that tell a clear story, demonstrate impact, and align with funder priorities. My background in policy research and program evaluation means proposals are grounded in rigorous evidence.
-				</p>
-				<ul class="space-y-2 text-sm text-neutral-600">
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Grant proposal writing and editing</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Logic model and theory of change development</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Impact measurement and evaluation design</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Funder research and alignment strategies</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Budget development and financial narratives</span>
-					</li>
-				</ul>
-			</section>
-
-			<section class="border-t border-neutral-200 pt-12">
-				<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-					Fitness & Performance Coaching
-				</h2>
-				<p class="mb-6 text-base leading-relaxed text-neutral-700">
-					Build discipline and capacity that compounds. As a Certified CrossFit Trainer (CF-L3), I help individuals and teams develop the consistency, standards, and mental resilience needed to achieve ambitious goals. The same principles that drive organizational success apply to physical performance.
-				</p>
-				<ul class="space-y-2 text-sm text-neutral-600">
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Individual coaching and program design</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Team training and group fitness programming</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Movement analysis and technique refinement</span>
-					</li>
-					<li class="flex items-start">
-						<span class="mr-2 mt-1.5 text-primary">→</span>
-						<span>Performance mindset and goal-setting</span>
-					</li>
-				</ul>
-			</section>
-		</div>
-
-		<section class="rounded-2xl border border-neutral-200 bg-neutral-50 p-8 sm:p-12">
-			<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-				Get In Touch
+		<!-- Services Section -->
+		<section class="mb-24">
+			<h2 class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+				How I Help
 			</h2>
-			<p class="mb-8 text-base leading-relaxed text-neutral-700">
-				Interested in working together? I take on a limited number of consulting engagements each year, focusing on projects where I can make meaningful impact. Let's discuss how I can help you achieve your goals.
-			</p>
-			<div class="flex flex-col gap-4 sm:flex-row">
-				<a
-					href="mailto:pmagouir@gmail.com"
-					class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
-				>
-					Email Me
-				</a>
-				<a
-					href="https://www.linkedin.com/in/preston-magouirk-840aa757/"
-					target="_blank"
-					rel="noopener noreferrer"
-					class="inline-flex items-center justify-center rounded-lg border-2 border-neutral-200 px-8 py-4 text-base font-semibold text-neutral-900 transition-colors hover:border-neutral-900 hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
-				>
-					Connect on LinkedIn
-				</a>
+			<div class="space-y-16">
+				<!-- Service 1: Data & Analytics Strategy -->
+				<article class="border-t border-neutral-200 pt-12">
+					<div class="mb-6">
+						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
+							Data & Analytics Strategy
+						</h3>
+						<p class="text-lg font-medium text-primary">Turn data into decisions.</p>
+					</div>
+					<p class="mb-8 text-base leading-relaxed text-neutral-700">
+						Most organizations collect more data than they use. Dashboards may exist, but they gather dust. Leaders say they are "data-driven," but often lack clear outcomes, clean and valid data, and a comfort using data to guide their work. The gap between data collection and data-informed action is where most organizations sit today.
+					</p>
+					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								What I offer
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Analytics strategy and roadmap development</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Salesforce and CRM optimization for program teams</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Dashboard design and KPI/OKR development</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Data infrastructure assessment and modernization</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Training and capacity building for internal teams</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Ad-hoc data/analytics product development</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								Results I've delivered
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Built the analytics environment for Common App, the world's largest source of college application data</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Led Salesforce Education Cloud implementation at DC-CAP, saving $500K+ annually, reducing administrative burden by over 50%, and dramatically improving scholar and staff experiences</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Designed financial modeling tools supporting multi-year organizational strategy and budgeting at a $10M+ college success organization</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Developed secure, interactive, accessible analytic pipelines generating branded reports, visualizations, and executive dashboards</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<!-- Service 2: Grant Writing & Proposal Development -->
+				<article class="border-t border-neutral-200 pt-12">
+					<div class="mb-6">
+						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
+							Grant Writing & Proposal Development
+						</h3>
+						<p class="text-lg font-medium text-primary">Translate your impact into funded proposals.</p>
+					</div>
+					<p class="mb-8 text-base leading-relaxed text-neutral-700">
+						Competitive grants demand more than good intentions. Funders want clear theory of change, rigorous evaluation design, and evidence you can execute. Strong programs lose ground when the narrative raises more questions than it answers and the methodology section creates doubts for capacity. Winning proposals require both strategic clarity and technical credibility.
+					</p>
+					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								What I offer
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Full grant proposal development (federal, foundation, corporate)</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Theory of change and logic model design</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Evaluation framework and methodology sections</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Budget narrative and cost justification</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Proposal review, strengthening, and red-teaming</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								Results I've delivered
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Managed long-term operational relationships with large-scale funders at multiple organizations</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Developed strategy to land large innovation grant for AI-powered student success tools</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Contributed to $20M+ in philanthropic commitments at DC-CAP</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>PhD training in program evaluation, causal inference, and quantitative methods</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Led large-scale randomized control trials of strategic initiatives using newly developed data architecture, both funded by large-scale grants from strategic funders</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<!-- Service 3: Organizational Change & Strategic Transitions -->
+				<article class="border-t border-neutral-200 pt-12">
+					<div class="mb-6">
+						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
+							Organizational Change & Strategic Transitions
+						</h3>
+						<p class="text-lg font-medium text-primary">Navigate complexity with clarity.</p>
+					</div>
+					<p class="mb-8 text-base leading-relaxed text-neutral-700">
+						Restructures, mergers, new strategic directions, leadership transitions. These inflection points create opportunity and risk in equal measure. Success requires clear frameworks, disciplined communication, and attention to the human dynamics that determine whether change sticks. Most organizations underinvest in the execution side of strategy.
+					</p>
+					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								What I offer
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Strategic planning design and facilitation</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Organizational restructuring and team integration</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Change management frameworks and implementation support</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Partnership development and optimization</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Operational efficiency assessment and process redesign</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-500">
+								Results I've delivered
+							</h4>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Led integration of four separate teams into a unified Student Success division at DC-CAP</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Directed strategic shift from national to regional partnership model, increasing retention rates to 85%+ and graduation rates to 75-95% at mature partners</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Managed enterprise-wide digital transformation reducing administrative time by over 50%</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span>Designed and implemented new supervision frameworks for cross-functional coaching teams</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+			</div>
+		</section>
+
+		<!-- Engagement Models Section -->
+		<section class="mb-24 border-t border-neutral-200 pt-16">
+			<h2 class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+				How We Work Together
+			</h2>
+			<div class="overflow-x-auto">
+				<table class="w-full border-collapse">
+					<thead>
+						<tr class="border-b-2 border-neutral-200">
+							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
+								Model
+							</th>
+							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
+								Description
+							</th>
+							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
+								Best For
+							</th>
+						</tr>
+					</thead>
+					<tbody class="divide-y divide-neutral-200">
+						<tr class="hover:bg-neutral-50 transition-colors">
+							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
+								Advisory Retainer
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Ongoing strategic counsel, typically 3-5 hours monthly. Regular check-ins, asynchronous support, and priority access for emerging challenges.
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Organizations wanting a trusted thought partner over time
+							</td>
+						</tr>
+						<tr class="hover:bg-neutral-50 transition-colors">
+							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
+								Project-Based
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Defined scope, timeline, and deliverables. Clear milestones and structured collaboration from kickoff to completion.
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Specific initiatives like grant proposals, strategic plans, or system implementations
+							</td>
+						</tr>
+						<tr class="hover:bg-neutral-50 transition-colors">
+							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
+								Intensive Sprint
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Concentrated engagement over 2-4 weeks. Deep immersion to accelerate progress on urgent priorities.
+							</td>
+							<td class="px-6 py-4 text-base text-neutral-700">
+								Time-sensitive decisions, board presentations, or funding deadlines
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="rounded-2xl border border-neutral-200 bg-neutral-50 p-12 sm:p-16">
+			<div class="mx-auto max-w-3xl text-center">
+				<h2 class="mb-6 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+					Let's talk about what you're building.
+				</h2>
+				<p class="mb-10 text-lg leading-relaxed text-neutral-700 sm:text-xl">
+					I take on a limited number of consulting engagements to ensure each client gets focused attention. If you're facing a strategic challenge, building new organizational capacity, or navigating a significant transition, I'd love to hear from and work with you!
+				</p>
+				<div class="mb-6 flex justify-center">
+					<a
+						href="mailto:pmagouir@gmail.com"
+						class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+					>
+						Start a Conversation
+						<svg
+							class="ml-2 h-4 w-4"
+							fill="none"
+							stroke="currentColor"
+							viewBox="0 0 24 24"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M17 8l4 4m0 0l-4 4m4-4H3"
+							></path>
+						</svg>
+					</a>
+				</div>
+				<p class="text-sm text-neutral-600">
+					Based in Washington, D.C. Available for remote engagements.
+				</p>
 			</div>
 		</section>
 	</main>
