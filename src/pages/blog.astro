@@ -1,11 +1,47 @@
 ---
 import Layout from '../layouts/Layout.astro';
+
+// Blog posts data - in a real app, this could come from a CMS or file system
+const posts = [
+	{
+		title: 'Five Lessons From Leading Change at a College Success Organization',
+		date: 'January 2025',
+		excerpt: 'DC CAP had a breakthrough year in 2025. Here\'s what I learned about leading organizational change.',
+		slug: 'five-lessons-leading-change',
+	},
+];
 ---
 
 <Layout>
 	<main class="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24">
-		<h1 class="text-3xl font-semibold text-neutral-900 sm:text-4xl">Blog</h1>
+		<div class="mb-16">
+			<h1 class="mb-6 text-4xl font-semibold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+				Writing
+			</h1>
+			<p class="text-lg leading-relaxed text-neutral-700 sm:text-xl">
+				Thoughts on strategy, data, organizational change, and building systems that scale opportunity.
+			</p>
+		</div>
+
+		<div class="space-y-12 border-t border-neutral-200 pt-12">
+			{posts.map((post) => (
+				<article class="group">
+					<a
+						href={`/blog/${post.slug}`}
+						class="block transition-colors hover:text-primary"
+					>
+						<time class="mb-2 block text-sm font-medium text-neutral-500">
+							{post.date}
+						</time>
+						<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl group-hover:text-primary transition-colors">
+							{post.title}
+						</h2>
+						<p class="text-base leading-relaxed text-neutral-700 sm:text-lg">
+							{post.excerpt}
+						</p>
+					</a>
+				</article>
+			))}
+		</div>
 	</main>
 </Layout>
-
-

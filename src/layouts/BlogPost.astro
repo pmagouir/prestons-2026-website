@@ -1,0 +1,102 @@
+---
+import Layout from './Layout.astro';
+
+interface Props {
+	title: string;
+	date: string;
+	excerpt?: string;
+}
+
+const { title, date, excerpt } = Astro.props;
+---
+
+<Layout>
+	<main class="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
+		<article>
+			<header class="mb-12">
+				<time class="mb-4 block text-sm font-medium text-neutral-500">
+					{date}
+				</time>
+				<h1 class="mb-6 text-4xl font-semibold leading-tight text-neutral-900 sm:text-5xl lg:text-6xl">
+					{title}
+				</h1>
+				{excerpt && (
+					<p class="text-lg leading-relaxed text-neutral-700 sm:text-xl">
+						{excerpt}
+					</p>
+				)}
+			</header>
+
+			<div class="prose prose-neutral prose-lg max-w-none">
+				<slot />
+			</div>
+
+			<footer class="mt-16 border-t border-neutral-200 pt-8">
+				<a
+					href="/blog"
+					class="inline-flex items-center text-base font-semibold text-primary hover:text-primary/80 transition-colors"
+				>
+					<svg
+						class="mr-2 h-4 w-4"
+						fill="none"
+						stroke="currentColor"
+						viewBox="0 0 24 24"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M15 19l-7-7 7-7"
+						></path>
+					</svg>
+					Back to Writing
+				</a>
+			</footer>
+		</article>
+	</main>
+</Layout>
+
+<style>
+	.prose {
+		color: rgb(38 38 38);
+		max-width: 65ch;
+	}
+
+	.prose p {
+		margin-top: 1.25em;
+		margin-bottom: 1.25em;
+		line-height: 1.75;
+	}
+
+	.prose h2 {
+		margin-top: 2em;
+		margin-bottom: 1em;
+		font-size: 1.5em;
+		font-weight: 600;
+		line-height: 1.3;
+		color: rgb(23 23 23);
+		font-family: 'Lora', Georgia, serif;
+	}
+
+	.prose h2:first-of-type {
+		margin-top: 2.5em;
+	}
+
+	.prose strong {
+		font-weight: 600;
+		color: rgb(23 23 23);
+	}
+
+	.prose a {
+		color: #1F3D2B;
+		text-decoration: underline;
+		text-decoration-thickness: 1px;
+		text-underline-offset: 2px;
+	}
+
+	.prose a:hover {
+		color: #1F3D2B;
+		opacity: 0.8;
+	}
+</style>
+
