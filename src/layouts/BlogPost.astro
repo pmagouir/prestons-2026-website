@@ -31,7 +31,7 @@ const { title, date, excerpt } = Astro.props;
 				<slot />
 			</div>
 
-			<footer class="mt-16 border-t border-neutral-200 pt-8">
+			<footer class="mt-16 space-y-8 border-t border-neutral-200 pt-8">
 				<a
 					href="/writing"
 					class="inline-flex items-center text-base font-semibold text-primary hover:text-primary/80 transition-colors"
@@ -51,6 +51,31 @@ const { title, date, excerpt } = Astro.props;
 					</svg>
 					Back to Writing
 				</a>
+
+				<div class="border-t border-neutral-200 pt-8">
+					<p class="mb-4 text-base font-semibold text-neutral-900">
+						Get in touch
+					</p>
+					<p class="mb-6 text-base leading-relaxed text-neutral-700">
+						I'd love to hear your thoughts or discuss how these ideas might apply to your work.
+					</p>
+					<div class="flex flex-wrap items-center gap-6">
+						<a
+							href="mailto:pmagouir@gmail.com"
+							class="inline-flex items-center text-base font-medium text-primary hover:text-primary/80 transition-colors"
+						>
+							Email
+						</a>
+						<a
+							href="https://www.linkedin.com/in/preston-magouirk-840aa757/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="inline-flex items-center text-base font-medium text-primary hover:text-primary/80 transition-colors"
+						>
+							LinkedIn
+						</a>
+					</div>
+				</div>
 			</footer>
 		</article>
 	</main>
