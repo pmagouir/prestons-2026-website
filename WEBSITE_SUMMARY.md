@@ -42,7 +42,7 @@
 **Hero Section:**
 - **Tagline:** "Data | Strategy | Change Management"
 - **Headline:** "Strategy and systems for work that matters."
-- **Subhead:** "Currently leading strategy and analytics at DC-CAP Scholars, where we've transformed retention and graduation outcomes for low-income, first-generation college students in D.C."
+- **Subhead:** "Currently leading strategy and analytics at DC CAP Scholars, where we've transformed retention and graduation outcomes for low-income, first-generation college students in D.C."
 - **CTAs:**
   - "View Selected Work" → `/projects`
   - "Work With Me" → `/consulting`
@@ -73,7 +73,7 @@
 
 I've spent my career studying what actually moves the needle for students who face the longest odds: first-generation college-goers, kids from under-resourced communities, young people navigating systems that weren't designed with them in mind. I've led analytics teams, built research partnerships and managed funder relationships, designed and implemented randomized control trials of educational interventions, and transformed how organizations collect and use data to make decisions.
 
-Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars**, where I lead our Program Strategy, Student Success, Strategic Partnerships, and Data & Technology portfolios. Our partners achieve retention rates above 85% and graduation rates between 75-95%, outcomes that far exceed national averages for first-generation students."
+Today, I serve as **Chief Strategy and Analytics Officer** at **DC CAP Scholars**, where I lead our Program Strategy, Student Success, Strategic Partnerships, and Data & Technology portfolios. Our partners achieve retention rates above 85% and graduation rates between 75-95%, outcomes that far exceed national averages for first-generation students."
 
 **Operating Principles Section:**
 1. **Evidence eats Intuition**
@@ -97,7 +97,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 - Franklin.JPEG
 
 **Sidebar:**
-- **Current Role:** Chief Strategy & Analytics Officer, DC-CAP
+- **Current Role:** Chief Strategy & Analytics Officer, DC CAP
 - **Core Focus:**
   - → Change Management
   - → Strategy & Operations
@@ -116,7 +116,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 **Professional Experience:**
 
-1. **Chief Strategy and Analytics Officer | DC-CAP**
+1. **Chief Strategy and Analytics Officer | DC CAP**
    - July 2023 – Present | Washington, DC
    - **Executive Leadership:** Member of the Senior Leadership Team reporting directly to the CEO. Promote and steer the organization-wide "2050 Moonshot" strategy (80% college completion) across a network of 800+ scholars. Responsible for designing and executing strategic plan. Secure and nurture multiple multimillion dollar funding relationships to propel our work and impact.
    - **Organizational Health:** Oversee all programmatic, relationship management, and data operations, leading cross-functional teams (Success Coaching, University Partnerships, Data & Technology) and budgets, as well as research and development initiatives to power multimillion dollar annual fundraising model.
@@ -157,7 +157,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 **Page Title:** "Portfolio"
 
-**Project 1: DC College Access Program (DC-CAP)**
+**Project 1: DC College Access Program (DC CAP)**
 - **Context:** Senior Leadership: Strategy, Data & Partnerships
 - **Description:** "Leading the programmatic and data strategy for a major college access organization. Spearheaded a digital transformation saving over $500k/annually and reducing admin time by >50%. Directed the strategic shift toward a local, partnership-based support model that increased retention rates to over 85%, graduation rates at leading partners to between 75-95%, and aligned our programmatic strategy with the CEO's "2050 Moonshot Goal" (80% college completion). Designed the disbursement process for $5.4M in annual scholarships and developed financial modeling tools for strategic planning."
 - **Tags:** Digital Transformation, Strategic Planning, Financial Modeling, Partnership Management
@@ -207,7 +207,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 - **Tagline:** "Strategic Consulting"
 - **Headline:** "Data, strategy, and execution for mission-driven organizations."
 - **Subhead:** "I help nonprofits and education organizations build the analytic infrastructure, secure the funding, and navigate the transitions that turn ambitious goals into measurable outcomes."
-- **Credibility Paragraph:** "With experience leading strategy at DC-CAP Scholars, building the analytics, internal R&D, and public-facing research and reporting functions at Common App, and building and managing key relationships with both partner organizations and grant funding institutions, I bring both strategic rigor and operational background for a variety of engagements."
+- **Credibility Paragraph:** "With experience leading strategy at DC CAP Scholars, building the analytics, internal R&D, and public-facing research and reporting functions at Common App, and building and managing key relationships with both partner organizations and grant funding institutions, I bring both strategic rigor and operational background for a variety of engagements."
 - **CTA:** "Let's Schedule Time to Meet!" → https://calendly.com/preston-magouirk
 
 **How I Help Section:**
@@ -224,7 +224,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
   - Ad-hoc data/analytics product development
 - **Results I've delivered:**
   - Built the analytics environment for Common App, the world's largest source of college application data
-  - Led Salesforce Education Cloud implementation at DC-CAP, saving $500K+ annually, reducing administrative burden by over 50%, and dramatically improving scholar and staff experiences
+  - Led Salesforce Education Cloud implementation at DC CAP, saving $500K+ annually, reducing administrative burden by over 50%, and dramatically improving scholar and staff experiences
   - Designed financial modeling tools supporting multi-year organizational strategy and budgeting at a $10M+ college success organization
   - Developed secure, interactive, accessible analytic pipelines generating branded reports, visualizations, and executive dashboards
 
@@ -240,7 +240,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 - **Results I've delivered:**
   - Managed long-term operational relationships with large-scale funders at multiple organizations
   - Developed strategy to land large innovation grant for AI-powered student success tools
-  - Contributed to $20M+ in philanthropic commitments at DC-CAP
+  - Contributed to $20M+ in philanthropic commitments at DC CAP
   - PhD training in program evaluation, causal inference, and quantitative methods
   - Led large-scale randomized control trials of strategic initiatives using newly developed data architecture, both funded by large-scale grants from strategic funders
 
@@ -254,7 +254,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
   - Partnership development and optimization
   - Operational efficiency assessment and process redesign
 - **Results I've delivered:**
-  - Led integration of four separate teams into a unified Student Success division at DC-CAP
+  - Led integration of four separate teams into a unified Student Success division at DC CAP
   - Directed strategic shift from national to regional partnership model, increasing retention rates to 85%+ and graduation rates to 75-95% at mature partners
   - Managed enterprise-wide digital transformation reducing administrative time by over 50%
   - Designed and implemented new supervision frameworks for cross-functional coaching teams
@@ -495,7 +495,7 @@ Please let me know what you learned this year. I'm always looking to improve our
 ## EXTERNAL LINKS
 
 **Organizations:**
-- DC-CAP: https://www.dccap.org/
+- DC CAP: https://www.dccap.org/
 - Common App Research Hub: https://www.commonapp.org/about/reports-and-insights
 - SEELA Partnership: https://www.see-partnerships.com/seela-projects.html
 
