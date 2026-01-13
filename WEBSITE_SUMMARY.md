@@ -26,7 +26,7 @@
 - Experience
 - Portfolio
 - Consulting
-- Writing
+- Perspectives
 - Fitness
 
 **Footer:**
@@ -85,7 +85,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 3. **Talent compounds. Surround yourself accordingly.**
    - "I take great pride in seeking out excellent mentors, friends, and peers. I trust those on my teams use their special talents to lead as only they can."
 
-4. **Discipline Compounds**
+4. **Consistency Wins**
    - "As a professional, husband, dad, and an athlete, I subscribe to the belief that consistency and standards drive results. Keep showing up."
 
 **The Real Work Section:**
@@ -99,11 +99,14 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 **Sidebar:**
 - **Current Role:** Chief Strategy & Analytics Officer, DC-CAP
 - **Core Focus:**
-  - → Digital Transformation
-  - → Causal Inference
-  - → Strategic Finance
+  - → Change Management
+  - → Strategy & Operations
+  - → Analytics & Research
 - **Technical Stack:** R (tidyverse), Python, Salesforce, SQL, Astro
-- **The Edge:** Certified CrossFit Trainer (CF-L3)
+- **Credentials:**
+  - PhD (UVA)
+  - MPP (Vanderbilt)
+  - Certified CrossFit Trainer (CF-L3)
 
 ---
 
@@ -115,7 +118,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 1. **Chief Strategy and Analytics Officer | DC-CAP**
    - July 2023 – Present | Washington, DC
-   - **Executive Leadership:** Member of the Senior Leadership Team reporting directly to the CEO. Promote and steer the organization-wide "2050 Moonshot" strategy (80% college completion) across a network of 1,000+ scholars.
+   - **Executive Leadership:** Member of the Senior Leadership Team reporting directly to the CEO. Promote and steer the organization-wide "2050 Moonshot" strategy (80% college completion) across a network of 800+ scholars. Responsible for designing and executing strategic plan. Secure and nurture multiple multimillion dollar funding relationships to propel our work and impact.
    - **Organizational Health:** Oversee all programmatic, relationship management, and data operations, leading cross-functional teams (Success Coaching, University Partnerships, Data & Technology) and budgets, as well as research and development initiatives to power multimillion dollar annual fundraising model.
    - **Change Management:** Lead the digital transformation roadmap, selecting technology vendors and restructuring internal workflows to modernize a legacy non-profit infrastructure.
    - Link: "View Transformation Projects" → `/projects`
@@ -164,7 +167,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 **Project 2: Data Analytics & Research at Common App**
 - **Context:** Founding Leader, Data Analytics and Research
-- **Description:** "Architected the analytics environment for the world's largest source of college application data. Transformed the platform into a public good by establishing a dual-engine approach: building internal capacity for rapid public-facing reporting and cultivating external partnerships for rigorous intervention science. Led RCTs on direct admissions and partnered with NBER/Brookings to study equity gaps."
+- **Description:** "Founding team member responsible for designing and building the analytics environment for America's largest single source of college application data. Transformed the platform into a public good by establishing a dual-engine approach: building internal capacity for rapid public-facing reporting and cultivating external partnerships for rigorous interventions and evaluation. Designed and led randomized control trials on direct admissions and text messaging information campaigns. Developed research agenda and led founding Analytics & Research function."
 - **Tags:** Data Architecture, RCTs, Public Reporting, Strategic Partnerships, Higher Ed Policy
 - **Main Link:** "View Research Hub" → https://www.commonapp.org/about/reports-and-insights
 - **Resources:**
@@ -179,7 +182,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 **Project 3: Systemwide Quality Improvement in Louisiana**
 - **Context:** University of Virginia / SEELA (2015–2020)
-- **Description:** "Partnered with the Louisiana Department of Education to evaluate a massive statewide reform unifying fragmented early childhood sectors. Led survey development, validation studies of the QRIS, and longitudinal analysis. This study provides the first statewide exploration of ECE quality, improvement, and variability by key program characteristics, highlighting how detailed data collected in a mandatory QRIS can enhance understanding of quality improvement."
+- **Description:** "Partnered with the Louisiana Department of Education to evaluate a massive statewide reform unifying fragmented early childhood sectors. Led survey development, and longitudinal cleaning and analysis. The resulting study provides the first statewide exploration of long-term early care and education program quality, improvement, and variability by key program characteristics, highlighting how detailed data collected in a mandatory QRIS can enhance understanding of quality improvement."
 - **Tags:** Survey Design, Validation Studies, Longitudinal Analysis, Stata/R
 - **Main Link:** "View SEELA Partnership" → https://www.see-partnerships.com/seela-projects.html
 - **Resources:**
@@ -205,7 +208,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 - **Headline:** "Data, strategy, and execution for mission-driven organizations."
 - **Subhead:** "I help nonprofits and education organizations build the analytic infrastructure, secure the funding, and navigate the transitions that turn ambitious goals into measurable outcomes."
 - **Credibility Paragraph:** "With experience leading strategy at DC-CAP Scholars, building the analytics, internal R&D, and public-facing research and reporting functions at Common App, and building and managing key relationships with both partner organizations and grant funding institutions, I bring both strategic rigor and operational background for a variety of engagements."
-- **CTA:** "Start a Conversation" → mailto:pmagouir@gmail.com
+- **CTA:** "Let's Schedule Time to Meet!" → https://calendly.com/preston-magouirk
 
 **How I Help Section:**
 
@@ -267,7 +270,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 **CTA Section:**
 - **Headline:** "Let's talk about what you're building."
 - **Copy:** "I take on a limited number of consulting engagements to ensure each client gets focused attention. If you're facing a strategic challenge, building new organizational capacity, or navigating a significant transition, I'd love to hear from and work with you!"
-- **Button:** "Start a Conversation" → mailto:pmagouir@gmail.com
+- **Button:** "Let's Schedule Time to Meet!" → https://calendly.com/preston-magouirk
 - **Location:** "Based in Washington, D.C. Available for remote engagements."
 
 ---
@@ -277,10 +280,12 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 **Hero Section:**
 - **Tagline:** "Fitness & Nutrition Coaching"
 - **Headline:** "Build a system that fits your life."
-- **CTA:** "Let's Talk" → mailto:pmagouir@gmail.com
+- **No CTA button** (removed "Let's Talk" button)
 
 **Main Copy:**
-"I get it. You're balancing a career, a family, a social life, and somewhere in there you're supposed to train consistently and eat well. The fitness industry doesn't help. It's either overly intense, unnecessarily restrictive, or so vague you don't know where to start.
+"I bring the same systems thinking to fitness that I bring to my teams at work: clear goals, measurable progress, and frameworks that adapt when life doesn't cooperate.
+
+I get it. You're balancing a career, a family, a social life, and somewhere in there you're supposed to train consistently and eat well. The fitness industry doesn't help. It's either overly intense, unnecessarily restrictive, or so vague you don't know where to start.
 
 Most people don't need a complicated program. They need a clear system, someone to help them adjust it until it works, and the accountability to keep it running.
 
@@ -300,11 +305,26 @@ I believe it's important to train a broad range of skills under varied loads and
 
 If that sounds like what you're looking for, let's talk."
 
+**Contact Section:**
+- **Headline:** "Ready to build your system?"
+- **Copy:** "Let's talk about your goals, what's worked before, and how we can design a program that fits your life."
+- **Button:** "Schedule a Call" → https://calendly.com/preston-magouirk
+
+**Background Section:**
+- **Header:** "Background"
+- **Content:** "I've coached CrossFit since 2018 across group classes, personal training, and remote programming for athletes ranging from first-timers to competitive qualifiers. In 2024, I earned both the CF-L3 and Certified CrossFit Trainer (CCFT) credentials, a distinction held by roughly 1% of CrossFit coaches. As an athlete, I've also qualified for and competed in the CrossFit Games Quarterfinals multiple times, placing in the top 5-10% of Rx participants worldwide. While far from 'competitive' in the sport, I appreciate and enjoy the challenge to maintain and improve fitness as I age. As my son gets older, I know I'll need it."
+- **Credentials:**
+  - CF-L1 (2017)
+  - CF-L2 (2019)
+  - CF-L3 & CCFT (2024)
+  - Nutrition 1 Certificate
+  - Programming Certificate
+
 ---
 
-### WRITING PAGE (/writing)
+### PERSPECTIVES PAGE (/writing)
 
-**Page Title:** "Writing"
+**Page Title:** "Perspectives"
 
 **Intro Text:** "Thoughts on strategy, data, and building systems for change wherever you are."
 
@@ -382,9 +402,9 @@ Please let me know what you learned this year. I'm always looking to improve our
 **Contact Section:**
 - **Header:** "Get in touch"
 - **Copy:** "I'd love to hear your thoughts or discuss how these ideas might apply to your work."
-- **Links:** Email (pmagouir@gmail.com), LinkedIn
+- **Links:** Schedule Time (https://calendly.com/preston-magouirk), Email (pmagouir@gmail.com), LinkedIn
 
-**Footer:** "Back to Writing" link → `/writing`
+**Footer:** "Back to Perspectives" link → `/writing`
 
 ---
 
@@ -429,13 +449,14 @@ Please let me know what you learned this year. I'm always looking to improve our
 1. **Home → Portfolio:** View work samples → Full portfolio → Media mentions
 2. **Home → Consulting:** Learn about services → Engagement models → Contact CTA
 3. **Home → About:** Read narrative → Operating principles → Personal section
-4. **Home → Writing:** View post listing → Read full post → Contact section
+4. **Home → Perspectives:** View post listing → Read full post → Contact section
 5. **Navigation:** Sticky header allows quick navigation from any page
 
 **Call-to-Action Flow:**
 - Hero: "Work With Me" → Consulting page
-- Consulting: Multiple "Start a Conversation" CTAs → Email
-- Blog posts: Contact section at bottom → Email/LinkedIn
+- Consulting: Multiple "Let's Schedule Time to Meet!" CTAs → Calendly (https://calendly.com/preston-magouirk)
+- Fitness: "Schedule a Call" button → Calendly
+- Blog posts: Contact section at bottom → Calendly, Email, LinkedIn
 - Footer: Email link on every page
 
 ---
@@ -466,6 +487,7 @@ Please let me know what you learned this year. I'm always looking to improve our
 
 **Email:** pmagouir@gmail.com
 **LinkedIn:** https://www.linkedin.com/in/preston-magouirk-840aa757/
+**Calendly:** https://calendly.com/preston-magouirk
 **Location:** Washington, D.C.
 
 ---
