@@ -125,15 +125,15 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC-CAP Scholars*
 
 2. **Senior Manager of Research & Analytics | Common App**
    - Oct 2020 – July 2023 | Remote
-   - **Department Founding:** First hire recruited to build the research function from scratch. Defined the hiring strategy, technical stack, and data governance policies for the world's largest college application dataset.
+   - **Department Founding:** Second member of founding team tasked to build the research function from scratch. Defined the data environment, technical stack, research agenda, and data sharing and partnership policies for America's largest college application dataset.
    - **External Relations:** Served as the primary spokesperson for data insights, representing the organization to national media (NYT, Bloomberg) and the Board of Directors.
    - **Strategic Partnerships:** Negotiated and managed research collaborations and data sharing protocols with partners at leading universities across the United States. Partnerships resulted in high-profile research profiled in leading outlets such as NBER, Brookings, the Association for Education Finance and Policy (AEFP), and the EdWorkingPapers Series at Brown University's Annenberg Institute.
    - Link: "View Research & Reports" → `/projects`
 
 3. **Virginia Education Science Training Fellow | University of Virginia**
    - Aug 2015 – Aug 2020 | Charlottesville, VA
-   - **Project Leadership:** Lead researcher managing a complex, multi-year partnership with the Louisiana Department of Education during a statewide policy rollout.
-   - **Stakeholder Management:** Managed relationships with state policymakers and district leaders to ensure data validity and buy-in for high-stakes accountability metrics.
+   - **Project Leadership:** Lead researcher managing a large project within a multi-year partnership with the Louisiana Department of Education during a statewide policy rollout.
+   - **Stakeholder Management:** Managed relationships with state policymakers and district leaders to ensure buy-in for long-term partnership and data sharing to drive quality improvements from accountability policy.
    - Link: "View State Policy Study" → `/projects`
 
 4. **Associate Editor | Peabody Journal of Education**
