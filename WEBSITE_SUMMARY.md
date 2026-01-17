@@ -188,7 +188,6 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC CAP Scholars*
 - **Resources:**
   - AERA Open: Systemwide Quality Improvement
   - ECRQ: Parent Search & Preferences
-  - Policy Brief: Unifying Early Childhood Networks
   - Policy Brief: Leader Experiences
 
 **Selected Media & Commentary Section:**
