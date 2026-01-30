@@ -31,6 +31,15 @@ const skillCategories = [
             "Financial Modeling",
             "Strategic Planning"
         ]
+    },
+    {
+        title: "AI & Automation",
+        skills: [
+            "Claude AI",
+            "Multi-Agent Orchestration",
+            "Workflow Automation",
+            "Quality Gates"
+        ]
     }
 ];
 ---
@@ -42,7 +51,7 @@ const skillCategories = [
             <p class="mt-2 text-neutral-600">The languages, frameworks, and platforms I use to build systems.</p>
         </div>
 
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
             {skillCategories.map((category) => (
                 <div class="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-neutral-200 hover:ring-primary/20 transition-all">
                     <h3 class="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
