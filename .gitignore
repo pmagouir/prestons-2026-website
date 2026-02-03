@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# documentation files (not for version control)
+VISUAL_MOCKUP_EXAMPLES.md
+AI_AGENT_PROMPTS.md
