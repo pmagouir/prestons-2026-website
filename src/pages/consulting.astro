@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout>
+<Layout title="Consulting" description="Data strategy, grant writing, and organizational change consulting for nonprofits and education organizations.">
 	<main class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
 		<!-- Hero Section -->
 		<div class="mb-24">
@@ -257,57 +257,34 @@ import Layout from '../layouts/Layout.astro';
 			<h2 class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl">
 				How We Work Together
 			</h2>
-			<div class="overflow-x-auto">
-				<table class="w-full border-collapse">
-					<thead>
-						<tr class="border-b-2 border-neutral-200">
-							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
-								Model
-							</th>
-							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
-								Description
-							</th>
-							<th class="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-neutral-700">
-								Best For
-							</th>
-						</tr>
-					</thead>
-					<tbody class="divide-y divide-neutral-200">
-						<tr class="hover:bg-neutral-50 transition-colors">
-							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
-								Advisory Retainer
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Ongoing strategic counsel, typically 3-5 hours monthly. Regular check-ins, asynchronous support, and priority access for emerging challenges.
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Organizations wanting a trusted thought partner over time
-							</td>
-						</tr>
-						<tr class="hover:bg-neutral-50 transition-colors">
-							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
-								Project-Based
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Defined scope, timeline, and deliverables. Clear milestones and structured collaboration from kickoff to completion.
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Specific initiatives like grant proposals, strategic plans, or system implementations
-							</td>
-						</tr>
-						<tr class="hover:bg-neutral-50 transition-colors">
-							<td class="px-6 py-4 text-base font-semibold text-neutral-900">
-								Intensive Sprint
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Concentrated engagement over 2-4 weeks. Deep immersion to accelerate progress on urgent priorities.
-							</td>
-							<td class="px-6 py-4 text-base text-neutral-700">
-								Time-sensitive decisions, board presentations, or funding deadlines
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
+				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Advisory Retainer</h3>
+					<p class="mb-4 text-base leading-relaxed text-neutral-700">
+						Ongoing strategic counsel, typically 3-5 hours monthly. Regular check-ins, asynchronous support, and priority access for emerging challenges.
+					</p>
+					<p class="text-sm font-medium text-primary">
+						Organizations wanting a trusted thought partner over time
+					</p>
+				</div>
+				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Project-Based</h3>
+					<p class="mb-4 text-base leading-relaxed text-neutral-700">
+						Defined scope, timeline, and deliverables. Clear milestones and structured collaboration from kickoff to completion.
+					</p>
+					<p class="text-sm font-medium text-primary">
+						Grant proposals, strategic plans, or system implementations
+					</p>
+				</div>
+				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Intensive Sprint</h3>
+					<p class="mb-4 text-base leading-relaxed text-neutral-700">
+						Concentrated engagement over 2-4 weeks. Deep immersion to accelerate progress on urgent priorities.
+					</p>
+					<p class="text-sm font-medium text-primary">
+						Time-sensitive decisions, board presentations, or funding deadlines
+					</p>
+				</div>
 			</div>
 		</section>
 
