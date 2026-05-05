@@ -10,10 +10,84 @@ interface Props {
 
 const {
 	title = "Preston Magouirk",
-	description = "Strategy, data, and change management for mission-driven organizations. Currently Chief Strategy & Analytics Officer at DC CAP Scholars.",
+	description = "Chief Strategy and Analytics Officer at DC CAP. Builds the systems behind 75–95% completion outcomes for first-generation, low-income college students.",
 } = Astro.props;
 
 const pageTitle = title === "Preston Magouirk" ? title : `${title} | Preston Magouirk`;
+
+const personSchema = {
+	"@context": "https://schema.org",
+	"@type": "Person",
+	name: "Preston Magouirk",
+	givenName: "Preston",
+	familyName: "Magouirk",
+	jobTitle: "Chief Strategy and Analytics Officer",
+	worksFor: {
+		"@type": "Organization",
+		name: "DC College Access Program",
+		alternateName: "DC CAP",
+		url: "https://www.dccap.org/",
+	},
+	alumniOf: [
+		{
+			"@type": "CollegeOrUniversity",
+			name: "University of Virginia",
+			sameAs: "https://www.virginia.edu/",
+		},
+		{
+			"@type": "CollegeOrUniversity",
+			name: "Vanderbilt University",
+			sameAs: "https://www.vanderbilt.edu/",
+		},
+		{
+			"@type": "CollegeOrUniversity",
+			name: "Tulane University",
+			sameAs: "https://www.tulane.edu/",
+		},
+	],
+	hasCredential: [
+		{
+			"@type": "EducationalOccupationalCredential",
+			credentialCategory: "Doctorate",
+			name: "PhD, Educational Policy Studies",
+			educationalLevel: "Doctoral",
+			recognizedBy: {
+				"@type": "CollegeOrUniversity",
+				name: "University of Virginia",
+			},
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			credentialCategory: "Masters",
+			name: "Master of Public Policy",
+			recognizedBy: {
+				"@type": "CollegeOrUniversity",
+				name: "Vanderbilt University",
+			},
+		},
+		{
+			"@type": "EducationalOccupationalCredential",
+			credentialCategory: "Fellowship",
+			name: "IES Predoctoral Fellow",
+			recognizedBy: {
+				"@type": "Organization",
+				name: "Institute of Education Sciences",
+			},
+		},
+	],
+	knowsAbout: [
+		"Education policy",
+		"AI governance",
+		"Strategic planning",
+		"Organizational change management",
+		"Causal inference",
+		"Stable matching algorithms",
+		"Higher education access",
+		"First-generation college students",
+	],
+	description:
+		"Strategy and analytics leader at DC CAP. Builds the systems behind 75–95% completion outcomes for first-generation, low-income college students.",
+};
 ---
 <!doctype html>
 <html lang="en">
@@ -32,6 +106,7 @@ const pageTitle = title === "Preston Magouirk" ? title : `${title} | Preston Mag
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={description} />
+		<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
 		<title>{pageTitle}</title>
 	</head>
 	<body class="flex min-h-screen flex-col">
