@@ -5,12 +5,27 @@ interface Props {
 	title: string;
 	date: string;
 	excerpt?: string;
+	pubDate?: Date;
 }
 
-const { title, date, excerpt } = Astro.props;
+const { title, date, excerpt, pubDate } = Astro.props;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const articleSchema = pubDate
+	? {
+			"@context": "https://schema.org",
+			"@type": "Article",
+			headline: title,
+			description: excerpt,
+			datePublished: pubDate.toISOString(),
+			author: { "@type": "Person", name: "Preston Magouirk", url: Astro.site?.href },
+			publisher: { "@type": "Person", name: "Preston Magouirk" },
+			mainEntityOfPage: canonicalURL.href,
+		}
+	: null;
 ---
 
 <Layout title={title} description={excerpt}>
+	{articleSchema && <script type="application/ld+json" set:html={JSON.stringify(articleSchema)} />}
 	<main class="mx-auto max-w-3xl px-6 py-16 lg:px-8 lg:py-24">
 		<article>
 			<header class="mb-12">
