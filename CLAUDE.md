@@ -65,7 +65,7 @@ Two human gates are non-negotiable: scope after Designer (Lesson 8), merge after
 
 ## Verification
 
-Before any merge, `scripts/verify_site.sh` must pass: `npm run build` green, axe-core clean (WCAG 2.2 AA), Lighthouse within budget, JSON-LD valid against schema.org, and every site number traced to `canonical.md`. CI runs the same gate on every PR. The node rebuilds from a clean checkout in under ten minutes via `scripts/bootstrap.sh` (reproducibility, Lesson 6).
+Before any merge, `scripts/verify_site.sh` must pass: `npm run build` green, JSON-LD parses, and the forbidden-token voice scan is clean. CI runs that gate plus Lighthouse budgets (`lighthouserc.json`, whose accessibility category covers axe-style WCAG 2.2 AA checks) on every PR. Claim-tracing — confirming every site number resolves to `canonical.md` — is the Auditor's manual gate, not yet automated. The node rebuilds from a clean checkout in under ten minutes via `scripts/bootstrap.sh` (reproducibility, Lesson 6).
 
 ## Cadence
 

@@ -1,119 +1,97 @@
-# PROTOCOL.md — Monthly Site Refresh Cadence + Ad Hoc Triggers
+# PROTOCOL.md — Website Cycle Sequence (8-agent node)
 
-How the 5-agent team runs in sequence, and what each step produces.
-
-This is the website team's analog of the dev-office weekly briefing protocol. Same shape, monthly cadence.
+How the team runs in sequence and what each step produces. The orchestration is owned by the **Site Lead** (`.claude/agents/site-lead.md`), which runs as the main thread (`claude --agent site-lead`) and dispatches the seven specialists. Subagents cannot spawn subagents, so every handoff routes through the Site Lead, which surfaces the two gates to Preston. Cycle artifacts live in the node's `cycles/` directory.
 
 ---
 
-## Default Cadence: Monthly Orchestrator
+## Default cadence: monthly, plus ad-hoc triggers
 
-**When:** First of each month, scheduled via `mcp__scheduled-tasks__create_scheduled_task` (registration deferred until first manual run validates the protocol — see open work in `BRAIN/handoff.md`).
+**When:** first of each month (the `website-refresh` scheduled task), plus any ad-hoc trigger below. A no-change cycle is a healthy outcome — the Scout still records "no material changes" and the cycle closes.
 
 **Sequence (each step gates the next):**
 
 ```
-Strategist  →  Resume Consultant  →  Designer  →  Engineer  →  Auditor
+Site Lead (orchestrator)
+  → BRAIN Scout → Content Architect → Resume Consultant → Designer
+  → [GATE 1 — Preston reviews scope]
+  → Engineer → Performance & SEO → Auditor
+  → [GATE 2 — Preston approves merge]
+  → Engineer ships to main → changelog
 ```
 
-The dev-office Director-equivalent here is a thin orchestrator: it sequences the five agents, surfaces the Auditor's report to Preston, and waits for approval before the Engineer pushes to main.
+### Step 1 — BRAIN Scout (read-only detection)
 
-### Step 1 — Strategist (read-only scan)
+Reads `.learn/` files, `strategic_brief.md`, the current site surface, and recent BRAIN activity (session_log, decisions, dev-office briefings, thought-leadership drafts, recent commits). Produces `cycles/proposals/YYYY-MM-DD_proposal.md`. Per-candidate fields: **source artifact, surface (page/section), proposed change, lane (A operator / B builder), audience priority, pattern flag, evidence link, canonical-update-needed (yes/no)**. Plus carryover, no-change surfaces, and sources-walked sections. Flags canonical-update proposals separately. Writes no content, design, schema, or code.
 
-- Reads `.learn/` files, `strategic_brief.md`, current site state (page list + last-modified dates), recent BRAIN activity (session_log.md, decisions.md, dev-office briefings, recent proactive-writing-agent drafts, recent commits in BRAIN + prestons-2026-website).
-- Produces `proposals/YYYY-MM-DD_proposal.md` — a structured candidate list:
-  - For each candidate: source artifact, surface (page or section), proposed change, lane (A operator / B builder), audience priority, evidence link.
-  - Plus a "carryover" section for last month's unaddressed items.
-  - Plus a "no-change" section if applicable.
-- Does NOT write content, design, or code.
+### Step 2 — Content Architect (schema + ingestion)
 
-### Step 2 — Resume Consultant (positioning + content)
+Reads the proposal. Maintains `src/content.config.ts` (Zod-typed `writing` / `projects` / `talks` / `media` / `recognition` collections) and creates the `src/content/<collection>/` directories. Maps each advancing candidate to a collection and writes stubbed entries (valid front matter, body left `TODO` for the Resume Consultant). Marks any value absent from `canonical.md` as `TODO(canonical)` and flags it. Build must validate all collections.
 
-- Reads `.learn/` files, `strategic_brief.md`, the Strategist's proposal, `preston.md`, the specific page(s) being modified.
-- Decides which proposals to advance, defers, or rejects.
-- Drafts page-level or section-level content to `content_drafts/[page]_vN.md`.
-- Invokes `preston-writing` (mandatory voice check), `dc-cap-org-intelligence` (when DC CAP claims appear), `researching-with-confidence` (for any external citation), `checking-communications` (final voice/policy pass).
-- Output content meets the verbatim phrasing rules in `glossary.md` and the verified-numbers rules in `canonical.md`.
+### Step 3 — Resume Consultant (positioning + copy)
 
-### Step 3 — Designer (visual + structural spec)
+Reads the proposal + stubbed entries. Triages advance/defer/reject. Drafts prose in Preston's voice (preloaded `preston-writing`; invokes `dc-cap-org-intelligence`, `researching-with-confidence`, `checking-communications`). Fills entry bodies and writes page drafts to `cycles/content_drafts/[surface]_vN.md`. Every number cites `canonical.md`; no `errors.md` pattern present.
 
-- Reads `.learn/` files, current site Tailwind config + global.css, the Resume Consultant's content drafts, the page being designed.
-- Produces `design_specs/[surface]_vN.md` — describes layout structure, component composition, type scale (clamp ranges), color decisions (OKLCH values), motion (with prefers-reduced-motion), spacing rhythm, accessibility specs.
-- Does NOT write Astro code.
-- Cites OKLCH values, not raw HEX, in spec files. Engineer converts when implementing.
+### Step 4 — Designer (visual + a11y spec)
 
-### Step 4 — Engineer (implementation)
+Reads the drafts + current Tailwind config + `global.css`. Produces `cycles/design_specs/[surface]_vN.md`: layout, type scale (`clamp()`), OKLCH colors with verified contrast, motion with `prefers-reduced-motion`, spacing, accessibility. Writes no code. Flags any palette/type change for Preston.
 
-- Reads `.learn/` files, Designer's spec, Resume Consultant's content drafts, current Astro codebase.
-- Edits files in `/Users/prestonmagouirk/Desktop/prestons-2026-website` on a feature branch (`monthly-refresh-YYYY-MM`).
-- Updates content collections, Astro components, Tailwind theme as needed.
-- Verifies build (`npm run build`) passes locally.
-- Writes `diffs/[surface]_vN.md` — summary of files touched + before/after notes for the Auditor.
-- Does NOT push to main. Vercel preview deploy happens automatically on the feature branch.
+### GATE 1 — Preston reviews scope
 
-### Step 5 — Auditor (4-lens adversarial review)
+Site Lead surfaces triage decisions, net effect (surfaces touched), and open questions. Preston approves scope and answers questions. The Engineer does not touch code before this gate clears (Lesson 8).
 
-- Reads `.learn/` files, the Resume Consultant's content drafts, the Designer's spec, the Engineer's diffs, the live preview deploy.
-- Runs four lenses (Executive Recruiter / Consulting Buyer / Brand & Voice / Performance & Accessibility).
-- Runs `axe-core` against the preview URL (or local dev) and notes WCAG 2.2 AA failures.
-- Runs Lighthouse against the preview and reports per-axis scores.
-- Cross-checks every quantitative claim in the changed pages against `canonical.md`.
-- Scans every changed page against every `errors.md` pattern.
-- Produces `audits/YYYY-MM-DD_audit.md` with severity-ordered findings.
-- Recommends merge, revise, or block.
+### Step 5 — Engineer (implementation)
 
-### Step 6 — Preston decides
+Reads the spec + schema + approved scope. Implements on feature branch `monthly-refresh-YYYY-MM`: wires collections into pages, converts images through `astro:assets`, converts OKLCH to the Tailwind theme. `npm run build` green, no broken links. Writes `cycles/diffs/[surface]_vN.md`. Does not push to main.
 
-- Reads the audit report.
-- One of three outcomes: (a) approve and merge, (b) request specific revisions (loops back to Resume Consultant or Designer with targeted asks), (c) defer the cycle.
+### Step 6 — Performance & SEO (budgets + structured data)
 
-### Step 7 — Engineer ships (if approved)
+Verifies Core Web Vitals against `lighthouserc.json`, completes structured data (Person `sameAs`, Article, BreadcrumbList; verified URLs only), confirms `site:` URL / sitemap / RSS / robots / OG image. Files off-budget fixes for the Engineer. Returns a findings note.
 
-- Merges feature branch to main.
-- Vercel deploys to production.
-- Records the run in `changelogs/YYYY-MM-DD_changelog.md` with: pages touched, content changes, design changes, code changes, audit findings carried forward as future work.
+### Step 7 — Auditor (4-lens adversarial review)
 
-## Ad Hoc Triggers
+Reads all upstream handoffs + the preview. Runs four lenses (Executive Recruiter / Consulting Buyer / Brand & Voice / Performance & Accessibility). Runs axe-core + Lighthouse, validates JSON-LD, traces every claim to `canonical.md`, scans every changed surface against every `errors.md` pattern. Produces `cycles/audits/YYYY-MM-DD_audit.md` with a merge / revise / block verdict. Final authority on voice and accessibility.
 
-The monthly cadence is a default, not a ceiling. Any of these warrants an out-of-cycle run:
+### GATE 2 — Preston approves merge
 
-- **New published writing** (Preston ships a public essay, op-ed, or board-level talk worth surfacing).
-- **Role change or major project ship** (e.g., CPIP launches in October 2026 — site must update day-of).
-- **Media mention secured** (new outlet adds a citation; verify URL, add to projects/media list).
-- **Speaking engagement confirmed** (conference page added).
-- **First major consulting engagement secured** (the Advisory layer warrants a dedicated surface).
-- **Auditor finds a Critical-severity issue mid-cycle** (e.g., a stale figure went live).
+Site Lead surfaces the verdict + diff summary. On approval the Engineer merges to main; Vercel deploys. Scheduled runs commit to the feature branch but never push or merge — Preston is the gate.
 
-Ad hoc runs use the same five-step sequence but are scoped to the trigger.
+### Step 8 — Engineer ships + records
+
+Merges (on approval), then writes `cycles/changelogs/YYYY-MM-DD_changelog.md`: surfaces touched, content/design/code changes, and audit findings carried forward.
+
+## Ad-hoc triggers
+
+New published writing · role change or major project ship · verified media mention · speaking engagement confirmed · first major consulting engagement · a Critical audit finding mid-cycle. Ad-hoc runs use the same sequence, scoped to the trigger.
 
 ## Escalation
 
 | Situation | Escalation |
 |-----------|-----------|
-| Strategist surfaces a fact the canonical doesn't yet contain | Resume Consultant routes through Preston before treating as canon |
-| Resume Consultant cannot find a verified number for a claim Preston wants to make | Strategist re-checks BRAIN sources; if absent, Preston supplies or the claim is dropped |
-| Designer proposes a palette or type change | Preston approves before Engineer implements |
-| Engineer hits an Astro / Tailwind constraint that breaks the spec | Pause; Designer + Engineer resolve; do not silently downgrade |
-| Auditor finds 3+ Critical issues in a single audit | Cycle pauses for full revision before merge consideration |
-| Build fails on main | Engineer reverts to last green commit; root-cause; reships through standard cycle |
+| Scout surfaces a fact not yet in `canonical.md` | Flag as canonical-update; Site Lead routes to Preston before drafting |
+| Resume Consultant lacks a verified number | Scout re-checks BRAIN; if absent, Preston supplies or the claim is dropped |
+| Designer proposes a palette / type change | Preston approves at Gate 1 before the Engineer implements |
+| Engineer hits a constraint that breaks the spec | Pause; Designer + Engineer resolve; no silent downgrade |
+| Auditor returns block, or 3+ Critical findings | Cycle loops back to the named owner before merge consideration |
+| Build fails on main | Engineer reverts to last green commit; root-cause; reship through the cycle |
 
-## Verification Gates (mirroring dev-office)
-
-Each agent has a verification gate it must clear before declaring complete:
+## Verification gates
 
 | Agent | Gate |
 |-------|------|
-| Strategist | Every proposal has a source artifact link (file path or URL) |
-| Resume Consultant | Every numerical claim cites canonical.md; voice check passed via preston-writing |
-| Designer | Every color spec'd in OKLCH; contrast verified ≥4.5:1 against background; motion respects prefers-reduced-motion |
-| Engineer | `npm run build` passes; no broken internal links; JSON-LD validates against schema.org |
-| Auditor | Every page in scope checked against every errors.md pattern; Lighthouse + axe-core run; report saved |
+| Site Lead | Both Preston gates cleared; `verify_site.sh` green; changelog written |
+| BRAIN Scout | Every candidate has a source + evidence link + a criterion tag; sources-walked complete |
+| Content Architect | `npm run build` validates all collections; every metric field carries a `sourceKey`; `TODO(canonical)` fields listed |
+| Resume Consultant | Every number cites `canonical.md`; `preston-writing` + `checking-communications` passed; no `errors.md` pattern |
+| Designer | Every color OKLCH; contrast ≥4.5:1 verified; motion has a reduced-motion fallback |
+| Engineer | `npm run build` passes; no broken internal links; images via `astro:assets`; nothing pushed to main |
+| Performance & SEO | Lighthouse within budget; JSON-LD valid; `sameAs` verified; `site:`/sitemap/RSS/robots/OG present |
+| Auditor | Every changed surface checked against every `errors.md` pattern; axe + Lighthouse run; claims traced; report saved; verdict explicit |
 
-## What This Protocol Is Not
+## What this protocol is not
 
-This is not a content strategy or a design strategy — those live in `strategic_brief.md`. This is the operating sequence that turns strategy into shipped changes. If the protocol becomes a bottleneck rather than a quality gate, surface that as a `lessons.md` entry and let it shape the next protocol revision.
+Not a content or design strategy — those live in `strategic_brief.md`. This is the operating sequence. If a step becomes a bottleneck rather than a quality gate, log it in `lessons.md` and let it shape the next revision.
 
 ---
 
-*Maintained by: Auditor (proposes protocol changes based on what fails); Preston approves.*
-*Last verified: 2026-05-02*
+*Maintained by: Auditor proposes changes based on what fails; Preston approves. Orchestration of record: `.claude/agents/site-lead.md`.*
+*Updated: 2026-06-01 — rewritten from the 5-agent model to the 8-agent node.*

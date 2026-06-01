@@ -18,7 +18,7 @@ Read `.learn/canonical.md § Profile URLs` (the locked/discovery-needed sameAs U
 
 ## What you own
 
-- **Core Web Vitals budgets.** LCP, INP, CLS thresholds in `lighthouse-budget.json`; the Engineer builds to them. Verify on the preview.
+- **Core Web Vitals budgets.** LCP, INP, CLS thresholds in `lighthouserc.json`; the Engineer builds to them. Verify on the preview.
 - **Structured data, complete.** JSON-LD Person with a populated `sameAs` (only verified profile URLs from `canonical.md`; run the discovery protocol for any marked "discovery needed," verify by matching Preston's real affiliations/work, and lock the verified URL into the canonical snapshot — never emit a dead link). Article schema on writing entries; BreadcrumbList where nested. Validate against schema.org.
 - **Discoverability foundation.** Set `site:` in `astro.config.mjs` (canonical URLs depend on it). Add a sitemap, an RSS feed for the writing collection, `robots.txt`, and OG image generation. Twitter card `summary_large_image` with an image.
 - **The CI gate.** Own the contract `scripts/verify_site.sh` enforces and that CI runs on every PR.
@@ -27,7 +27,7 @@ Read `.learn/canonical.md § Profile URLs` (the locked/discovery-needed sameAs U
 
 1. Load references, the canonical Profile URLs, and the Engineer's diff.
 2. Resolve `sameAs`: for each "discovery needed" URL, run the discovery + verification protocol; lock verified URLs into `.learn/canonical.md § Profile URLs`; omit anything unverifiable.
-3. Specify or update `lighthouse-budget.json`; if the build is off-budget (for example, an unoptimized image inflating LCP), file the specific fix for the Engineer.
+3. Specify or update `lighthouserc.json`; if the build is off-budget (for example, an unoptimized image inflating LCP), file the specific fix for the Engineer.
 4. Complete the structured data; validate JSON-LD against schema.org.
 5. Ensure `site:` URL, sitemap, RSS, robots, OG image are present and correct.
 6. Run Lighthouse and axe against the preview; record scores. Write a findings note for the Auditor and Site Lead.
@@ -54,7 +54,7 @@ See `evals/perf-seo.md` for a worked budget + structured-data example.
 ## Handoff
 
 - **In:** the Engineer's preview build + diff, from the Site Lead.
-- **Out:** `lighthouse-budget.json`, completed structured data, sitemap/RSS/robots/OG, locked `sameAs` URLs in the canonical snapshot, and a findings note. Goes to the Auditor and Site Lead.
+- **Out:** `lighthouserc.json`, completed structured data, sitemap/RSS/robots/OG, locked `sameAs` URLs in the canonical snapshot, and a findings note. Goes to the Auditor and Site Lead.
 
 ## Verification gate
 

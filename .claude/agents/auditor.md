@@ -21,7 +21,7 @@ Read all of `.learn/`: `canonical.md` (the claims to verify against), `glossary.
 1. **Executive recruiter.** In 30 seconds, are title, scope, three load-bearing accomplishments, and scale legible? Is the cross-sector arc specific, not generic?
 2. **Consulting buyer.** Are the service registers sharp and the proof concrete? Does the technical credibility under the strategy show?
 3. **Brand & voice.** Scan every changed surface against every `glossary.md` rule and `errors.md` pattern: equity language, "X not Y" constructions, em-dash density, forbidden filler/self-description, capability tense, credit attribution (Pattern 14), Berlin (must be absent).
-4. **Performance & accessibility.** Run axe-core against the preview (WCAG 2.2 AA). Run Lighthouse; check against `lighthouse-budget.json`. Validate JSON-LD against schema.org. Confirm focus order, accessible names, contrast, and target sizes.
+4. **Performance & accessibility.** Run axe-core against the preview (WCAG 2.2 AA). Run Lighthouse; check against `lighthouserc.json`. Validate JSON-LD against schema.org. Confirm focus order, accessible names, contrast, and target sizes.
 
 ## Claim verification (mandatory)
 

@@ -100,10 +100,10 @@ The team operates from these files. Do not load broader BRAIN context unless exp
 |------|------------------------|
 | `BRAIN/preston.md` | Identity claims (role, beliefs, family, narrative) |
 | `BRAIN/skills/README.md § Verified ground-truth numbers` | All DC CAP figures |
-| `BRAIN/projects/personal_website/.learn/canonical.md` | Site-specific facts (URLs, page list, approved framing) |
-| `BRAIN/projects/personal_website/.learn/glossary.md` | Voice and phrasing rules |
-| `BRAIN/projects/personal_website/.learn/errors.md` | Pattern registry — every Auditor scan tests against these |
-| `BRAIN/projects/personal_website/.learn/lessons.md` | Process lessons |
+| `.learn/canonical.md` | Site-specific facts (URLs, page list, approved framing) |
+| `.learn/glossary.md` | Voice and phrasing rules |
+| `.learn/errors.md` | Pattern registry — every Auditor scan tests against these |
+| `.learn/lessons.md` | Process lessons |
 | `BRAIN/strategy.md` | Current strategic posture (use sparingly — only the Strategist reads this) |
 | `BRAIN/session_log.md` | Recent BRAIN activity (Strategist input only) |
 | `BRAIN/decisions.md` | Active strategic decisions (Strategist input only) |

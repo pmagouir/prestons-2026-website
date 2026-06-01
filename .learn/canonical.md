@@ -233,7 +233,7 @@ When facts on the site conflict with sources, resolve in this order:
 2. `BRAIN/skills/README.md § Verified ground-truth numbers` — DC CAP figures
 3. `BRAIN/org_intelligence/README.md` — DC CAP context beyond numbers
 4. `BRAIN/strategy.md` — current strategic posture
-5. `BRAIN/projects/personal_website/.learn/canonical.md` (this file) — site-specific approvals (e.g., approved framing, media URLs, publication list)
+5. `.learn/canonical.md` (this file, in the prestons-2026-website node) — site-specific approvals (e.g., approved framing, media URLs, publication list)
 
 ## Profile URLs (for JSON-LD sameAs and footer)
 
