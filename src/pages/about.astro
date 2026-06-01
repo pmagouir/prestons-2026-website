@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import lizaPreston from '../assets/liza_preston.JPG';
+import familyHalloween from '../assets/family_halloween.jpg';
+import franklin from '../assets/Franklin.JPEG';
 ---
 
 <Layout title="About" description="Chief Strategy and Analytics Officer at DC CAP. PhD in Educational Policy Studies (UVA, IES Fellow), MPP from Vanderbilt. Builds the systems behind 75–95% completion outcomes for first-generation, low-income college students.">
@@ -87,24 +91,36 @@ import Layout from '../layouts/Layout.astro';
 
                         <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
                             <div class="overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
-                                <img
-                                    src="/liza_preston.JPG"
+                                <Image
+                                    src={lizaPreston}
                                     alt="Preston with Liza"
                                     class="h-48 w-full object-cover transition-all duration-500"
+                                    widths={[300, 500]}
+                                    sizes="(min-width: 1024px) 20rem, (min-width: 640px) 45vw, 90vw"
+                                    loading="lazy"
+                                    format="webp"
                                 />
                             </div>
                             <div class="overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
-                                <img
-                                    src="/family_halloween.jpg"
+                                <Image
+                                    src={familyHalloween}
                                     alt="Family Halloween photo"
                                     class="h-48 w-full object-cover transition-all duration-500"
+                                    widths={[300, 500]}
+                                    sizes="(min-width: 1024px) 20rem, (min-width: 640px) 45vw, 90vw"
+                                    loading="lazy"
+                                    format="webp"
                                 />
                             </div>
                             <div class="overflow-hidden rounded-lg shadow-sm transition-transform hover:scale-[1.02]">
-                                <img
-                                    src="/Franklin.JPEG"
+                                <Image
+                                    src={franklin}
                                     alt="Franklin"
                                     class="h-48 w-full object-cover transition-all duration-500"
+                                    widths={[300, 500]}
+                                    sizes="(min-width: 1024px) 20rem, (min-width: 640px) 45vw, 90vw"
+                                    loading="lazy"
+                                    format="webp"
                                 />
                             </div>
                         </div>

@@ -1,5 +1,6 @@
 ---
-// Hero section with split screen layout
+import { Image } from 'astro:assets';
+import prestonImg from '../assets/Preston1.jpg';
 ---
 
 <section class="min-h-[85vh] bg-background">
@@ -47,11 +48,14 @@
             <div
                 class="relative h-[400px] w-full max-w-md overflow-hidden rounded-2xl bg-neutral-100 shadow-2xl sm:h-[500px] lg:h-[600px]"
             >
-                <img
-                    src="/Preston1.jpg"
+                <Image
+                    src={prestonImg}
                     alt="Preston Magouirk"
                     class="h-full w-full object-cover transition-all duration-700 hover:scale-105"
+                    widths={[400, 600, 900]}
+                    sizes="(min-width: 1024px) 28rem, 90vw"
                     loading="eager"
+                    format="webp"
                 />
             </div>
         </div>

@@ -1,0 +1,21 @@
+name: verify
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Build + JSON-LD + voice gate
+        run: bash scripts/verify_site.sh
+      - name: Lighthouse CI (perf, a11y, best-practices, seo budgets)
+        run: npx --yes @lhci/cli@latest autorun

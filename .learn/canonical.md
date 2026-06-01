@@ -1,0 +1,276 @@
+# canonical.md — Personal Website Single Source of Truth
+
+Every fact the website states about Preston, his career, or his work must trace back to this file or to the BRAIN files it cites. If a number, title, or claim is not here and not in `preston.md`, it does not belong on the site.
+
+This file is the website's analog of `BRAIN/projects/development_office/.learn/canonical.md`. Same purpose, different scope.
+
+---
+
+## Identity Baseline
+
+| Field | Value | Source |
+|-------|-------|--------|
+| Full name | Preston Magouirk | preston.md |
+| Current title | Chief Strategy and Analytics Officer | preston.md, BRAIN/context.md |
+| Current org | DC CAP (DC College Access Program) | preston.md |
+| Tenure in current role | July 2023 – Present | preston.md |
+| Location | Washington, DC | preston.md |
+| Family | Married to Liza; son George (~2yrs); rescue dog Franklin (12+ yrs) | preston.md |
+
+## Education
+
+| Degree | Institution | Year | Notes |
+|--------|-------------|------|-------|
+| PhD, Educational Policy Studies | University of Virginia | 2020 | IES Fellow |
+| MPP | Vanderbilt University | 2015 | Peabody Honors Scholar |
+| BA, History | Tulane University | 2011 | |
+
+## Career Trajectory (verbatim titles)
+
+| Period | Title | Org |
+|--------|-------|-----|
+| 2011–2013 | Corps Member | Teach For America, South Louisiana |
+| 2013–2015 | Associate Editor | Peabody Journal of Education, Vanderbilt |
+| 2015–2020 | VEST Fellow (IES) | University of Virginia |
+| 2020–2023 | Senior Manager of Research & Analytics | The Common Application |
+| 2023–present | Chief Strategy and Analytics Officer | DC CAP |
+
+## UVA / Louisiana Department of Education Partnership (2017–2020) — Load-Bearing
+
+This is a load-bearing component of the UVA period and must remain visible on the site. It is *not* solely the early-childhood QRIS work that the existing projects page features.
+
+**The work:** Lead researcher on the UVA–Louisiana Department of Education research-practice partnership covering **policy and accountability systems research** during a multi-year statewide policy rollout. Managed direct relationships with Louisiana state policymakers and district leaders.
+
+**Why it matters for the site:** Demonstrates Preston's experience operating inside a state education agency on policy + accountability design — a credential distinct from the academic-research framing currently dominating the UVA section. This is the period that produced the public-facing publications cited on the site.
+
+**Approved framing language for site copy:**
+- "Policy and accountability systems research with the Louisiana Department of Education (2017–2020)."
+- "Multi-year UVA–LDOE research-practice partnership during statewide policy rollout."
+- "Direct work with state policymakers and district leaders on accountability design."
+
+**What NOT to do:** drop or obscure this strand in favor of the early-childhood QRIS publication alone. The accountability systems work is the broader through-line — the QRIS study is one publication that came out of it. Both belong on the site; the partnership framing is the umbrella.
+
+**Publications evidence:** the partnership produced the Louisiana early-childhood QRIS study (AERA Open, ECRQ, policy brief — already on the site under projects.astro Project 3) and additional accountability-policy work. Resume Consultant maintains the publication list as part of canonical site state.
+
+## Credentials & Recognitions
+
+- IES Fellowship (UVA)
+- Peabody Honors Scholar (Vanderbilt)
+- TFA South Louisiana Excellence in Teaching Award (2013)
+- Certified CrossFit Trainer + CF-L3 (2024) — top ~1% of CrossFit coaches
+- CrossFit Games Quarterfinals qualifier (multiple years)
+- Board of Advisors, American University School of Education
+
+## Proof-of-Capability Systems (the four load-bearing artifacts)
+
+These are the four systems referenced as evidence of the full-stack-leader claim. Use exact framing.
+
+1. **Career Pathway Intelligence Platform (CPIP)** — research-grade recommendation engine matching DC CAP's 4,100+ students to career-connected college pathways. Synthesizes 19 federal data sources into ~400,000 ranked pathways. Solo-architected. 1,625 passing tests, 7/7 quality gates, 18 ADRs. Status: October 2026 soft launch (NOT yet live — capability-overstate risk).
+2. **Scholar Matching Algorithm** — empirically validated stable matching that allocates DC CAP's annual scholarship offers among ~700 applicants and 13 university partners. 9,100 pairs tested, zero blocking pairs. Currently in production (Phase 4 acceptance period as of April 2026). **Site framing rule (added 2026-05-05):** describe as "allocates scholarship offers among ~700 applicants" — never "places ~700 scholars" or similar phrasing that conflates applicants with placements. Drop the "Gale-Shapley" technical name from public copy; use "empirically validated matching algorithm" instead. The "Gale-Shapley" name and the Nobel Prize lineage stay in technical references and `BRAIN/projects/matching_2026/` documentation, not on the public site.
+3. **Enterprise AI Governance Framework** — DC CAP's 60-day AI pilot for 9 staff across 3 units. 19 interactive HTML pages on dccapinnovation.org. 4D fluency model (Delegation, Description, Discernment, Diligence). Currently running (launched April 6, 2026).
+4. **DC CAP Financial Scenarios Tool (added 2026-05-03)** — multi-scenario endowment / fundraising / spending model used in board meetings. Solo-built (Vite + React + TypeScript SPA, 88-test math audit, multi-phase audit-driven rebuild including a Brief tab redesigned for CEO use after a CEO-lens audit caught CFO-jargon failure modes). Live behind Cloudflare Access at dccapinnovation.org/financial_modeling/ (board / staff only; not public-linkable). Site treatment: **referenced, not linked.** Site copy may name dccapinnovation.org as the host but must not turn the URL into a hyperlink. Approved framing: understated capacity signal — names the artifact and its function, lets numbers carry the rest.
+
+## DC CAP Verified Numbers (use only these)
+
+These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/skills/README.md § Verified ground-truth numbers` and `BRAIN/org_intelligence/README.md`. If a candidate metric is not here, do not place it on the site.
+
+- Endowment: $100M+
+- Scholars served: ~800 (FY26), 1,190 (FY25)
+- Scholarships disbursed: $5.4M (FY26), $7.2M (FY25)
+- DCTAG: $15,000/year at public universities
+- FGLI completion baseline: 20–25% nationally, 23% DC-specific
+- Overall DC completion (any income): 37%
+- First-year retention: 90% (class of 2023), 85% (class of 2024)
+- Established partner graduation: 75–95%
+- Economic mobility multiplier: 1.77x partner portfolio over national
+- Earnings premium: $55,661 (BA $95,471 vs HS $39,810)
+- Leverage per DC CAP dollar: $4–7 in stacked aid
+- Pipeline: 1,750 low-income DC HS grads → 810 enroll → 140 DC CAP funded, 670 unfunded
+- Ward 3 vs Ward 8: 89% / 27% BA attainment, $174K / $64K median household income
+- Ward 7/8 persistence: 38% → 72% in one year after intensive coaching shift
+- Tenure: 25 years (DC CAP founded 2000)
+
+### Operational Discipline Numbers (added 2026-05-23 from `BRAIN/personal/fy2026_contributions.md`)
+
+- Application process compression: 10 staff / 20+ hours per week → 1 staff / 3–5 hours per week (FY26 vs prior baseline)
+- Coach administrative burden: ~60% of time → 5–10% within a single three-month period (FY26)
+- Annual staff capacity recovered through digital transformation: $500K+ (derived from the two compression figures above; locked for use in consulting page "Results I've delivered" and Experience DC CAP body)
+- Philanthropic commitments contributed to since 2023: $50M+ (instrumental in; includes MacKenzie Scott / Yield Giving)
+- KPMG AI Impact Initiative grant: $600K (DC CAP's largest AI investment to date; FY26)
+- CPIP solo build: 19 federal data sources, ~400,000 ranked pathways, 1,625 passing tests, 7/7 quality gates, 18 ADRs (October 2026 launch — future tense)
+- AI Governance Pilot: 9 staff × 3 units, 4 phases over 60 days, 19 interactive HTML pages on dccapinnovation.org (April–June 2026)
+- Scholar Matching 2026 cycle: 140 priority matches, 70 waitlist offers, 189 Ward 7/8 free-agent placements; 9,100 pairs stability-tested, zero blocking pairs
+- Financial Modeling Tool: 53/53 verification checks green; live behind Cloudflare Access at dccapinnovation.org/financial_modeling/
+- H3 Agentic Workflows: 2 production systems on a shared five-agent pattern (AI Development Office + Compensation Benchmarking)
+- FY2026 conferences led: UERU, CIO4Good, UVA IES Program Conference
+- FY2026 funder conversations led: Strada Education Foundation, Gates Foundation, Philip L. Graham Fund
+- Standards of Practice authored (FY26): 4 documents — disbursement protocols, renewal processes, programmatic FAQ, staff onboarding playbook
+- Salesforce Operational Architecture (FY26): 3 pieces — retention cycle, application/award cycle, three-audience communications journey (counselors C1–C4, partners UP1–UP5, scholars S1–S14)
+
+## Common App Verified Claims
+
+- Second member of founding research team
+- Built analytics environment from scratch (data environment, technical stack, research agenda, data sharing policies)
+- America's largest college application dataset
+- Spokesperson to NYT, Bloomberg, Board
+- Partnerships profiled at NBER, Brookings, AEFP, Brown's Annenberg Institute (EdWorkingPapers)
+- Led RCTs on direct admissions and text-message information campaigns
+
+## Media Mentions (verified URLs — use exactly these)
+
+- NPR Marketplace, "Some colleges opt for direct admissions" — https://www.marketplace.org/2022/08/15/automatic-college-admissions-can-be-a-boon-to-students-and-schools-alike/
+- CNBC, "College admission applications spike" — https://www.cnbc.com/2023/03/23/college-admissions-application-volume-rises-30percent-since-pre-pandemic.html
+- Brookings, "Complex applications create barriers to college" — https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/
+- Slate, "I Have a Simple Solution to the College Essay Problem" — https://slate.com/human-interest/2023/09/college-essay-personal-statement-narrative-common-app.html
+- Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2021/11/15/common-app-sees-increase-minority-applicants
+- The 74 / Early Learning Nation, "The Path to Quality Child Care" — https://earlylearningnation.com/2021/06/the-path-to-quality-child-care-just-became-a-little-less-elusive-new-research-shows-star-rating-systems-can-drive-improvement-at-scale/
+
+Do not invent additional outlets. If a new media mention surfaces, the Strategist routes it through the canonical-update protocol (PROTOCOL.md § 4) before placing on site.
+
+## Conferences (verified)
+
+AEFP, APPAM, UERU, Common App Illuminate, AIR, CIO4Good. No others without source.
+
+## Published Writing (verified)
+
+- "Five Lessons from Leading Change at a College Success Organization" — January 2026
+
+## Forward-Facing Positioning (approved framing — use exactly)
+
+These phrases are pre-approved and can appear on the site. Variations require Resume Consultant rewrite + voice check.
+
+- **Throughline:** "School was a source of opportunity when I needed it most. That experience shaped everything that followed."
+- **Position:** Cross-sector connector — classrooms, academic research, the largest college application dataset in the country, government and policy, nonprofit leadership.
+- **Differentiator:** Full-stack strategic leader. Breadth at depth across strategy, management, analytics, technology, culture-building.
+- **Reputation claim:** Comes into turnaround environments, identifies problems, solidifies strategy, builds solutions that map to that strategy, builds the culture to carry it out.
+
+## Home Hero — Canonical (locked 2026-05-23)
+
+The live site hero is the canonical hero. Current shipped version (per commit `06761d1`, 2026-05-22):
+
+- **Eyebrow:** Chief Strategy and Analytics Officer · DC CAP
+- **H1:** I design governance and build analytic tools to drive strategy and decision-making.
+- **Subhead:** We execute clear, reproducible, auditable processes to deliver evidence-based outcomes for our students and community.
+
+This framing emphasizes the *what* of Preston's work (designs governance, builds analytic tools) and routes outcomes through the team ("we execute"). The previous candidates A/B/C/D from the 2026-05-02 positioning research are archived to `lessons.md § Headline iteration history` and are no longer active candidates.
+
+**Iteration rule (no Preston-routing):** the Strategist or Resume Consultant may propose a hero refresh by writing a `_proposed.md` sibling to this section in canonical, with: proposed new hero, evidence basis (which BRAIN artifact justifies the change), audience-fit argument, and risk mitigation. The cycle adopts the proposed hero only after the canonical entry above is updated by Preston async. The live site is never the source of truth; canonical is.
+
+**What stays locked across any hero refresh:**
+- Eyebrow names the role + org ("Chief Strategy and Analytics Officer · DC CAP")
+- H1 is a verb-led claim (action or outcome, not credential-led)
+- Subhead grounds in a verifiable property (process, outcome, or community)
+- Em-dash density ≤ 1 in the H1
+- No "passionate / driven / on a mission / believes in" register
+- No PhD-led framing in the first sentence (Pattern 12)
+- Pattern 14 discipline: "I" for solo-built artifacts, "we" for team / org outcomes
+
+## Approved 3-Pillar Credibility Stack
+
+The site's positioning rests on three pillars, each pointing to a verifiable artifact:
+
+1. **Strategy that's tested** → the regional partnership pivot (75–95% partner graduation outcomes)
+2. **Analytics that's reproducible** → CPIP and Scholar Matching (1,625 tests; Gale-Shapley with zero blocking pairs)
+3. **AI that's governed** → the dccapinnovation.org governance framework (60-day pilot, 9 staff × 3 units, 4D fluency model)
+
+Tagline form: "Strategy that's tested. Analytics that's reproducible. AI that's governed."
+
+This is the only 3-pillar framing that walks every reader directly to a piece of evidence. Other framings tested ("Operator/Builder/Researcher"; "Strategy/Analytics/AI Governance") are weaker because they don't lock down what's rare.
+
+## Selectivity Language (name the credentials, don't assume readers know)
+
+Readers — including senior recruiters and program officers — under-rate non-Ivy education credentials by default. The Resume Consultant names the selectivity explicitly when the credential is invoked.
+
+- **IES Predoctoral Fellowship at UVA** — the gold-standard signal in education policy research. Approved framing: "IES Fellow" or "IES-funded PhD" — the term itself is the credential signal for academic and research-partnership audiences. Do not pad with adjectival inflation ("highly competitive," etc.); the name carries.
+- **UVA Educational Policy Studies** — top-tier program in the discipline. Approved: name the program, not just the university. "PhD, Educational Policy Studies (UVA)."
+- **Common App founding research team** — second member of the founding team. Approved framing for executive audiences: "Founding member of the research function at Common App, the largest college application dataset in the United States." The "founding" + "largest" pairing is the load-bearing signal.
+- **Peabody Honors Scholar (Vanderbilt MPP)** — top-of-cohort marker. Use when the academic ladder is being established; otherwise omit.
+
+**What NOT to do:** lead with "PhD" as a self-description before the outcome or artifact lands. PhD-led framings under-perform with corporate and foundation buyers in equal measure (per positioning research, 2026-05-02).
+
+## Case-Study Sequence (forward-facing artifact priority)
+
+When the site presents Preston's three load-bearing systems plus the Common App and UVA/LDOE work as case studies, the order should match what a 2026 buyer most needs to believe in this sequence: outcomes are real → systems behind the outcomes are real → AI-governance lane is real.
+
+1. **AI Governance Framework (dccapinnovation.org)** — the strongest single-artifact entry into the AI advisory lane in 2026. Public, implemented, novel conceptual contribution (4D model). Front-doors current buyer demand.
+2. **CPIP — Career Pathway Intelligence Platform** — proves the engineering-and-data-systems claim with hard numbers (19 federal sources, ~400K pathways, 1,625 tests, October 2026 launch). Status: building/scheduled; tense discipline applies.
+3. **Scholar Matching algorithm (Gale-Shapley)** — algorithmic-CS-meets-applied-research move (9,100 pairs tested zero blocking). Currently in production. Ties algorithm directly to the 75-95% completion outcomes.
+4. **Regional partnership strategic pivot** — pure-strategy case. Drove the 38%→72% Ward 7/8 swing and 75-95% completion outcomes. Reads as the strategist's signature move.
+5. **Common App founding research team + UVA/LDOE research-practice partnership** — career-arc credibility for recruiters and academic peers; spokesperson + board-communication proof. UVA section must surface the LDOE policy and accountability systems work (2017–2020), not only the QRIS publication (per `errors.md` Pattern 4).
+
+Sequencing logic: future-buyer-relevance descending. AI governance is the front-door 2026 demand; older work is the credibility that makes the new work trustworthy.
+
+## Approved Agent-OS / Operating-Cadence Framing (added 2026-05-03)
+
+Preston's BRAIN/Cowork agent OS — the writing tools, audit pipelines, scheduled-task harness, and bridge contracts that run his work — is permissible on the About page as an **operating-discipline signal, not a productized claim**. The OS is internal infrastructure; it does not get its own page, its own case study, or its own service offer.
+
+Approved phrasing pattern (use as a closing sentence in the Lane B paragraph):
+
+> "The agent stack and audit pipelines behind all of this rebuild from a clean machine in ten minutes."
+
+Why that phrasing works:
+- Names the artifact (agent stack + audit pipelines) without trying to sell it
+- Cites a verifiable property (clean-machine rebuild in ten minutes — Phase 5 reproducibility bootstrap, shipped 2026-05-01)
+- Understated register matches Preston's voice rules (no "first-class," no "novel," no "rare")
+
+What NOT to do:
+- Do not call it an "operating system" or "agent OS" on the public site (productizes internal infrastructure)
+- Do not claim "first-class architecture" externally until full Phase 6 (per-bridge contract testing) ships
+- Do not lead with the OS in a headline or hero — it is a closing-sentence signal, not the front door
+
+## Operating Principles (verbatim — these are Preston's words)
+
+1. **Evidence eats Intuition.** Good intentions don't solve problems. Clean, valid data should guide problem framing, alternatives for action, and evaluation of our work.
+2. **Leaders Remove Barriers.** Strategy fails without execution, and execution requires trusting relationships. Lead by removing barriers and building capacity so teams can do their best work.
+3. **Talent compounds. Surround yourself accordingly.** Seek out excellent mentors, friends, and peers. Trust those on your teams to lead with their special talents.
+4. **Consistency Wins.** As a professional, husband, dad, and athlete: consistency and standards drive results. Keep showing up.
+
+## Site Source-of-Truth Hierarchy
+
+When facts on the site conflict with sources, resolve in this order:
+
+1. `BRAIN/preston.md` — identity claims (career, beliefs, family)
+2. `BRAIN/skills/README.md § Verified ground-truth numbers` — DC CAP figures
+3. `BRAIN/org_intelligence/README.md` — DC CAP context beyond numbers
+4. `BRAIN/strategy.md` — current strategic posture
+5. `BRAIN/projects/personal_website/.learn/canonical.md` (this file) — site-specific approvals (e.g., approved framing, media URLs, publication list)
+
+## Profile URLs (for JSON-LD sameAs and footer)
+
+Locked URLs the Engineer agent emits in JSON-LD `sameAs` and renders in the footer. If a URL isn't locked here, the Engineer runs the discovery protocol and writes a `_proposed.md` update; Preston approves async by editing this section.
+
+- **LinkedIn:** https://www.linkedin.com/in/preston-magouirk-840aa757/ (locked 2026-05-23)
+- **GitHub:** discovery needed — Engineer runs `gh api users/pmagouir` then `gh api users/pmagouirk`; verifies via public repo contents matching Preston's work (prestons-2026-website, Product_Build, Partnership_Data_Project visibility); locks the matching URL into this section
+- **Google Scholar:** discovery needed — Engineer searches scholar.google.com for "Preston Magouirk"; verifies via affiliation (UVA, Common App, DC CAP) and matching publications (AERA Open, ECRQ entries); locks the profile URL
+- **ORCID:** discovery needed — Engineer searches orcid.org for "Preston Magouirk"; verifies via UVA Educational Policy Studies affiliation; if no record exists, omits from sameAs rather than emit a dead link
+- **Calendly:** https://calendly.com/preston-magouirk (locked 2026-05-23; CTA destination, not sameAs)
+- **Email:** pmagouir@gmail.com (locked; footer + contact paths)
+
+**Engineer discovery protocol:** any URL marked "discovery needed" gets resolved in the next monthly cycle. The Engineer agent runs the protocol, verifies, writes the locked URL into this section, and ships JSON-LD with the verified sameAs array. Unverified URLs are omitted from sameAs, not emitted as dead links.
+
+---
+
+## Berlin Relocation Disclosure Policy (superseded 2026-06-01)
+
+**Directive (2026-06-01, Preston): Berlin stays off the public site. Full stop.**
+
+Preston relocates to Berlin with family in late July 2026 (confirmed; planning files at `BRAIN/personal/relocation_plan/`). That fact does not surface on the public website. This directive supersedes the prior 2026-05-23 four-phase disclosure plan (soft-surface note, post-move "based in Berlin" copy, JSON-LD address change, ESMT-in-Berlin entry) and aligns with the standing rule in BRAIN memory ("No Berlin/EU references on site").
+
+**What this means for the team:**
+- Location copy reads "Based in Washington, DC" and does not change on any date.
+- No soft-surface note, no banner, no dedicated page, no "based in Berlin" copy, no ESMT-in-Berlin Education entry.
+- JSON-LD Person `address` does not change to Berlin.
+- The consulting page offers remote engagements without naming a Berlin basis.
+
+**Post-move (August 2026) is a separate decision Preston makes later.** Until he directs otherwise in writing, the site shows DC and says nothing about the move. Any change routes through Preston explicitly; no agent applies a location change on a policy date.
+
+---
+
+## What This File Is Not
+
+This is not a content draft. It is a fact registry. Phrasing belongs in the page drafts produced by the Resume Consultant. Drift between this file and the live site is a defect — surfaced by the Auditor, fixed by the Engineer.
+
+---
+
+*Maintained by: Resume Consultant (proposes updates), Auditor (cross-checks), Engineer (applies). Preston approves every canonical change.*
+*Last verified: 2026-05-02*
