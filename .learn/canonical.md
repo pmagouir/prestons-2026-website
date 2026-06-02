@@ -144,15 +144,15 @@ These phrases are pre-approved and can appear on the site. Variations require Re
 - **Differentiator:** Full-stack strategic leader. Breadth at depth across strategy, management, analytics, technology, culture-building.
 - **Reputation claim:** Comes into turnaround environments, identifies problems, solidifies strategy, builds solutions that map to that strategy, builds the culture to carry it out.
 
-## Home Hero — Canonical (locked 2026-05-23)
+## Home Hero — Canonical (locked 2026-06-02)
 
-The live site hero is the canonical hero. Current shipped version (per commit `06761d1`, 2026-05-22):
+The live site hero is the canonical hero. Current shipped version (refreshed 2026-06-02 at Preston's direction):
 
 - **Eyebrow:** Chief Strategy and Analytics Officer · DC CAP
-- **H1:** I design governance and build analytic tools to drive strategy and decision-making.
-- **Subhead:** We execute clear, reproducible, auditable processes to deliver evidence-based outcomes for our students and community.
+- **H1:** I design systems, build tools, and lead the teams that deliver outcomes for DC students.
+- **Subhead:** At DC CAP, our work ensures scholars succeed at our partner universities and graduate prepared for thriving careers.
 
-This framing emphasizes the *what* of Preston's work (designs governance, builds analytic tools) and routes outcomes through the team ("we execute"). The previous candidates A/B/C/D from the 2026-05-02 positioning research are archived to `lessons.md § Headline iteration history` and are no longer active candidates.
+This framing (Preston-authored) leads with his three verbs (design, build, lead) over concrete objects (systems, tools, teams), and the subhead carries the career-connected outcome arc (succeed at partner universities, graduate prepared for thriving careers). It replaces the prior process-framed hero ("I design governance… we execute… processes"), which Preston flagged as understating the work. Earlier candidates A/B/C/D from 2026-05-02 remain archived in `lessons.md`.
 
 **Iteration rule (no Preston-routing):** the Strategist or Resume Consultant may propose a hero refresh by writing a `_proposed.md` sibling to this section in canonical, with: proposed new hero, evidence basis (which BRAIN artifact justifies the change), audience-fit argument, and risk mitigation. The cycle adopts the proposed hero only after the canonical entry above is updated by Preston async. The live site is never the source of truth; canonical is.
 
