@@ -4,7 +4,7 @@ context: "University of Virginia / SEELA — Educational Policy Studies (2017–
 lane: "A"
 order: 6
 status: "completed"
-summary: "As lead researcher on the UVA–Louisiana Department of Education research-practice partnership (2017–2020), an IES Fellow, I worked directly with state policymakers and district leaders on policy and accountability systems during a statewide rollout. The partnership produced the first statewide longitudinal study of early-childhood program quality under a mandatory rating system — published in AERA Open and ECRQ — alongside additional accountability-policy research."
+summary: "As an IES Fellow on the UVA–Louisiana Department of Education research-practice partnership (2017–2020), I worked directly with state policymakers and district leaders on policy and accountability systems during a statewide rollout. The partnership produced the first statewide longitudinal study of early-childhood program quality under a mandatory rating system — published in AERA Open and ECRQ — alongside additional accountability-policy research."
 tags: ["Policy Research", "Accountability Systems", "Research-Practice Partnership", "Longitudinal Analysis"]
 mainLink: { label: "View SEELA Partnership", url: "https://www.see-partnerships.com/seela-projects.html" }
 links:
