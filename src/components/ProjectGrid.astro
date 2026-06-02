@@ -1,185 +1,97 @@
 ---
-// src/components/ProjectGrid.astro
+// src/components/ProjectGrid.astro — renders project case studies from the
+// `projects` content collection. Pass `limit` for a homepage preview.
+import { getCollection } from 'astro:content';
 
-const projects = [
-    {
-        title: 'DC College Access Program (DC CAP)',
-        context: 'Senior Leadership: Strategy, Data & Partnerships',
-        description:
-            "Leading the programmatic and data strategy for a major college access organization. Spearheaded a digital transformation saving over $500k/annually and reducing admin time by >50%. Directed the strategic shift toward a local, partnership-based support model that increased retention rates to over 85%, graduation rates at leading partners to between 75-95%, and aligned our programmatic strategy with the CEO's \"2050 Moonshot Goal\" (80% college completion). Designed the disbursement process for $5.4M in annual scholarships and developed financial modeling tools for strategic planning.",
-        tags: [
-            'Digital Transformation',
-            'Strategic Planning',
-            'Financial Modeling',
-            'Partnership Management',
-        ],
-        mainLink: {
-            url: 'https://www.dccap.org/',
-            label: 'View Organization',
-        },
-        resources: [
-            {
-                label: '2025 Impact Report & Strategy',
-                url: 'https://cdn.prod.website-files.com/68c993ef1e7453083a638769/68fbb6cd587db08fc8695f46_DC%20CAP%20Impact%20Report_Updated_10242025.pdf',
-            },
-        ],
-        hasCategorizedResources: false,
-    },
-    {
-        title: 'Data Analytics & Research at Common App',
-        context: 'Founding Leader, Data Analytics and Research',
-        description:
-            "Founding team member responsible for designing and building the analytics environment for America's largest single source of college application data. Transformed the platform into a public good by establishing a dual-engine approach: building internal capacity for rapid public-facing reporting and cultivating external partnerships for rigorous interventions and evaluation. Designed and led randomized control trials on direct admissions and text messaging information campaigns. Developed research agenda and led founding Analytics & Research function.",
-        tags: [
-            'Data Architecture',
-            'RCTs',
-            'Public Reporting',
-            'Strategic Partnerships',
-            'Higher Ed Policy',
-        ],
-        mainLink: {
-            url: 'https://www.commonapp.org/about/reports-and-insights',
-            label: 'View Research Hub',
-        },
-        resources: [
-            {
-                category: 'Internal Reports',
-                items: [
-                    {
-                        label: 'Pandemic Patterns: First-Year Applications',
-                        url: 'https://www.commonapp.org/about/reports-and-insights/pandemic-patterns-first-year-applications',
-                    },
-                    {
-                        label: 'The Test-Optional Landscape',
-                        url: 'https://www.commonapp.org/about/reports-and-insights/applying-college-test-optional-landscape',
-                    },
-                    {
-                        label: 'Early Admission Trends',
-                        url: 'https://www.commonapp.org/about/reports-and-insights/early-admission-deadlines-student-trends-and-implications',
-                    },
-                ],
-            },
-            {
-                category: 'External Partnerships',
-                items: [
-                    {
-                        label: 'Brookings: Direct Admissions',
-                        url: 'https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/',
-                    },
-                    {
-                        label: 'NBER: Test-Optional Admissions',
-                        url: 'https://www.nber.org/papers/w34260',
-                    },
-                    {
-                        label: 'EdWorkingPapers: Non-Submitters',
-                        url: 'https://edworkingpapers.com/ai23-819',
-                    },
-                ],
-            },
-        ],
-        hasCategorizedResources: true,
-    },
-    {
-        title: 'UVA–Louisiana Department of Education Partnership',
-        context: 'University of Virginia / SEELA — Educational Policy Studies (2017–2020)',
-        description:
-            "Multi-year research-practice partnership with the Louisiana Department of Education on policy and accountability systems research during a statewide policy rollout. As lead researcher, worked directly with state policymakers and district leaders on accountability design and partnership governance. Downstream publications include the first statewide longitudinal study of early-childhood program quality improvement under a mandatory QRIS — published in AERA Open and ECRQ — alongside additional accountability-policy research and a policy brief on leader experiences.",
-        tags: ['Policy Research', 'Accountability Systems', 'Research-Practice Partnership', 'Longitudinal Analysis'],
-        mainLink: {
-            url: 'https://www.see-partnerships.com/seela-projects.html',
-            label: 'View SEELA Partnership',
-        },
-        resources: [
-            {
-                label: 'AERA Open: Systemwide Quality Improvement',
-                url: 'https://journals.sagepub.com/doi/10.1177/23328584211011610',
-            },
-            {
-                label: 'ECRQ: Parent Search & Preferences',
-                url: 'https://doi.org/10.1016/j.ecresq.2018.01.006',
-            },
-            {
-                label: 'Policy Brief: Leader Experiences',
-                url: 'https://www.see-partnerships.com/seela-projects.html',
-            },
-        ],
-        hasCategorizedResources: false,
-    },
-];
+interface Props {
+	limit?: number;
+}
+const { limit } = Astro.props;
+
+let projects = (await getCollection('projects')).sort((a, b) => a.data.order - b.data.order);
+if (limit) projects = projects.slice(0, limit);
+
+const statusLabel: Record<string, string> = {
+	operational: 'Live',
+	building: 'Building',
+	completed: 'Prior',
+};
 ---
 
 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-    {projects.map((project) => (
-        <article class="flex flex-col rounded-lg bg-white p-6 shadow-sm ring-1 ring-neutral-200 transition-all hover:shadow-md hover:ring-primary/20">
-            <p class="mb-2 text-sm font-medium text-neutral-500">{project.context}</p>
+	{projects.map((project) => {
+		const p = project.data;
+		const categories = [...new Set(p.links.map((l) => l.category ?? ''))];
+		return (
+			<article class="flex flex-col rounded-lg bg-white p-6 shadow-sm ring-1 ring-neutral-200 transition-all hover:shadow-md hover:ring-primary/20">
+				<div class="mb-2 flex items-start justify-between gap-3">
+					<p class="text-sm font-medium text-neutral-500">{p.context}</p>
+					<span class="shrink-0 rounded-full border border-primary/15 bg-primary/5 px-2.5 py-0.5 text-xs font-medium text-primary">
+						{statusLabel[p.status]}
+					</span>
+				</div>
 
-            <h2 class="mb-4 text-2xl font-bold text-neutral-900 leading-tight">{project.title}</h2>
+				<h2 class="mb-4 text-2xl font-bold leading-tight text-neutral-900">{p.title}</h2>
 
-            <p class="mb-6 flex-grow text-sm leading-relaxed text-neutral-600">
-                {project.description}
-            </p>
+				<p class="mb-4 text-sm leading-relaxed text-neutral-600">{p.summary}</p>
 
-            <div class="mb-6 flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                    <span class="rounded-full bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-700 border border-neutral-200 hover:bg-primary/5 hover:border-primary/20 transition-colors">
-                        {tag}
-                    </span>
-                ))}
-            </div>
+				{p.metrics.length > 0 && (
+					<dl class="mb-6 space-y-1">
+						{p.metrics.map((m) => (
+							<div class="flex gap-2 text-sm">
+								<dt class="text-neutral-500">{m.label}:</dt>
+								<dd class="font-medium text-neutral-800">{m.value}</dd>
+							</div>
+						))}
+					</dl>
+				)}
 
-            <div class="mb-6 border-t border-neutral-100 pt-4">
-                <p class="mb-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">
-                    Key Artifacts
-                </p>
-                <ul class="space-y-3">
-                    {project.hasCategorizedResources ? (
-                        project.resources.map((category) => (
-                            <li>
-                                <p class="mb-1.5 text-xs font-semibold text-neutral-900">
-                                    {category.category}
-                                </p>
-                                <ul class="ml-2 space-y-1.5 border-l-2 border-primary/20 pl-3">
-                                    {category.items.map((resource) => (
-                                        <li>
-                                            <a
-                                                href={resource.url}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                class="text-sm text-neutral-600 hover:text-primary hover:underline"
-                                            >
-                                                {resource.label}
-                                            </a>
-                                        </li>
-                                    ))}
-                                </ul>
-                            </li>
-                        ))
-                    ) : (
-                        project.resources.map((resource) => (
-                            <li>
-                                <a
-                                    href={resource.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    class="flex items-start text-sm text-neutral-600 hover:text-primary group"
-                                >
-                                    <span class="mr-2 mt-1.5 h-1.5 w-1.5 rounded-full bg-neutral-300 group-hover:bg-primary transition-colors"></span>
-                                    <span class="group-hover:underline">{resource.label}</span>
-                                </a>
-                            </li>
-                        ))
-                    )}
-                </ul>
-            </div>
+				<div class="mb-6 flex flex-wrap gap-2">
+					{p.tags.map((tag) => (
+						<span class="rounded-full border border-neutral-200 bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-700">
+							{tag}
+						</span>
+					))}
+				</div>
 
-            <a
-                href={project.mainLink.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                class="mt-auto inline-flex w-full items-center justify-center rounded-lg border border-transparent bg-neutral-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
-            >
-                {project.mainLink.label}
-            </a>
-        </article>
-    ))}
+				{p.links.length > 0 && (
+					<div class="mb-6 border-t border-neutral-100 pt-4">
+						<p class="mb-3 text-xs font-semibold uppercase tracking-wide text-neutral-500">
+							Key Artifacts
+						</p>
+						{categories.map((cat) => (
+							<div class="mb-2">
+								{cat && <p class="mb-1.5 text-xs font-semibold text-neutral-900">{cat}</p>}
+								<ul class={cat ? 'ml-2 space-y-1.5 border-l-2 border-primary/20 pl-3' : 'space-y-1.5'}>
+									{p.links.filter((l) => (l.category ?? '') === cat).map((l) => (
+										<li>
+											<a
+												href={l.url}
+												target="_blank"
+												rel="noopener noreferrer"
+												class="text-sm text-neutral-600 hover:text-primary hover:underline"
+											>
+												{l.label}
+											</a>
+										</li>
+									))}
+								</ul>
+							</div>
+						))}
+					</div>
+				)}
+
+				{p.mainLink && (
+					<a
+						href={p.mainLink.url}
+						target="_blank"
+						rel="noopener noreferrer"
+						class="mt-auto inline-flex w-full items-center justify-center rounded-lg bg-neutral-900 px-4 py-3 text-sm font-semibold text-white transition-all hover:bg-neutral-800 focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+					>
+						{p.mainLink.label}
+					</a>
+				)}
+			</article>
+		);
+	})}
 </div>

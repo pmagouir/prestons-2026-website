@@ -14,20 +14,22 @@ const writing = defineCollection({
   }),
 });
 
-// projects — case studies (the load-bearing systems). Schema defined; the
-// case-study layer is a forward-state build (see strategic_brief.md).
+// projects — portfolio case studies (the load-bearing systems), rendered as
+// cards on /projects in the canonical case-study sequence (order field).
 const projects = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/projects' }),
   schema: z.object({
     title: z.string(),
+    context: z.string(),
     lane: z.enum(['A', 'B', 'both']),
     order: z.number(),
     status: z.enum(['operational', 'building', 'completed']),
-    challenge: z.string(),
-    approach: z.string(),
-    outcome: z.string(),
-    takeaway: z.string(),
-    evidenceUrl: z.string().url().optional(),
+    summary: z.string(),
+    tags: z.array(z.string()).default([]),
+    links: z
+      .array(z.object({ label: z.string(), url: z.string().url(), category: z.string().optional() }))
+      .default([]),
+    mainLink: z.object({ label: z.string(), url: z.string().url() }).optional(),
     // every metric traces to a canonical key (canonical.md § DC CAP Verified Numbers)
     metrics: z
       .array(z.object({ label: z.string(), value: z.string(), sourceKey: z.string() }))
