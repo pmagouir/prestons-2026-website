@@ -81,13 +81,15 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - FGLI completion baseline: 20–25% nationally, 23% DC-specific
 - Overall DC completion (any income): 37%
 - First-year retention: 90% (class of 2023), 85% (class of 2024)
-- Established partner graduation: 75–95%
+- Established partner graduation: 75–95% (established-partner band)
+- Completion at active/mature partner campuses: 67–100% (Class of 2021, five-year)
+- First-to-second-year retention: seven partners at 100% (AY2025–26)
 - Economic mobility multiplier: 1.77x partner portfolio over national
 - Earnings premium: $55,661 (BA $95,471 vs HS $39,810)
 - Leverage per DC CAP dollar: $4–7 in stacked aid
 - Pipeline: 1,750 low-income DC HS grads → 810 enroll → 140 DC CAP funded, 670 unfunded
 - Ward 3 vs Ward 8: 89% / 27% BA attainment, $174K / $64K median household income
-- Ward 7/8 persistence: 38% → 72% in one year after intensive coaching shift
+- Ward 7/8 persistence: 38% → 72% in one year after intensive coaching shift. (Kept OFF the public site per Preston, 2026-06-02; do not surface Ward 7/8 framing in site copy.)
 - Tenure: 25 years (DC CAP founded 2000)
 
 ### Operational Discipline Numbers (added 2026-05-23 from `BRAIN/personal/fy2026_contributions.md`)
