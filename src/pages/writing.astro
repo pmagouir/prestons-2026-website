@@ -1,15 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
 
-// Blog posts data - in a real app, this could come from a CMS or file system
-const posts = [
-	{
-		title: 'Five Lessons From Leading Change at a College Success Organization',
-		date: 'January 2025',
-		excerpt: 'DC CAP had a breakthrough year in 2025. Here\'s what I learned about leading organizational change.',
-		slug: 'five-lessons-leading-change',
-	},
-];
+const posts = (await getCollection('writing', ({ data }) => !data.draft)).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const fmt = (d) => d.toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
 ---
 
 <Layout title="Perspectives" description="Thoughts on strategy, data, and building systems for change in education and nonprofits.">
@@ -27,17 +24,17 @@ const posts = [
 			{posts.map((post) => (
 				<article class="group">
 					<a
-						href={`/writing/${post.slug}`}
+						href={post.data.externalUrl ?? `/writing/${post.id}`}
 						class="block transition-colors hover:text-primary"
 					>
 						<time class="mb-2 block text-sm font-medium text-neutral-500">
-							{post.date}
+							{fmt(post.data.date)}
 						</time>
 						<h2 class="mb-4 text-2xl font-semibold text-neutral-900 sm:text-3xl group-hover:text-primary transition-colors">
-							{post.title}
+							{post.data.title}
 						</h2>
 						<p class="text-base leading-relaxed text-neutral-700 sm:text-lg">
-							{post.excerpt}
+							{post.data.description}
 						</p>
 					</a>
 				</article>
