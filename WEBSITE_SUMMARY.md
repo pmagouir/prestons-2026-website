@@ -132,7 +132,7 @@ Today, I serve as **Chief Strategy and Analytics Officer** at **DC CAP Scholars*
 
 3. **Virginia Education Science Training Fellow | University of Virginia**
    - Aug 2015 – Aug 2020 | Charlottesville, VA
-   - **Project Leadership:** Lead researcher managing a large project within a multi-year partnership with the Louisiana Department of Education during a statewide policy rollout.
+   - **Policy & Accountability Research:** Policy and accountability systems research within a multi-year partnership with the Louisiana Department of Education during a statewide policy rollout.
    - **Stakeholder Management:** Managed relationships with state policymakers and district leaders to ensure buy-in for long-term partnership and data sharing to drive quality improvements from accountability policy.
    - Link: "View State Policy Study" → `/projects`
 

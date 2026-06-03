@@ -39,7 +39,7 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/c
 
 This is a load-bearing component of the UVA period and must remain visible on the site. It is *not* solely the early-childhood QRIS work that the existing projects page features.
 
-**The work:** Lead researcher on the UVA–Louisiana Department of Education research-practice partnership covering **policy and accountability systems research** during a multi-year statewide policy rollout. Managed direct relationships with Louisiana state policymakers and district leaders.
+**The work:** The UVA–Louisiana Department of Education research-practice partnership covered **policy and accountability systems research** during a multi-year statewide policy rollout. Managed direct relationships with Louisiana state policymakers and district leaders.
 
 **Why it matters for the site:** Demonstrates Preston's experience operating inside a state education agency on policy + accountability design — a credential distinct from the academic-research framing currently dominating the UVA section. This is the period that produced the public-facing publications cited on the site.
 

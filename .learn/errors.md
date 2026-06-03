@@ -31,7 +31,7 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/e
 ### Pattern 4 — UVA/LDOE partnership reduced to QRIS only
 
 **Caught:** [structural risk — the existing projects.astro Project 3 surfaces the early-childhood QRIS study but does not name the broader UVA–Louisiana Department of Education research-practice partnership on policy and accountability systems (2017–2020) that the QRIS work emerged from]
-**Description:** Drafts and existing pages frame the UVA period as either generic "academic research" or as the QRIS publication alone. Both miss the load-bearing fact: Preston led policy and accountability systems research inside a state education agency partnership for ~3 years.
+**Description:** Drafts and existing pages frame the UVA period as either generic "academic research" or as the QRIS publication alone. Both miss the load-bearing fact: Preston worked on policy and accountability systems research inside a state education agency partnership for ~3 years.
 **Lesson:** Every UVA-period reference must surface (a) the LDOE partnership and (b) the policy + accountability systems framing. The QRIS publication is a downstream artifact, not the headline. See `canonical.md § UVA / Louisiana Department of Education Partnership` for approved language.
 **Watch on:** experience.astro, projects.astro, about.astro, any new case study touching the UVA period.
 
