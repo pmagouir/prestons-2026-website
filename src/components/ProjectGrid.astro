@@ -35,17 +35,6 @@ const statusLabel: Record<string, string> = {
 
 				<p class="mb-4 text-sm leading-relaxed text-neutral-600">{p.summary}</p>
 
-				{p.metrics.length > 0 && (
-					<dl class="mb-6 space-y-1">
-						{p.metrics.map((m) => (
-							<div class="flex gap-2 text-sm">
-								<dt class="text-neutral-600">{m.label}:</dt>
-								<dd class="font-medium text-neutral-800">{m.value}</dd>
-							</div>
-						))}
-					</dl>
-				)}
-
 				<div class="mb-6 flex flex-wrap gap-2">
 					{p.tags.map((tag) => (
 						<span class="rounded-full border border-neutral-200 bg-neutral-100 px-3 py-1 text-xs font-medium text-neutral-700">
