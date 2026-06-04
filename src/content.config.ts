@@ -37,18 +37,6 @@ const projects = defineCollection({
   }),
 });
 
-// talks — conference presentations
-const talks = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/talks' }),
-  schema: z.object({
-    title: z.string(),
-    venue: z.string(),
-    date: z.coerce.date(),
-    audience: z.string().optional(),
-    link: z.string().url().optional(),
-  }),
-});
-
 // media — verified press mentions (seed ONLY from canonical.md § Media Mentions)
 const media = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/media' }),
@@ -60,14 +48,4 @@ const media = defineCollection({
   }),
 });
 
-// recognition — awards, fellowships, board service
-const recognition = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/recognition' }),
-  schema: z.object({
-    title: z.string(),
-    grantor: z.string().optional(),
-    year: z.number().optional(),
-  }),
-});
-
-export const collections = { writing, projects, talks, media, recognition };
+export const collections = { writing, projects, media };

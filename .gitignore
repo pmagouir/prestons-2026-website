@@ -4,6 +4,9 @@ dist/
 # generated types
 .astro/
 
+# lighthouse ci output
+.lighthouseci/
+
 # dependencies
 node_modules/
 

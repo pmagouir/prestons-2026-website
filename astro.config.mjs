@@ -6,6 +6,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://prestonmagouirk.com',
+  prefetch: { prefetchAll: true },
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]

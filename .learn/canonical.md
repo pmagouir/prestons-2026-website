@@ -35,6 +35,10 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/c
 | 2020–2023 | Senior Manager of Research & Analytics | The Common Application |
 | 2023–present | Chief Strategy and Analytics Officer | DC CAP |
 
+## Units Led at DC CAP (canonical — reconciled 2026-06-04)
+
+Preston leads these units as CSAO; use this exact list in both the About narrative and the Experience DC CAP body: **Student Success, University Partnerships, GEAR UP, Innovation, and Data & Technology.** The prior About-page list ("Program Strategy, Student Success, Strategic Partnerships, and Data & Technology") is retired to remove the cross-page drift the 2026-06-04 audit caught. Units touch points: about.astro narrative, experience.astro DC CAP body — update both or neither.
+
 ## UVA / Louisiana Department of Education Partnership (2017–2020) — Load-Bearing
 
 This is a load-bearing component of the UVA period and must remain visible on the site. It is *not* solely the early-childhood QRIS work that the existing projects page features.
@@ -146,15 +150,15 @@ These phrases are pre-approved and can appear on the site. Variations require Re
 - **Differentiator:** Full-stack strategic leader. Breadth at depth across strategy, management, analytics, technology, culture-building.
 - **Reputation claim:** Comes into turnaround environments, identifies problems, solidifies strategy, builds solutions that map to that strategy, builds the culture to carry it out.
 
-## Home Hero — Canonical (locked 2026-06-02)
+## Home Hero — Canonical (locked 2026-06-03)
 
-The live site hero is the canonical hero. Current shipped version (refreshed 2026-06-02 at Preston's direction):
+The live site hero is the canonical hero. Current shipped version (refreshed 2026-06-02, tightened 2026-06-03; subhead tail updated to "ready for D.C.'s workforce" on 2026-06-04 at Preston's direction):
 
 - **Eyebrow:** Chief Strategy and Analytics Officer · DC CAP
-- **H1:** I design systems, build tools, and lead the teams that deliver outcomes for DC students.
-- **Subhead:** At DC CAP, our work ensures scholars succeed at our partner universities and graduate prepared for thriving careers.
+- **H1:** I design systems, build tools, and lead teams that deliver for DC students.
+- **Subhead:** At DC CAP, we help scholars graduate from our partner universities, ready for D.C.'s workforce.
 
-This framing (Preston-authored) leads with his three verbs (design, build, lead) over concrete objects (systems, tools, teams), and the subhead carries the career-connected outcome arc (succeed at partner universities, graduate prepared for thriving careers). It replaces the prior process-framed hero ("I design governance… we execute… processes"), which Preston flagged as understating the work. Earlier candidates A/B/C/D from 2026-05-02 remain archived in `lessons.md`.
+This framing (Preston-authored) leads with his three verbs (design, build, lead) over concrete objects (systems, tools, teams), and the subhead carries the career-connected outcome arc (graduate from partner universities, ready for D.C.'s workforce). It replaces the prior process-framed hero ("I design governance… we execute… processes"), which Preston flagged as understating the work. Earlier candidates A/B/C/D from 2026-05-02 remain archived in `lessons.md`.
 
 **Iteration rule (no Preston-routing):** the Strategist or Resume Consultant may propose a hero refresh by writing a `_proposed.md` sibling to this section in canonical, with: proposed new hero, evidence basis (which BRAIN artifact justifies the change), audience-fit argument, and risk mitigation. The cycle adopts the proposed hero only after the canonical entry above is updated by Preston async. The live site is never the source of truth; canonical is.
 
@@ -242,7 +246,7 @@ When facts on the site conflict with sources, resolve in this order:
 Locked URLs the Engineer agent emits in JSON-LD `sameAs` and renders in the footer. If a URL isn't locked here, the Engineer runs the discovery protocol and writes a `_proposed.md` update; Preston approves async by editing this section.
 
 - **LinkedIn:** https://www.linkedin.com/in/preston-magouirk-840aa757/ (locked 2026-05-23)
-- **GitHub:** discovery needed — Engineer runs `gh api users/pmagouir` then `gh api users/pmagouirk`; verifies via public repo contents matching Preston's work (prestons-2026-website, Product_Build, Partnership_Data_Project visibility); locks the matching URL into this section
+- **GitHub:** excluded from the public site per Preston (2026-06-04). Do not emit a GitHub URL in JSON-LD `sameAs` or the footer, and do not re-run discovery for it. (Direction stands until Preston says otherwise.)
 - **Google Scholar:** discovery needed — Engineer searches scholar.google.com for "Preston Magouirk"; verifies via affiliation (UVA, Common App, DC CAP) and matching publications (AERA Open, ECRQ entries); locks the profile URL
 - **ORCID:** discovery needed — Engineer searches orcid.org for "Preston Magouirk"; verifies via UVA Educational Policy Studies affiliation; if no record exists, omits from sameAs rather than emit a dead link
 - **Calendly:** https://calendly.com/preston-magouirk (locked 2026-05-23; CTA destination, not sameAs)
