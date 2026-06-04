@@ -30,10 +30,6 @@ const projects = defineCollection({
       .array(z.object({ label: z.string(), url: z.string().url(), category: z.string().optional() }))
       .default([]),
     mainLink: z.object({ label: z.string(), url: z.string().url() }).optional(),
-    // every metric traces to a canonical key (canonical.md § DC CAP Verified Numbers)
-    metrics: z
-      .array(z.object({ label: z.string(), value: z.string(), sourceKey: z.string() }))
-      .default([]),
   }),
 });
 

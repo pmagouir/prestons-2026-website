@@ -9,7 +9,4 @@ tags: ["Strategic Planning", "Program Evaluation", "Causal Inference", "Partners
 mainLink: { label: "View DC CAP", url: "https://www.dccap.org/" }
 links:
   - { label: "2025 Impact Report & Strategy", url: "https://cdn.prod.website-files.com/68c993ef1e7453083a638769/68fbb6cd587db08fc8695f46_DC%20CAP%20Impact%20Report_Updated_10242025.pdf" }
-metrics:
-  - { label: "Graduation (mature partners)", value: "67–100%", sourceKey: "canonical:dc-cap-verified-numbers" }
-  - { label: "First-to-second-year retention", value: "7 partners at 100% (AY2025–26)", sourceKey: "canonical:dc-cap-verified-numbers" }
 ---
