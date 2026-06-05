@@ -63,7 +63,6 @@ This is a load-bearing component of the UVA period and must remain visible on th
 - TFA South Louisiana Excellence in Teaching Award (2013)
 - Certified CrossFit Trainer + CF-L3 (2024) — top ~1% of CrossFit coaches
 - CrossFit Games Quarterfinals qualifier (multiple years)
-- Board of Advisors, American University School of Education
 
 ## Proof-of-Capability Systems (the four load-bearing artifacts)
 

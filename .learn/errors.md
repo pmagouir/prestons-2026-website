@@ -116,6 +116,20 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/e
 
 **Watch on:** every page on every cycle. Hero, About body, About operating principles, Experience role bodies (current role), consulting.astro "Results I've delivered" once that page is touched.
 
+### Pattern 15 — Empty balanced-clause maxim
+
+**Caught:** 2026-06-03, Preston in-session ("scan for this junk").
+**Description:** Symmetrical, quotable two-clause sentences that describe nothing: parallel structure, abstract subjects, no concrete mechanism. Example: "The model lays the foundation; the planning sets the agenda." It reads like a maxim and conveys no information; delete it and nothing is lost.
+**Lesson:** Replace with the concrete mechanism or outcome, or cut. The tell: a sentence that would fit on a poster and survive deletion without losing a fact. Related to the Agency Rule (abstract nouns as active subjects) and the "TED-talk-ready sentence" red flag. Structural pattern — Auditor manual-scan, not caught by the token scan.
+**Watch on:** every page; highest risk on about.astro narrative, consulting.astro service blocks, hero subhead, and any writing/blog long-form.
+
+### Pattern 16 — Phantom negation
+
+**Caught:** 2026-06-03, Preston in-session.
+**Description:** Denying a claim nobody made, to manufacture significance: "None of it was guaranteed," "This wasn't luck," "There were no shortcuts." It inflates an achievement by negating an unstated counterfactual.
+**Lesson:** State what happened and let the evidence carry the weight. Do NOT confuse with Preston's signature deflation ("None of this is revolutionary," "while far from perfect"): deflation downplays and is correct voice; phantom negation inflates. Distinct from the "X, not Y" rule (glossary rule 2): phantom negation has no stated alternative, only a strawman being knocked down. The highest-signal phrases are caught by the verify_site.sh token scan; subtler instances are Auditor manual-scan.
+**Watch on:** every page; highest risk on hero subhead, about.astro narrative, consulting hero, writing/blog.
+
 ## Adding New Patterns
 
 When the Auditor catches a new failure mode in a real run:
@@ -130,4 +144,4 @@ When 3+ entries cluster on the same theme, roll the rule up into `glossary.md` o
 ---
 
 *Maintained by: Auditor (writes), Strategist + Resume Consultant + Engineer (read at session start).*
-*Last verified: 2026-05-02*
+*Last verified: 2026-06-03*
