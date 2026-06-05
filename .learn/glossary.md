@@ -37,6 +37,8 @@ These are non-negotiable. Auditor flags every violation as Critical.
 8. **Lead with the point.** Strategic context follows. Next move closes. This is the BLUF order Preston applies to every artifact.
 9. **No elite-institution comparators.** Never frame DC CAP students against Ivy/Stanford/MIT.
 10. **No "promotion ceiling" framing in Professional Inventory–adjacent content.** DC CAP context — promotion within is not the growth narrative.
+11. **No empty balanced-clause maxims.** Symmetrical two-part sentences that sound quotable but describe nothing, e.g. "The model lays the foundation; the planning sets the agenda." Parallel clauses, abstract subjects, zero concrete content. Name the actual mechanism or cut the line. Auditor flags as Critical.
+12. **No phantom negation.** Denying a claim nobody made to manufacture significance, e.g. "None of it was guaranteed," "This wasn't luck," "There were no shortcuts." State what happened and let the evidence carry it. Keep Preston's genuine deflation ("None of this is revolutionary," "while far from perfect"): that downplays, which is correct voice. Phantom negation inflates by knocking down a strawman, and unlike rule 2 it has no stated "Y," only the unraised claim. Auditor flags as Critical.
 
 ## Approved Cross-Sector Framing
 
@@ -119,4 +121,4 @@ If a draft surfaces any of these, it is a sign the Resume Consultant slipped int
 ---
 
 *Maintained by: Resume Consultant + Auditor.*
-*Last verified: 2026-05-02*
+*Last verified: 2026-06-03*

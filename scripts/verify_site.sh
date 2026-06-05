@@ -28,7 +28,7 @@ process.exit(bad>0?1:0);
 
 say "3/4 forbidden-token scan (src/ only)"
 # Hard voice rules from .learn/glossary.md. Banned on the public site regardless of context.
-if grep -rniE "\bequit(y|able)\b|passionate about|driven by|on a mission to|believes in the power of|bringing together a unique blend" src/; then
+if grep -rniE "\bequit(y|able)\b|passionate about|driven by|on a mission to|believes in the power of|bringing together a unique blend|wasn'?t luck|did(n'?t| not) happen by accident|none of (it|this) was guaranteed|not by chance|no shortcuts to" src/; then
   echo "FORBIDDEN TOKEN found in src/ — see .learn/glossary.md"; FAIL=1
 else
   echo "no forbidden tokens"
