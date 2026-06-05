@@ -5,7 +5,7 @@
 
 ## Goal
 
-The body gains a fourth paragraph (Lane B exposure with three production systems) and the sidebar gains a fourth credential entry (AU Board of Advisors) plus credential-text expansion (program names, fellowship designations). The page must remain a single-scroll narrative — the sidebar stays a quiet companion, never competes — while absorbing the density increase without feeling crowded.
+The body gains a fourth paragraph (Lane B exposure with three production systems) and the sidebar gains credential-text expansion (program names, fellowship designations). The page must remain a single-scroll narrative — the sidebar stays a quiet companion, never competes — while absorbing the density increase without feeling crowded.
 
 ## Information Architecture
 

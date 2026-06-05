@@ -132,7 +132,6 @@ DC CAP
 PhD, Educational Policy Studies (UVA, IES Fellow)
 MPP (Vanderbilt, Peabody Honors Scholar)
 Certified CrossFit Trainer (CF-L3)
-Board of Advisors, AU School of Education
 ```
 
 Notes:
@@ -140,7 +139,6 @@ Notes:
 - IES Fellow visible (Pattern 11).
 - Peabody Honors Scholar visible — the credential signals top-of-cohort (canonical line 159).
 - CF-L3 kept; Designer / Preston decide whether the fitness signal stays in the sidebar (Pattern 13 is a positioning preference, not a rule).
-- Adds AU Board of Advisors — Lane A external-validation signal not currently visible anywhere on site.
 
 ---
 
@@ -160,7 +158,6 @@ Notes:
 | CPIP 19 federal sources / 400,000 / 1,625 tests / Oct 2026 | canonical.md § Proof-of-Capability Systems (line 68) |
 | IES Fellowship + UVA Ed Policy program naming | canonical.md § Selectivity Language (lines 156–157) |
 | Peabody Honors Scholar | canonical.md § Selectivity Language (line 159) |
-| AU Board of Advisors | canonical.md § Credentials & Recognitions (line 62) |
 
 ## Voice Self-Audit
 
@@ -178,9 +175,8 @@ Notes:
 
 ## Open Questions for Preston
 
-1. **AU Board of Advisors in sidebar** — adds a Lane A external-validation signal not currently visible. Worth adding, or hold?
-2. **Lane B paragraph in body** — pulls AI Governance Framework forward into the About page. Aggressive enough? Or push the "I build production systems" claim to the case-study layer (C6) and keep About operator-leaning?
-3. **Sidebar Core Focus** — proposed swap to "Strategy & Analytics / AI Governance / Organizational Change." This shifts the public framing toward the AI-advisory lane. Confirm the timing fits 2026 positioning.
+1. **Lane B paragraph in body** — pulls AI Governance Framework forward into the About page. Aggressive enough? Or push the "I build production systems" claim to the case-study layer (C6) and keep About operator-leaning?
+2. **Sidebar Core Focus** — proposed swap to "Strategy & Analytics / AI Governance / Organizational Change." This shifts the public framing toward the AI-advisory lane. Confirm the timing fits 2026 positioning.
 
 ## Revision Log
 
@@ -192,6 +188,6 @@ Notes:
 - Q3 — C8 (consulting page restructure): defer to next cycle. Confirmed.
 - Lesson 8 (Pre-implementation Preston gate): **approved**, written to `.learn/lessons.md`.
 
-**Open questions 1, 2, 3 above (AU Board, Lane B aggressiveness, Sidebar Core Focus reframe) — answered by approval of the full draft.**
+**Open questions 1, 2 above (Lane B aggressiveness, Sidebar Core Focus reframe) — answered by approval of the full draft.**
 
-Sidebar AU Board of Advisors line stays in. Lane B paragraph stays in (revised per above). Core Focus swap to "Strategy & Analytics / AI Governance / Organizational Change" stays in.
+Lane B paragraph stays in (revised per above). Core Focus swap to "Strategy & Analytics / AI Governance / Organizational Change" stays in.
