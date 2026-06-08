@@ -211,11 +211,11 @@ Preston's BRAIN/Cowork agent OS — the writing tools, audit pipelines, schedule
 
 Approved phrasing pattern (use as a closing sentence in the Lane B paragraph):
 
-> "The agent stack and audit pipelines behind all of this rebuild from a clean machine in ten minutes."
+> "The agent stack and audit pipelines behind all of this rebuild from a clean machine."
 
 Why that phrasing works:
 - Names the artifact (agent stack + audit pipelines) without trying to sell it
-- Cites a verifiable property (clean-machine rebuild in ten minutes — Phase 5 reproducibility bootstrap, shipped 2026-05-01)
+- Cites a verifiable property (clean-machine rebuild, a Phase 5 reproducibility bootstrap shipped 2026-05-01)
 - Understated register matches Preston's voice rules (no "first-class," no "novel," no "rare")
 
 What NOT to do:
