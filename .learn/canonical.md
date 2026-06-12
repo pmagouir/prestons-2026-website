@@ -78,6 +78,7 @@ These are the four systems referenced as evidence of the full-stack-leader claim
 These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/skills/README.md § Verified ground-truth numbers` and `BRAIN/org_intelligence/README.md`. If a candidate metric is not here, do not place it on the site.
 
 - Endowment: $100M+
+- Operating budget: $10M+ (registered 2026-06-12; `BRAIN/context.md:39`)
 - Scholars served: ~800 (FY26), 1,190 (FY25)
 - Scholarships disbursed: $5.4M (FY26), $7.2M (FY25)
 - DCTAG: $15,000/year at public universities
@@ -120,13 +121,13 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - **Leads financial planning & analysis (FP&A)** — strategic finance, budgeting, multi-year scenario modeling. **Precision rule (Preston, 2026-06-12, verbatim intent): "lead FP&A, not finance writ large… I'm not an accountant."** Approved site phrasing: "leads financial planning and analysis," "leads the FP&A function," "owns multi-year financial modeling and scenario planning." **Banned:** "head of finance," "leads finance," "CFO-adjacent," "oversees accounting," or anything implying the controller / accounting / audit / GAAP-close seat. The load-bearing proof for this claim is the Financial Scenarios Tool (§ Proof-of-Capability #4).
 - **Supervisory span:** ~6 direct reports, including direct supervision of the Chief Programs Officer. Approved for the site (recruiters reward demonstrated executive scope). Aggregate framing only; no named reports.
 - **Primary-architect framing (JD language):** "primary architect of the organization's technology and AI strategy that funders are actively funding." Approved for site use. Pattern 14 discipline still applies: "I" for solo-architected artifacts, "we"/attributional for team-executed outcomes.
-- **Units Led — open reconciliation (flag for Gate 1):** `§ Units Led` carries "Student Success, University Partnerships, GEAR UP, Innovation, and Data & Technology"; the JD's functional list names "Career-Connected Learning." Resume Consultant keeps the canonical five as the "units led" list and treats Career-Connected Learning as a named functional responsibility unless Preston resolves otherwise at Gate 1. Do not draft the About units sentence around the unresolved term.
+- **Units Led — open reconciliation (flag for Gate 1):** `§ Units Led` carries "Student Success, University Partnerships, GEAR UP, Innovation, and Data & Technology"; the JD's functional list names "Career-Connected Learning." Resume Consultant keeps the canonical five as the "units led" list and treats Career-Connected Learning as a named functional responsibility unless Preston resolves otherwise at Gate 1. **RESOLVED at Gate 1 (2026-06-12): keep the canonical five units; Career-Connected Learning stays OFF the public site this cycle — do not list it as a unit or name it as a function on any page.**
 
 **2050 Moonshot (registered 2026-06-12):** DC CAP's "2050 Moonshot" target of **80% college completion** traces to the revised CSAO JD and `BRAIN/context.md`. Approved as an org-level ambition Preston helps lead; frame as DC CAP's goal (org voice), never as Preston's personal claim. Replaces the previously untraceable on-site occurrence at `experience.astro:39`.
 
 **Talent-multiplier / promotions (registered 2026-06-12, from `BRAIN/personal/fy2026_contributions.md` §15):** "Three direct reports promoted across Preston's tenure at Common App and DC CAP, one of them twice." Aggregate only — no staff names on the site. Glossary rule 10 (no promotion-ceiling framing) still hard-bans the inverse framing in this content zone.
 
-**Consulting "$10M+ organization" figure (`consulting.astro:108`) — NOT yet registered.** The Scout traced a corroborating figure to `BRAIN/context.md`, but per Lesson 7 the Resume Consultant must content-verify the exact figure and phrasing against the source before it stays on the page; otherwise rephrase the line without the number. Pending verification, treat as unverified.
+**Consulting "$10M+ organization" figure (`consulting.astro:108`) — REGISTERED at Gate 1 (2026-06-12).** Content-verified verbatim at `BRAIN/context.md:39` ("Operating budget: $10M+"); now listed in § DC CAP Verified Numbers above. Approved for the consulting page as drafted.
 
 **"First statewide longitudinal study" (`experience.astro:101`, `uva-ldoe-partnership.md`) — UNVERIFIED, flagged for cut-or-verify.** No trace in canonical or BRAIN. Resume Consultant verifies against the AERA Open / ECRQ publications or cuts the superlative (Lesson 7 / Pattern 11 discipline). Not registered here.
 
