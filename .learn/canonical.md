@@ -265,8 +265,8 @@ Locked URLs the Engineer agent emits in JSON-LD `sameAs` and renders in the foot
 
 - **LinkedIn:** https://www.linkedin.com/in/preston-magouirk-840aa757/ (locked 2026-05-23)
 - **GitHub:** excluded from the public site per Preston (2026-06-04). Do not emit a GitHub URL in JSON-LD `sameAs` or the footer, and do not re-run discovery for it. (Direction stands until Preston says otherwise.)
-- **Google Scholar:** discovery needed — Engineer searches scholar.google.com for "Preston Magouirk"; verifies via affiliation (UVA, Common App, DC CAP) and matching publications (AERA Open, ECRQ entries); locks the profile URL
-- **ORCID:** discovery needed — Engineer searches orcid.org for "Preston Magouirk"; verifies via UVA Educational Policy Studies affiliation; if no record exists, omits from sameAs rather than emit a dead link
+- **Google Scholar:** OMITTED (2026-06-12 discovery). The author-profile search (`scholar.google.com/citations?view_op=search_authors`) returned a CAPTCHA/anti-bot page with zero verifiable profile entries; no record content-verified against affiliation or publications. Per the discovery protocol, omitted from `sameAs` (no dead link, no guessed `user=` ID — Lesson 7). Re-run discovery next cycle.
+- **ORCID:** `https://orcid.org/0000-0003-1093-5312` (LOCKED 2026-06-12). Content-verified via the ORCID public API: record name "Preston Magouirk", education **University of Virginia (PhD)** (matches the canonical UVA Educational Policy Studies criterion), and the single registered work "Cross-Sector Program Selection, Quality Improvement, and System-Building in Early Childhood Education: Evidence from a Statewide Reform in Louisiana" (the Louisiana early-childhood QRIS / AERA Open study the UVA–LDOE partnership produced). URL resolves HTTP 200, visibility public. Emitted in the Person `sameAs` array.
 - **Calendly:** https://calendly.com/preston-magouirk (locked 2026-05-23; CTA destination, not sameAs)
 - **Email:** pmagouir@gmail.com (locked; footer + contact paths)
 

@@ -1,11 +1,36 @@
 @import "tailwindcss";
 
 @theme {
+  /* Fonts (unchanged families) */
   --font-heading: "Lora", Georgia, serif;
   --font-body: Inter, system-ui, sans-serif;
-  --color-primary: #1F3D2B;
-  --color-secondary: #7A1E2C;
-  --color-background: #F5F5F4;
+
+  /* Brand colors — converted to OKLCH (same hues as the prior hex; tailwind4_system §3) */
+  --color-primary: oklch(0.30 0.06 145);      /* Hunter Green  #1F3D2B */
+  --color-secondary: oklch(0.36 0.13 18);     /* Burgundy      #7A1E2C */
+  --color-background: oklch(0.96 0.003 90);   /* Light neutral #F5F5F4 */
+
+  /* CTA hover ground — Hunter Green one step lighter (≈ #264A34); white label 9.95:1 */
+  --color-primary-hover: oklch(0.34 0.06 145);
+
+  /* Functional neutral: footer link hover on the dark ground (≈ #F1F5F2; 17.4:1). M4 fix. */
+  --color-footer-link-hover: oklch(0.97 0.01 145);
+
+  /* Tokenized modular type scale (navigation-global spec §2). Fluid via clamp().
+     Line-height + letter-spacing applied per-utility in @layer base below. */
+  --text-display: clamp(2.5rem, 1.5rem + 3.4vw, 4.75rem);   /* 40 → 76  Hero H1 only */
+  --text-h1:      clamp(2.25rem, 1.6rem + 2.6vw, 4rem);     /* 36 → 64  Page H1 */
+  --text-h2:      clamp(1.75rem, 1.45rem + 1.3vw, 2.5rem);  /* 28 → 40  Section headings */
+  --text-h3:      clamp(1.375rem, 1.25rem + 0.5vw, 1.625rem); /* 22 → 26 Sub-section / card titles */
+  --text-dek:     clamp(1.25rem, 1.1rem + 0.6vw, 1.625rem); /* 20 → 26  Lead paragraph (Lora) */
+  --text-lead:    clamp(1.0625rem, 1rem + 0.4vw, 1.375rem); /* 17 → 22  Intro body */
+  --text-body:    clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);  /* 17 → 20  Body paragraph */
+  --text-base:    1rem;                                      /* 16       Dense body / lists */
+  --text-sm:      0.875rem;                                  /* 14       Meta, captions, dates */
+  --text-label:   clamp(0.75rem, 0.72rem + 0.1vw, 0.8125rem); /* 12 → 13 Eyebrow / uppercase label */
+
+  /* Prose measure for body line length (refactoring_ui §6) */
+  --container-prose: 65ch;
 }
 
 @layer base {
@@ -15,6 +40,8 @@
     color: rgb(23 23 23);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* m12 — sticky header (~72px) never obscures a focused/anchored element */
+    scroll-padding-top: 5rem;
   }
 
   body {
@@ -28,6 +55,40 @@
   h5,
   h6 {
     font-family: var(--font-heading);
+  }
+
+  /* Line-height + letter-spacing bound to each type token (navigation-global spec §2:
+     line-height and letter-spacing inverse to size). Applied when a utility sets the token. */
+  .text-display { line-height: 1.03; letter-spacing: -0.025em; }
+  .text-h1      { line-height: 1.06; letter-spacing: -0.022em; }
+  .text-h2      { line-height: 1.12; letter-spacing: -0.015em; }
+  .text-h3      { line-height: 1.18; letter-spacing: -0.01em; }
+  .text-dek     { line-height: 1.4;  letter-spacing: -0.005em; }
+  .text-lead    { line-height: 1.55; }
+  .text-body    { line-height: 1.7; }
+  .text-base    { line-height: 1.65; }
+  .text-sm      { line-height: 1.5; }
+  /* Eyebrow / uppercase label: always Inter regardless of HTML tag (m6 fix) */
+  .text-label   {
+    font-family: var(--font-body);
+    line-height: 1.4;
+    letter-spacing: 0.18em;
+  }
+}
+
+@layer base {
+  /* Brand focus state on every interactive element (m12, WCAG 2.2 §2.4.7).
+     :focus-visible, never :focus — keyboard users get the ring; mouse users don't. */
+  *:focus-visible {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  /* On dark / green grounds a green ring would be invisible — use the light ring.
+     Keyed off .on-dark (footer, green CTAs). Light ring on green = 10.9:1; on #0F0F0F ≈ 17:1. */
+  .on-dark:focus-visible {
+    outline-color: var(--color-background);
   }
 }
 

@@ -2,12 +2,12 @@
 // Navigation component with mobile hamburger menu
 const currentPath = Astro.url.pathname;
 
+// Four primary links (Fitness removed 2026-06-12; personal content is footer-reached).
 const navLinks = [
 	{ href: "/about", label: "About" },
 	{ href: "/experience", label: "Experience" },
 	{ href: "/projects", label: "Portfolio" },
 	{ href: "/consulting", label: "Consulting" },
-	{ href: "/fitness", label: "Fitness" },
 ];
 
 function isActive(href: string): boolean {
@@ -17,11 +17,11 @@ function isActive(href: string): boolean {
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-sm">
-	<nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 lg:px-8">
+	<nav class="mx-auto flex max-w-5xl items-center justify-between px-6 py-4 lg:px-8" aria-label="Primary">
 		<!-- Name/Logo - acts as Home button -->
 		<a
 			href="/"
-			class="text-lg font-bold tracking-[0.12em] text-neutral-900 transition-colors hover:text-primary lg:text-xl"
+			class="text-lead font-bold tracking-[0.12em] text-neutral-900 transition-colors duration-150 ease-out hover:text-primary"
 		>
 			Preston Magouirk
 		</a>
@@ -31,9 +31,12 @@ function isActive(href: string): boolean {
 			{navLinks.map((link) => (
 				<a
 					href={link.href}
+					aria-current={isActive(link.href) ? "page" : undefined}
 					class:list={[
-						"transition-colors hover:text-primary",
-						{ "text-primary font-semibold": isActive(link.href) },
+						"py-2 font-medium transition-colors duration-150 ease-out hover:text-primary",
+						isActive(link.href)
+							? "border-b-2 border-secondary pb-1 font-semibold text-secondary"
+							: "text-neutral-700",
 					]}
 				>
 					{link.label}
@@ -47,6 +50,7 @@ function isActive(href: string): boolean {
 			class="flex flex-col gap-1.5 p-2 md:hidden"
 			aria-label="Toggle menu"
 			aria-expanded="false"
+			aria-controls="mobile-menu"
 		>
 			<span
 				id="hamburger-line-1"
@@ -73,9 +77,10 @@ function isActive(href: string): boolean {
 			{navLinks.map((link) => (
 				<a
 					href={link.href}
+					aria-current={isActive(link.href) ? "page" : undefined}
 					class:list={[
-						"py-3 text-sm transition-colors hover:text-primary",
-						isActive(link.href) ? "text-primary font-semibold" : "text-neutral-700",
+						"py-3 text-sm transition-colors duration-150 ease-out hover:text-primary",
+						isActive(link.href) ? "font-semibold text-secondary" : "text-neutral-700",
 					]}
 				>
 					{link.label}
@@ -92,46 +97,44 @@ function isActive(href: string): boolean {
 	const line2 = document.getElementById('hamburger-line-2');
 	const line3 = document.getElementById('hamburger-line-3');
 
+	function closeMenu() {
+		if (!mobileMenu || !menuButton) return;
+		mobileMenu.classList.add('hidden');
+		mobileMenu.dataset.open = 'false';
+		menuButton.setAttribute('aria-expanded', 'false');
+		line1?.classList.remove('rotate-45', 'translate-y-2');
+		line2?.classList.remove('opacity-0');
+		line3?.classList.remove('-rotate-45', '-translate-y-2');
+	}
+
+	function openMenu() {
+		if (!mobileMenu || !menuButton) return;
+		mobileMenu.classList.remove('hidden');
+		mobileMenu.dataset.open = 'true';
+		menuButton.setAttribute('aria-expanded', 'true');
+		line1?.classList.add('rotate-45', 'translate-y-2');
+		line2?.classList.add('opacity-0');
+		line3?.classList.add('-rotate-45', '-translate-y-2');
+	}
+
 	if (menuButton && mobileMenu) {
 		menuButton.addEventListener('click', () => {
 			const isOpen = mobileMenu.dataset.open === 'true';
-
-			if (isOpen) {
-				// Close menu
-				mobileMenu.classList.add('hidden');
-				mobileMenu.dataset.open = 'false';
-				menuButton.setAttribute('aria-expanded', 'false');
-
-				// Reset hamburger icon
-				line1?.classList.remove('rotate-45', 'translate-y-2');
-				line2?.classList.remove('opacity-0');
-				line3?.classList.remove('-rotate-45', '-translate-y-2');
-			} else {
-				// Open menu
-				mobileMenu.classList.remove('hidden');
-				mobileMenu.dataset.open = 'true';
-				menuButton.setAttribute('aria-expanded', 'true');
-
-				// Transform hamburger to X
-				line1?.classList.add('rotate-45', 'translate-y-2');
-				line2?.classList.add('opacity-0');
-				line3?.classList.add('-rotate-45', '-translate-y-2');
-			}
+			if (isOpen) closeMenu();
+			else openMenu();
 		});
 
 		// Close menu when clicking a link
-		const mobileLinks = mobileMenu.querySelectorAll('a');
-		mobileLinks.forEach((link) => {
-			link.addEventListener('click', () => {
-				mobileMenu.classList.add('hidden');
-				mobileMenu.dataset.open = 'false';
-				menuButton.setAttribute('aria-expanded', 'false');
+		mobileMenu.querySelectorAll('a').forEach((link) => {
+			link.addEventListener('click', () => closeMenu());
+		});
 
-				// Reset hamburger icon
-				line1?.classList.remove('rotate-45', 'translate-y-2');
-				line2?.classList.remove('opacity-0');
-				line3?.classList.remove('-rotate-45', '-translate-y-2');
-			});
+		// Escape closes the menu and returns focus to the toggle (m15)
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && mobileMenu.dataset.open === 'true') {
+				closeMenu();
+				menuButton.focus();
+			}
 		});
 	}
 </script>

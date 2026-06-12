@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import georgeCarry from '../assets/George_Carry.jpg';
+import georgeBackpack from '../assets/George_Backpack.jpg';
+---
+
+<Layout title="Personal" description="Family, movement, and the Fitness Gauntlet assessment tool.">
+	<div class="mx-auto max-w-5xl px-6 py-16 lg:px-8 lg:py-24">
+		<div class="mb-12">
+			<h1 class="text-h1 mb-6 font-semibold text-neutral-900">
+				Personal
+			</h1>
+			<p class="text-dek max-w-prose font-heading text-neutral-900">
+				A little of the life behind the work: the people I come home to and the way I stay sharp for them.
+			</p>
+		</div>
+
+		<section class="space-y-16">
+			<div>
+				<h2 class="text-h2 mb-8 font-semibold text-neutral-900">Movement</h2>
+
+				<div class="mb-8 grid grid-cols-1 gap-6 md:grid-cols-2">
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<Image
+							src={georgeCarry}
+							alt="George being carried"
+							class="h-full w-full object-cover"
+							widths={[400, 700]}
+							sizes="(min-width: 768px) 45vw, 90vw"
+							loading="lazy"
+							format="webp"
+						/>
+					</div>
+					<div class="overflow-hidden rounded-lg shadow-md">
+						<Image
+							src={georgeBackpack}
+							alt="George with backpack"
+							class="h-full w-full object-cover"
+							widths={[400, 700]}
+							sizes="(min-width: 768px) 45vw, 90vw"
+							loading="lazy"
+							format="webp"
+						/>
+					</div>
+				</div>
+
+				<div class="max-w-prose space-y-8 text-body text-neutral-700">
+					<p class="text-dek font-heading text-neutral-900">
+						I bring the same systems thinking to fitness that I bring to my teams at work: clear goals, measurable progress, and frameworks that adapt when life doesn't cooperate.
+					</p>
+
+					<p>
+						I've coached CrossFit since 2018, group classes, personal training, and remote programming for athletes ranging from first-timers to competitive qualifiers. In 2024, I earned the <strong class="font-semibold text-neutral-900">CF-L3</strong> and Certified CrossFit Trainer (CCFT) credentials, a distinction held by roughly 1% of CrossFit coaches. As an athlete, I've qualified for and competed in the CrossFit Games <strong class="font-semibold text-neutral-900">Quarterfinals</strong> multiple times, placing in the top 5-10% of Rx participants worldwide. Far from competitive in the sport, but I appreciate the challenge to maintain and improve fitness as I age. As George gets older, I know I'll need it.
+					</p>
+
+					<p>
+						I believe in training a broad range of skills under varied loads and time domains. Speed and endurance are great, as is strength or power, but none alone is as good for health and longevity as each combined. To keep myself honest, I stay in touch via a regular battery of assessments. I built a tool to track them.
+					</p>
+				</div>
+
+				<div class="my-8">
+					<a
+						href="https://fitness-gauntlet-site.vercel.app/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="group block overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm transition-all duration-200 ease-out hover:border-primary hover:shadow-md"
+					>
+						<div class="flex aspect-video items-center justify-center bg-gradient-to-br from-primary/10 to-secondary/10">
+							<div class="p-8 text-center">
+								<p class="text-h3 mb-2 font-heading font-semibold text-neutral-900 transition-colors group-hover:text-primary">
+									12-Test Fitness Gauntlet
+								</p>
+								<p class="text-sm text-neutral-600">
+									View the assessment tool <span aria-hidden="true">→</span>
+								</p>
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="mt-12 max-w-prose text-base leading-relaxed text-neutral-600">
+			<p>
+				If you're into this stuff too, I'd love to connect. <a href="mailto:pmagouir@gmail.com" class="text-primary underline underline-offset-2 hover:text-primary-hover">Drop me a line</a>.
+			</p>
+		</div>
+	</div>
+</Layout>

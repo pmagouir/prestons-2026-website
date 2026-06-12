@@ -7,6 +7,10 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://prestonmagouirk.com',
   prefetch: { prefetchAll: true },
+  // /fitness retired 2026-06-12; content folded into /personal. 301 so old links don't 404.
+  redirects: {
+    '/fitness': { status: 301, destination: '/personal' },
+  },
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]

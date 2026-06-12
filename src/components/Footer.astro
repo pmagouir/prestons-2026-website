@@ -1,5 +1,9 @@
 ---
-// Footer component with copyright and social links
+// Footer component with copyright and site/social links.
+// Footer link state (M4 / Pattern 19 fix): default neutral-400 (7.6:1 on #0F0F0F);
+// hover brightens to --color-footer-link-hover (#F1F5F2, 17.4:1) + underline.
+const linkClass =
+	"on-dark text-sm font-medium text-neutral-400 underline-offset-2 transition-colors duration-150 ease-out hover:text-[var(--color-footer-link-hover)] hover:underline";
 ---
 
 <footer class="mt-auto border-t border-neutral-300/50 bg-neutral-900/95 text-neutral-400">
@@ -14,26 +18,31 @@
 				</p>
 			</div>
 
-			<!-- Social Links -->
+			<!-- Site / Social Links -->
 			<div class="flex items-center gap-6">
-			<a
-				href="https://www.linkedin.com/in/preston-magouirk-840aa757/"
-				target="_blank"
-				rel="noopener noreferrer"
-				class="text-sm text-neutral-400 transition-colors hover:text-primary"
-				aria-label="LinkedIn"
-			>
-				LinkedIn
-			</a>
+				<a
+					href="https://www.linkedin.com/in/preston-magouirk-840aa757/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class={linkClass}
+					aria-label="LinkedIn"
+				>
+					LinkedIn
+				</a>
 				<a
 					href="mailto:pmagouir@gmail.com"
-					class="text-sm text-neutral-400 transition-colors hover:text-primary"
+					class={linkClass}
 					aria-label="Email"
 				>
 					Email
+				</a>
+				<a
+					href="/personal"
+					class={linkClass}
+				>
+					Personal
 				</a>
 			</div>
 		</div>
 	</div>
 </footer>
-
