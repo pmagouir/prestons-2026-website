@@ -51,7 +51,7 @@ You can't do everything. Even if you could, you certainly could not do everythin
 
 The changes reported above happened throughout 2025. We started the work to understand what needed to change back in 2023. If someone looked then, no progress was visible on the outside. A year later, very little was visible.
 
-The data infrastructure we built in 2023 made it possible to see the Ward 7&8 problem clearly. The partnership evaluation framework we developed in 2024 gave us the evidence to make portfolio decisions in 2025. Each invisible investment compounded.
+The data infrastructure we built in 2023 made it possible to see the persistence problem clearly. The partnership evaluation framework we developed in 2024 gave us the evidence to make portfolio decisions in 2025. Each invisible investment compounded.
 
 If you're leading change at an organization, a team, or your own work, be fair to yourself. Progress takes time to show. My colleagues often remind me to celebrate the small, procedural, seemingly inconsequential wins. The new processes. The habit changes. The feedback that taught you something. That's all positive and trends toward something better. Keep showing up. Little things compound and behaviors are visible far faster than outcomes.
 

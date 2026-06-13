@@ -146,7 +146,7 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - CNBC, "College admission applications spike" — https://www.cnbc.com/2023/03/23/college-admissions-application-volume-rises-30percent-since-pre-pandemic.html
 - Brookings, "Complex applications create barriers to college" — https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/
 - Slate, "I Have a Simple Solution to the College Essay Problem" — https://slate.com/human-interest/2023/09/college-essay-personal-statement-narrative-common-app.html
-- Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2021/11/15/common-app-sees-increase-minority-applicants
+- Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2022/09/26/common-app-sees-large-rise-minority-applicants (URL corrected 2026-06-13: the 2021/11/15 URL 404s; the live article — headline-exact, quotes "Preston Magouirk, data scientist at Common App," dated 2022-09-25 — is content-verified at this URL)
 - The 74 / Early Learning Nation, "The Path to Quality Child Care" — https://earlylearningnation.com/2021/06/the-path-to-quality-child-care-just-became-a-little-less-elusive-new-research-shows-star-rating-systems-can-drive-improvement-at-scale/
 
 Do not invent additional outlets. If a new media mention surfaces, the Strategist routes it through the canonical-update protocol (PROTOCOL.md § 4) before placing on site.
