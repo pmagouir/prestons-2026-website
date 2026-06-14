@@ -130,6 +130,27 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/e
 **Lesson:** State what happened and let the evidence carry the weight. Do NOT confuse with Preston's signature deflation ("None of this is revolutionary," "while far from perfect"): deflation downplays and is correct voice; phantom negation inflates. Distinct from the "X, not Y" rule (glossary rule 2): phantom negation has no stated alternative, only a strawman being knocked down. The highest-signal phrases are caught by the verify_site.sh token scan; subtler instances are Auditor manual-scan.
 **Watch on:** every page; highest risk on hero subhead, about.astro narrative, consulting hero, writing/blog.
 
+### Pattern 17 — Unrendered-content landmine
+
+**Caught:** 2026-06-10 baseline + 2026-06-12 Gate-2 audit (caught twice). The offline `five-lessons-leading-change.md` essay carried banned Ward 7/8 framing; the cleanup draft asserted "all Ward 7/8 framing removed" but missed a third occurrence (line 54) because it only re-checked the passages it named.
+**Description:** Content in `src/content/` (collections) is site copy even when no route renders it today. It evades the eye because it is not on a live page, and a "fix" gets verified only against the passages the draft happened to call out, not the whole file. The moment a route is added (e.g., a `/writing` page), the un-neutralized content publishes against a hard directive with no fresh review.
+**Lesson:** Every file in `src/content/` passes the same gates as a rendered page. When a content fix is claimed complete, verify it line-by-line across the entire file (grep the banned term against the whole file), not just the named passages. Never trust a draft's "all instances removed" completeness claim without an independent full-file scan.
+**Watch on:** `src/content/writing/*`, `src/content/projects/*`, `src/content/media/*` — every cycle, especially any file touched by a "cleanup" or "neutralize" task.
+
+### Pattern 18 — Time-bound status claim without an expiry check
+
+**Caught:** 2026-06-10 baseline (the AI Governance pilot, written present-tense, ran April 6 – June 5, 2026; the window had closed while the site still said "running"). Cleared 2026-06-12 (moved to past tense).
+**Description:** A "currently running / in progress / launching [date]" claim is true only inside a window. Without a per-cycle expiry check it silently goes stale and misrepresents status (a closed pilot reads as live; a shipped launch reads as future).
+**Lesson:** Every time-bound status claim carries a known end/launch date in canonical; each cycle compares that date to today and re-tenses (future → present → past) accordingly. CPIP (October 2026 launch) is the live instance to watch next.
+**Watch on:** experience.astro, consulting.astro, projects content entries, JSON-LD — any claim with "currently," "running," "in progress," "launching," or a year.
+
+### Pattern 19 — State-level contrast (hover / focus / active)
+
+**Caught:** 2026-06-10 baseline (footer link hover computed to 1.61:1). Cleared 2026-06-12 (hover token fixed to 17.4:1).
+**Description:** axe-core and Lighthouse evaluate the resting state of an element. Hover, focus, and active colors are not exercised by automated tooling, so a state-level contrast failure (a hover color that drops below 4.5:1) ships clean through CI and the audit.
+**Lesson:** Every interactive element's hover/focus/active color gets the same ≥4.5:1 contrast check as its resting state, computed from the OKLCH/hex ledger, not estimated. The Designer states the computed ratio for every state color in the spec; the Auditor checks state colors manually since the tooling can't.
+**Watch on:** Footer.astro, Navigation.astro, all CTA buttons, every link hover in global.css.
+
 ## Adding New Patterns
 
 When the Auditor catches a new failure mode in a real run:
@@ -144,4 +165,4 @@ When 3+ entries cluster on the same theme, roll the rule up into `glossary.md` o
 ---
 
 *Maintained by: Auditor (writes), Strategist + Resume Consultant + Engineer (read at session start).*
-*Last verified: 2026-06-03*
+*Last verified: 2026-06-12 (Patterns 17–19 ratified from the 2026-06-12 cycle audit).*
