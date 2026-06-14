@@ -95,6 +95,34 @@ const personSchema = {
 	description:
 		"Strategy and analytics leader at DC CAP. Builds the systems behind 75–95% completion outcomes for first-generation, low-income college students.",
 };
+
+// BreadcrumbList: emitted on every page below the root so search engines render
+// the site position. The IA is currently one level deep (Home > Page), so each
+// non-home page gets a two-item trail; the current page (last item) omits `item`
+// per Google's documented convention. When nested routes (e.g. /projects/[slug])
+// ship, those pages extend this with their parent section as the middle item.
+const isHome = title === "Preston Magouirk";
+const breadcrumbSchema = isHome
+	? null
+	: {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Home",
+					item: new URL("/", Astro.site).href,
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: title,
+				},
+			],
+		};
+
+const jsonLdBlocks = breadcrumbSchema ? [personSchema, breadcrumbSchema] : [personSchema];
 ---
 <!doctype html>
 <html lang="en">
@@ -121,7 +149,9 @@ const personSchema = {
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImageURL} />
-		<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+		{jsonLdBlocks.map((block) => (
+			<script type="application/ld+json" set:html={JSON.stringify(block)} />
+		))}
 		<title>{pageTitle}</title>
 	</head>
 	<body class="flex min-h-screen flex-col">
