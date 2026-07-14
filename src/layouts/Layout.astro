@@ -2,6 +2,13 @@
 import "../styles/global.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+// Above-the-fold font faces, preloaded so they fetch in parallel with HTML
+// parse instead of waiting on the CSS. Importing the asset returns its built,
+// fingerprinted URL. Only the two faces that paint above the fold are
+// preloaded: the Inter variable latin file (body/UI/eyebrow) and the Lora 600
+// display face (the hero H1). Preloading every weight would defeat the purpose.
+import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2";
+import loraDisplay from "@fontsource/lora/files/lora-latin-600-normal.woff2";
 
 interface Props {
 	title?: string;
@@ -130,9 +137,8 @@ const jsonLdBlocks = breadcrumbSchema ? [personSchema, breadcrumbSchema] : [pers
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href={loraDisplay} as="font" type="font/woff2" crossorigin="anonymous" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
