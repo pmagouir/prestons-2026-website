@@ -2,27 +2,27 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Consulting" description="Data strategy, grant writing, and organizational change consulting for nonprofits and education organizations.">
-	<main class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
+<Layout title="Consulting" description="AI governance, data strategy, grant writing, and organizational change consulting for nonprofits and education organizations.">
+	<div class="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
 		<!-- Hero Section -->
 		<div class="mb-24">
-			<p class="mb-4 font-bold uppercase tracking-widest text-primary text-sm">
+			<p class="text-label mb-4 font-bold uppercase text-primary">
 				Strategic Consulting
 			</p>
-			<h1 class="mb-6 text-4xl font-semibold leading-[1.05] tracking-tight text-neutral-900 sm:text-6xl lg:text-7xl">
-				Data, strategy, and execution for mission-driven organizations.
+			<h1 class="text-h1 mb-6 font-semibold text-neutral-900">
+				Data, strategy, and AI for mission-driven organizations.
 			</h1>
-			<p class="mb-6 max-w-3xl text-lg leading-relaxed text-neutral-700 sm:text-xl">
-				I help nonprofits and education organizations build their analytics, win the grants that fund the work, and lead the change that follows.
+			<p class="text-lead mb-6 max-w-3xl text-neutral-700">
+				I help nonprofits and education organizations build the analytics they actually use, govern AI responsibly, win the grants that fund the work, and lead the change that follows.
 			</p>
-			<p class="mb-8 max-w-3xl text-base leading-relaxed text-neutral-700">
-				I've led strategy at DC CAP, built the analytics and research functions at Common App, and managed relationships with partner organizations and major funders. I bring strategic depth and operational experience to a range of engagements.
+			<p class="text-body mb-8 max-w-3xl text-neutral-700">
+				I lead strategy and analytics at DC CAP, I helped found the research function at Common App, and I built the AI governance framework my own organization runs. I bring that mix of strategy, analytics, and hands-on building to a small number of engagements.
 			</p>
 			<a
 				href="https://calendly.com/preston-magouirk"
 				target="_blank"
 				rel="noopener noreferrer"
-				class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+				class="on-dark inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-sm transition-all duration-150 ease-out hover:bg-primary-hover hover:shadow-md"
 			>
 				Schedule time to meet
 				<svg
@@ -30,6 +30,7 @@ import Layout from '../layouts/Layout.astro';
 					fill="none"
 					stroke="currentColor"
 					viewBox="0 0 24 24"
+					aria-hidden="true"
 				>
 					<path
 						stroke-linecap="round"
@@ -43,207 +44,283 @@ import Layout from '../layouts/Layout.astro';
 
 		<!-- Services Section -->
 		<section class="mb-24">
-			<h2 class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+			<h2 class="text-h2 mb-12 font-semibold text-neutral-900">
 				How I Help
 			</h2>
 			<div class="space-y-16">
-				<!-- Service 1: Data & Analytics Strategy -->
-				<article class="border-t border-primary/10 pt-12">
+				<!-- Offer 1: AI Governance (the 2026 front door) -->
+				<article class="border-t border-neutral-200 pt-12">
 					<div class="mb-6">
-						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
-							Data & Analytics Strategy
+						<p class="text-label mb-1 font-semibold uppercase text-neutral-600">
+							For mission-driven organizations adopting AI
+						</p>
+						<h3 class="text-h3 mb-2 font-semibold text-neutral-900">
+							AI Governance Audits
 						</h3>
-						<p class="text-lg font-medium text-primary">Data your team actually uses.</p>
+						<p class="text-lead font-medium text-primary">AI governance for mission-driven organizations.</p>
 					</div>
-					<p class="mb-8 text-base leading-relaxed text-neutral-700">
-						Most organizations collect more data than they use. The dashboards exist, but they gather dust, and leaders who call themselves "data-driven" often lack clean data, clear outcomes, and the habit of using either. I help close that gap.
+					<p class="text-body mb-8 text-neutral-700">
+						Most nonprofits adopting AI have no framework for what is safe to hand to a model and what is not. I built one for my own organization and ran the pilot that put it into practice. I help mission-driven organizations adopt AI responsibly: a data-classification standard that protects the people you serve, a fluency model that trains staff to delegate well, and governance that holds up to a board's scrutiny.
 					</p>
 					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								What I offer
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>AI governance and data-classification frameworks</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Responsible-AI readiness assessments</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Staff AI fluency training and rollout</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Pilot design and implementation support</span>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
+								Results I've delivered
+							</p>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>DC CAP enterprise AI governance framework (<strong class="font-semibold text-neutral-900">9 staff, 3 units</strong>, 60-day pilot)</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Four-tier data classification exceeding FERPA and federal-grant requirements</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>4D fluency model adapted from current research</span>
+								</li>
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span><strong class="font-semibold text-neutral-900">19</strong> interactive governance pages, public at dccapinnovation.org</span>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</article>
+
+				<!-- Offer 2: Data & Analytics Strategy -->
+				<article class="border-t border-neutral-200 pt-12">
+					<div class="mb-6">
+						<p class="text-label mb-1 font-semibold uppercase text-neutral-600">
+							For education and philanthropy
+						</p>
+						<h3 class="text-h3 mb-2 font-semibold text-neutral-900">
+							Data & Analytics Strategy
+						</h3>
+						<p class="text-lead font-medium text-primary">Strategy and analytics builds for education and philanthropy.</p>
+					</div>
+					<p class="text-body mb-3 text-neutral-700">
+						Most organizations collect more data than they use. The dashboards exist, but they gather dust, and leaders who call themselves "data-driven" often lack clean data, clear outcomes, and the habit of using either. I help close that gap.
+					</p>
+					<p class="mb-8 text-sm text-neutral-600">
+						The financial scenario model I built for DC CAP's board, hosted at dccapinnovation.org, runs a 53-of-53 verification suite on every figure it surfaces.
+					</p>
+					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+						<div>
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
+								What I offer
+							</p>
+							<ul class="space-y-3 text-base text-neutral-700">
+								<li class="flex items-start">
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Analytics strategy and roadmap development</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Salesforce and CRM optimization for program teams</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Dashboard design and KPI/OKR development</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Data infrastructure assessment and modernization</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Training and capacity building for internal teams</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Ad-hoc data/analytics product development</span>
 								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								Results I've delivered
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Built the analytics environment for Common App, the largest source of college application data in the U.S.</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Founding analytics environment, Common App (largest U.S. college application dataset)</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Led DC CAP's Salesforce Education Cloud rollout, saving $500K+ a year and cutting administrative load by more than half</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>DC CAP Salesforce rollout: <strong class="font-semibold text-neutral-900">$500K+</strong> in annual staff capacity recovered</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Built the financial modeling tools behind a $10M+ organization's multi-year strategy and budget</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Financial scenario model for a <strong class="font-semibold text-neutral-900">$10M+</strong> organization's multi-year planning</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Built secure, accessible analytics pipelines that generate branded reports, dashboards, and visualizations</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Secure analytics pipelines producing branded reports and dashboards</span>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</article>
 
-				<!-- Service 2: Grant Writing & Proposal Development -->
-				<article class="border-t border-primary/10 pt-12">
+				<!-- Offer 3: Grant Writing & Proposal Development -->
+				<article class="border-t border-neutral-200 pt-12">
 					<div class="mb-6">
-						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
+						<p class="text-label mb-1 font-semibold uppercase text-neutral-600">
+							For funders and the funded
+						</p>
+						<h3 class="text-h3 mb-2 font-semibold text-neutral-900">
 							Grant Writing & Proposal Development
 						</h3>
-						<p class="text-lg font-medium text-primary">Translate your impact into funded proposals.</p>
+						<p class="text-lead font-medium text-primary">Translate your impact into funded proposals.</p>
 					</div>
-					<p class="mb-8 text-base leading-relaxed text-neutral-700">
+					<p class="text-body mb-8 text-neutral-700">
 						Competitive grants demand more than good intentions. Funders want a clear theory of change, credible evaluation design, and evidence you can execute. Strong programs lose ground when the narrative raises more questions than it answers, or the methodology undercuts confidence in the team. I write the proposals that close both gaps.
 					</p>
 					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								What I offer
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Full grant proposal development (federal, foundation, corporate)</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Theory of change and logic model design</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Evaluation framework and methodology sections</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Budget narrative and cost justification</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Proposal review, strengthening, and red-teaming</span>
 								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								Results I've delivered
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Managed long-term relationships with large-scale funders across multiple organizations</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Long-term relationships with large-scale funders across multiple organizations</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Built the strategy that won a $600K AI innovation grant (KPMG AI Impact Initiative)</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span><strong class="font-semibold text-neutral-900">$600K</strong> KPMG AI Impact Initiative grant (built the winning strategy)</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Contributed to $50M+ in philanthropic commitments at DC CAP, including MacKenzie Scott / Yield Giving</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span><strong class="font-semibold text-neutral-900">$50M+</strong> in DC CAP philanthropic commitments, including MacKenzie Scott and Yield Giving (instrumental in)</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>PhD training in program evaluation, causal inference, and quantitative methods</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Led randomized controlled trials of strategic initiatives, funded by national research grants</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Randomized controlled trials on direct admissions and text-message campaigns</span>
 								</li>
 							</ul>
 						</div>
 					</div>
 				</article>
 
-				<!-- Service 3: Organizational Change & Strategic Transitions -->
-				<article class="border-t border-primary/10 pt-12">
+				<!-- Offer 4: Organizational Change & Strategic Transitions -->
+				<article class="border-t border-neutral-200 pt-12">
 					<div class="mb-6">
-						<h3 class="mb-2 text-2xl font-semibold text-neutral-900 sm:text-3xl">
+						<p class="text-label mb-1 font-semibold uppercase text-neutral-600">
+							For leaders and boards in transition
+						</p>
+						<h3 class="text-h3 mb-2 font-semibold text-neutral-900">
 							Organizational Change & Strategic Transitions
 						</h3>
-						<p class="text-lg font-medium text-primary">Make the change stick.</p>
+						<p class="text-lead font-medium text-primary">Make the change stick.</p>
 					</div>
-					<p class="mb-8 text-base leading-relaxed text-neutral-700">
+					<p class="text-body mb-8 text-neutral-700">
 						Restructures, mergers, new strategic directions, leadership transitions. Each one puts strategy and people under pressure at the same time. Change sticks when leaders pair clear frameworks with disciplined communication and real attention to how people experience the shift. Most organizations underinvest in execution.
 					</p>
 					<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								What I offer
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Strategic planning design and facilitation</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Organizational restructuring and team integration</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Change management frameworks and implementation support</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Partnership development and optimization</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
 									<span>Operational efficiency assessment and process redesign</span>
 								</li>
 							</ul>
 						</div>
 						<div>
-							<h4 class="mb-4 text-sm font-semibold uppercase tracking-wider text-neutral-600">
+							<p class="text-label mb-4 font-semibold uppercase text-neutral-600">
 								Results I've delivered
-							</h4>
+							</p>
 							<ul class="space-y-3 text-base text-neutral-700">
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Led the integration of four teams into a unified Student Success division at DC CAP</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Integrated four teams into a unified Student Success division at DC CAP</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Directed the shift from a national to a regional partnership model, lifting first-year retention to 85%+ and graduation to 75–95% at established partners</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>National-to-regional partnership pivot: <strong class="font-semibold text-neutral-900">85%+</strong> first-year retention, <strong class="font-semibold text-neutral-900">75–95%</strong> graduation at established partners</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Led an enterprise-wide digital transformation that cut administrative time by more than half</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>Enterprise digital transformation that cut administrative time by more than half</span>
 								</li>
 								<li class="flex items-start">
-									<span class="mr-3 mt-1.5 text-primary">→</span>
-									<span>Designed new supervision frameworks for cross-functional coaching teams</span>
+									<span class="mr-3 mt-1.5 text-primary" aria-hidden="true">→</span>
+									<span>New supervision frameworks for cross-functional coaching teams</span>
 								</li>
 							</ul>
 						</div>
@@ -252,34 +329,34 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</section>
 
-		<!-- Engagement Models Section -->
-		<section class="mb-24 border-t border-secondary/10 pt-16">
-			<h2 class="mb-12 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+		<!-- Engagement Models Section (the page's one burgundy rule) -->
+		<section class="mb-24 border-t border-secondary/30 pt-16">
+			<h2 class="text-h2 mb-12 font-semibold text-neutral-900">
 				How We Work Together
 			</h2>
 			<div class="grid grid-cols-1 gap-6 md:grid-cols-3">
-				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+				<div class="rounded-lg border border-neutral-200 bg-white p-6">
 					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Advisory Retainer</h3>
-					<p class="mb-4 text-base leading-relaxed text-neutral-700">
-						Ongoing strategic counsel, typically 3-5 hours monthly. Regular check-ins, asynchronous support, and priority access for emerging challenges.
+					<p class="text-body mb-4 text-neutral-700">
+						Ongoing strategic counsel, typically 3–5 hours monthly. Regular check-ins, asynchronous support, and priority access for emerging challenges.
 					</p>
 					<p class="text-sm font-medium text-primary">
 						Organizations wanting a trusted thought partner over time
 					</p>
 				</div>
-				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+				<div class="rounded-lg border border-neutral-200 bg-white p-6">
 					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Project-Based</h3>
-					<p class="mb-4 text-base leading-relaxed text-neutral-700">
+					<p class="text-body mb-4 text-neutral-700">
 						Defined scope, timeline, and deliverables. Clear milestones and structured collaboration from kickoff to completion.
 					</p>
 					<p class="text-sm font-medium text-primary">
 						Grant proposals, strategic plans, or system implementations
 					</p>
 				</div>
-				<div class="rounded-lg border border-neutral-200 bg-white p-6 transition-all hover:shadow-sm">
+				<div class="rounded-lg border border-neutral-200 bg-white p-6">
 					<h3 class="mb-3 text-lg font-semibold text-neutral-900">Intensive Sprint</h3>
-					<p class="mb-4 text-base leading-relaxed text-neutral-700">
-						Concentrated engagement over 2-4 weeks. Deep immersion to accelerate progress on urgent priorities.
+					<p class="text-body mb-4 text-neutral-700">
+						Concentrated engagement over 2–4 weeks. Deep immersion to accelerate progress on urgent priorities.
 					</p>
 					<p class="text-sm font-medium text-primary">
 						Time-sensitive decisions, board presentations, or funding deadlines
@@ -291,10 +368,10 @@ import Layout from '../layouts/Layout.astro';
 		<!-- CTA Section -->
 		<section class="rounded-2xl border border-neutral-200 bg-neutral-50 p-12 sm:p-16">
 			<div class="mx-auto max-w-3xl text-center">
-				<h2 class="mb-6 text-3xl font-semibold text-neutral-900 sm:text-4xl">
+				<h2 class="text-h2 mb-6 font-semibold text-neutral-900">
 					Let's talk about what you're building.
 				</h2>
-				<p class="mb-10 text-lg leading-relaxed text-neutral-700 sm:text-xl">
+				<p class="text-lead mb-10 text-neutral-700">
 					I take on a limited number of consulting engagements so each client gets focused attention. If you're facing a strategic challenge, building new organizational capacity, or managing a major transition, I'd welcome the conversation.
 				</p>
 				<div class="mb-6 flex justify-center">
@@ -302,7 +379,7 @@ import Layout from '../layouts/Layout.astro';
 						href="https://calendly.com/preston-magouirk"
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+						class="on-dark inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-sm transition-all duration-150 ease-out hover:bg-primary-hover hover:shadow-md"
 					>
 						Schedule time to meet
 						<svg
@@ -310,6 +387,7 @@ import Layout from '../layouts/Layout.astro';
 							fill="none"
 							stroke="currentColor"
 							viewBox="0 0 24 24"
+							aria-hidden="true"
 						>
 							<path
 								stroke-linecap="round"
@@ -325,5 +403,5 @@ import Layout from '../layouts/Layout.astro';
 				</p>
 			</div>
 		</section>
-	</main>
+	</div>
 </Layout>

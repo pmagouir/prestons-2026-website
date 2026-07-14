@@ -9,21 +9,15 @@ import prestonImg from '../assets/Preston1.jpg';
     >
         <div class="flex flex-col justify-center space-y-8 lg:pr-8">
             <div class="space-y-7">
-                <p class="text-sm font-bold uppercase text-primary" style="letter-spacing: 0.18em;">
+                <p class="text-label font-bold uppercase text-primary">
                     Chief Strategy and Analytics Officer · DC CAP
                 </p>
 
-                <h1
-                    class="font-semibold text-neutral-900"
-                    style="font-size: clamp(2.5rem, 1.5rem + 3.4vw, 4.75rem); line-height: 1.03; letter-spacing: -0.025em;"
-                >
+                <h1 class="text-display font-semibold text-neutral-900">
                     I design systems, build tools, and lead teams that deliver for DC students.
                 </h1>
 
-                <p
-                    class="max-w-2xl text-neutral-700"
-                    style="font-size: clamp(1.0625rem, 1rem + 0.4vw, 1.375rem); line-height: 1.55;"
-                >
+                <p class="text-lead max-w-2xl text-neutral-700">
                     At DC CAP, we help scholars graduate from our partner universities, ready for D.C.'s workforce.
                 </p>
             </div>
@@ -31,13 +25,13 @@ import prestonImg from '../assets/Preston1.jpg';
             <div class="flex flex-wrap items-center gap-4 pt-4">
                 <a
                     href="/projects"
-                    class="inline-flex items-center justify-center rounded-lg bg-neutral-900 px-8 py-4 text-base font-semibold text-white transition-all hover:bg-neutral-800 hover:shadow-lg focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+                    class="on-dark inline-flex items-center justify-center rounded-lg bg-primary px-8 py-4 text-base font-semibold text-white shadow-sm transition-all duration-150 ease-out hover:bg-primary-hover hover:shadow-md"
                 >
                     View Selected Work
                 </a>
                 <a
                     href="/consulting"
-                    class="inline-flex items-center justify-center rounded-lg border-2 border-neutral-200 px-8 py-4 text-base font-semibold text-neutral-900 transition-colors hover:border-neutral-900 hover:bg-neutral-900 hover:text-white focus:outline-none focus:ring-2 focus:ring-neutral-900 focus:ring-offset-2"
+                    class="inline-flex items-center justify-center rounded-lg border-2 border-neutral-300 px-8 py-4 text-base font-semibold text-neutral-900 transition-colors duration-150 ease-out hover:border-primary hover:text-primary"
                 >
                     Work With Me
                 </a>
@@ -51,14 +45,14 @@ import prestonImg from '../assets/Preston1.jpg';
                 <Image
                     src={prestonImg}
                     alt="Preston Magouirk"
-                    class="h-full w-full object-cover transition-all duration-700 hover:scale-105"
+                    class="h-full w-full object-cover"
                     widths={[400, 600, 900]}
                     sizes="(min-width: 1024px) 28rem, 90vw"
                     loading="eager"
+                    fetchpriority="high"
                     format="webp"
                 />
             </div>
         </div>
     </div>
 </section>
-

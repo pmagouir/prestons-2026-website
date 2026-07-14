@@ -68,9 +68,9 @@ This is a load-bearing component of the UVA period and must remain visible on th
 
 These are the four systems referenced as evidence of the full-stack-leader claim. Use exact framing.
 
-1. **Career Pathway Intelligence Platform (CPIP)** — research-grade recommendation engine matching DC CAP's 4,100+ students to career-connected college pathways. Synthesizes 19 federal data sources into ~400,000 ranked pathways. Solo-architected. 1,625 passing tests, 7/7 quality gates, 18 ADRs. Status: October 2026 soft launch (NOT yet live — capability-overstate risk).
-2. **Scholar Matching Algorithm** — empirically validated stable matching that allocates DC CAP's annual scholarship offers among ~700 applicants and 13 university partners. 9,100 pairs tested, zero blocking pairs. Currently in production (Phase 4 acceptance period as of April 2026). **Site framing rule (added 2026-05-05):** describe as "allocates scholarship offers among ~700 applicants" — never "places ~700 scholars" or similar phrasing that conflates applicants with placements. Drop the "Gale-Shapley" technical name from public copy; use "empirically validated matching algorithm" instead. The "Gale-Shapley" name and the Nobel Prize lineage stay in technical references and `BRAIN/projects/matching_2026/` documentation, not on the public site.
-3. **Enterprise AI Governance Framework** — DC CAP's 60-day AI pilot for 9 staff across 3 units. 19 interactive HTML pages on dccapinnovation.org. 4D fluency model (Delegation, Description, Discernment, Diligence). Currently running (launched April 6, 2026).
+1. **Career Pathway Intelligence Platform (CPIP)** — research-grade recommendation engine matching DC CAP's 4,100+ students to career-connected college pathways. Synthesizes 15 federal data sources into ~400,000 ranked pathways. Solo-architected. 1,625 passing tests, 7/7 quality gates, 18 ADRs. Status: October 2026 soft launch (NOT yet live — capability-overstate risk). [Count corrected 19→15 on 2026-06-12: Product_Build canonical, `BRAIN/personal/fy2026_contributions.md` §3, and `BRAIN/decisions.md` all read 15; the "19" was an unverified internal-doc figure flagged in the 2026-06-05 Cowork verification signal.]
+2. **Scholar Matching Algorithm** — empirically validated stable matching that allocates DC CAP's annual scholarship offers among ~700 applicants and 13 university partners in the 2026 cycle. 9,100 pairs tested, zero blocking pairs. **Partner count (registered 2026-06-12):** 14 partners signed; American University is the 14th (signed 2026-05-31), joins Fall 2026 recruitment, first cohort enrolls Fall 2027, and enters the matching algorithm in the 2027 cycle. So "13 partners" remains accurate for the 2026 match if framed to that cycle; "14 signed partners" is accurate for the portfolio. Do not reintroduce the scrubbed AU board-advisor reference (repo commit `01d95e2`). Currently in production (Phase 4 acceptance period as of April 2026). **Site framing rule (added 2026-05-05):** describe as "allocates scholarship offers among ~700 applicants" — never "places ~700 scholars" or similar phrasing that conflates applicants with placements. Drop the "Gale-Shapley" technical name from public copy; use "empirically validated matching algorithm" instead. The "Gale-Shapley" name and the Nobel Prize lineage stay in technical references and `BRAIN/projects/matching_2026/` documentation, not on the public site.
+3. **Enterprise AI Governance Framework** — DC CAP's 60-day AI pilot for 9 staff across 3 units. 19 interactive HTML pages on dccapinnovation.org. 4D fluency model (Delegation, Description, Discernment, Diligence). **Status corrected 2026-06-12:** the 60-day pilot ran April 6 – June 5, 2026 and is **complete** (past tense on the site); the framework itself remains operational. No pilot-outcome or results claim goes on the site until a BRAIN capstone artifact exists to cite (Lesson 7 discipline).
 4. **DC CAP Financial Scenarios Tool (added 2026-05-03)** — multi-scenario endowment / fundraising / spending model used in board meetings. Solo-built (Vite + React + TypeScript SPA, 88-test math audit, multi-phase audit-driven rebuild including a Brief tab redesigned for CEO use after a CEO-lens audit caught CFO-jargon failure modes). Live behind Cloudflare Access at dccapinnovation.org/financial_modeling/ (board / staff only; not public-linkable). Site treatment: **referenced, not linked.** Site copy may name dccapinnovation.org as the host but must not turn the URL into a hyperlink. Approved framing: understated capacity signal — names the artifact and its function, lets numbers carry the rest.
 
 ## DC CAP Verified Numbers (use only these)
@@ -78,6 +78,7 @@ These are the four systems referenced as evidence of the full-stack-leader claim
 These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/skills/README.md § Verified ground-truth numbers` and `BRAIN/org_intelligence/README.md`. If a candidate metric is not here, do not place it on the site.
 
 - Endowment: $100M+
+- Operating budget: $10M+ (registered 2026-06-12; `BRAIN/context.md:39`)
 - Scholars served: ~800 (FY26), 1,190 (FY25)
 - Scholarships disbursed: $5.4M (FY26), $7.2M (FY25)
 - DCTAG: $15,000/year at public universities
@@ -92,7 +93,7 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - Leverage per DC CAP dollar: $4–7 in stacked aid
 - Pipeline: 1,750 low-income DC HS grads → 810 enroll → 140 DC CAP funded, 670 unfunded
 - Ward 3 vs Ward 8: 89% / 27% BA attainment, $174K / $64K median household income
-- Ward 7/8 persistence: 38% → 72% in one year after intensive coaching shift. (Kept OFF the public site per Preston, 2026-06-02; do not surface Ward 7/8 framing in site copy.)
+- Ward 7/8 persistence: BRAIN corrected this figure 2026-06-04 (commit `f17cf20`, `preston.md:142`) to **64% overall (72% within University Partnership cohorts)**; the earlier "38% → 72%" is superseded and must not be cited. (Stays OFF the public site per Preston, 2026-06-02; the registry value is kept accurate only so the offline essay and any internal use cite the corrected figure. Do not surface any Ward 7/8 framing in site copy.)
 - Tenure: 25 years (DC CAP founded 2000)
 
 ### Operational Discipline Numbers (added 2026-05-23 from `BRAIN/personal/fy2026_contributions.md`)
@@ -102,8 +103,8 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - Annual staff capacity recovered through digital transformation: $500K+ (derived from the two compression figures above; locked for use in consulting page "Results I've delivered" and Experience DC CAP body)
 - Philanthropic commitments contributed to since 2023: $50M+ (instrumental in; includes MacKenzie Scott / Yield Giving)
 - KPMG AI Impact Initiative grant: $600K (DC CAP's largest AI investment to date; FY26)
-- CPIP solo build: 19 federal data sources, ~400,000 ranked pathways, 1,625 passing tests, 7/7 quality gates, 18 ADRs (October 2026 launch — future tense)
-- AI Governance Pilot: 9 staff × 3 units, 4 phases over 60 days, 19 interactive HTML pages on dccapinnovation.org (April–June 2026)
+- CPIP solo build: 15 federal data sources, ~400,000 ranked pathways, 1,625 passing tests, 7/7 quality gates, 18 ADRs (October 2026 launch — future tense) [count corrected 19→15, 2026-06-12]
+- AI Governance Pilot: 9 staff × 3 units, 4 phases over 60 days, 19 interactive HTML pages on dccapinnovation.org (completed; ran April 6 – June 5, 2026) [status corrected to completed, 2026-06-12]
 - Scholar Matching 2026 cycle: 140 priority matches, 70 waitlist offers, 189 Ward 7/8 free-agent placements; 9,100 pairs stability-tested, zero blocking pairs
 - Financial Modeling Tool: 53/53 verification checks green; live behind Cloudflare Access at dccapinnovation.org/financial_modeling/
 - H3 Agentic Workflows: 2 production systems on a shared five-agent pattern (AI Development Office + Compensation Benchmarking)
@@ -111,6 +112,24 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - FY2026 funder conversations led: Strada Education Foundation, Gates Foundation, Philip L. Graham Fund
 - Standards of Practice authored (FY26): 4 documents — disbursement protocols, renewal processes, programmatic FAQ, staff onboarding playbook
 - Salesforce Operational Architecture (FY26): 3 pieces — retention cycle, application/award cycle, three-audience communications journey (counselors C1–C4, partners UP1–UP5, scholars S1–S14)
+
+## 2026-06-12 Cycle — Preston-Approved Registrations (in-session)
+
+Approved by Preston in-session 2026-06-12 for the correctness + record-capture cycle. Each traces to the cited BRAIN source. These fold into existing pages this cycle (no new case-study route — that is deferred to the next cycle).
+
+**Role scope (per revised CSAO JD, `BRAIN/personal/jd_csao_revised_2026-05-21.md`; JD is authoritative per `preston.md:281`):**
+- **Leads financial planning & analysis (FP&A)** — strategic finance, budgeting, multi-year scenario modeling. **Precision rule (Preston, 2026-06-12, verbatim intent): "lead FP&A, not finance writ large… I'm not an accountant."** Approved site phrasing: "leads financial planning and analysis," "leads the FP&A function," "owns multi-year financial modeling and scenario planning." **Banned:** "head of finance," "leads finance," "CFO-adjacent," "oversees accounting," or anything implying the controller / accounting / audit / GAAP-close seat. The load-bearing proof for this claim is the Financial Scenarios Tool (§ Proof-of-Capability #4).
+- **Supervisory span:** ~6 direct reports, including direct supervision of the Chief Programs Officer. Approved for the site (recruiters reward demonstrated executive scope). Aggregate framing only; no named reports.
+- **Primary-architect framing (JD language):** "primary architect of the organization's technology and AI strategy that funders are actively funding." Approved for site use. Pattern 14 discipline still applies: "I" for solo-architected artifacts, "we"/attributional for team-executed outcomes.
+- **Units Led — open reconciliation (flag for Gate 1):** `§ Units Led` carries "Student Success, University Partnerships, GEAR UP, Innovation, and Data & Technology"; the JD's functional list names "Career-Connected Learning." Resume Consultant keeps the canonical five as the "units led" list and treats Career-Connected Learning as a named functional responsibility unless Preston resolves otherwise at Gate 1. **RESOLVED at Gate 1 (2026-06-12): keep the canonical five units; Career-Connected Learning stays OFF the public site this cycle — do not list it as a unit or name it as a function on any page.**
+
+**2050 Moonshot (registered 2026-06-12):** DC CAP's "2050 Moonshot" target of **80% college completion** traces to the revised CSAO JD and `BRAIN/context.md`. Approved as an org-level ambition Preston helps lead; frame as DC CAP's goal (org voice), never as Preston's personal claim. Replaces the previously untraceable on-site occurrence at `experience.astro:39`.
+
+**Talent-multiplier / promotions (registered 2026-06-12, from `BRAIN/personal/fy2026_contributions.md` §15):** "Three direct reports promoted across Preston's tenure at Common App and DC CAP, one of them twice." Aggregate only — no staff names on the site. Glossary rule 10 (no promotion-ceiling framing) still hard-bans the inverse framing in this content zone.
+
+**Consulting "$10M+ organization" figure (`consulting.astro:108`) — REGISTERED at Gate 1 (2026-06-12).** Content-verified verbatim at `BRAIN/context.md:39` ("Operating budget: $10M+"); now listed in § DC CAP Verified Numbers above. Approved for the consulting page as drafted.
+
+**"First statewide longitudinal study" (`experience.astro:101`, `uva-ldoe-partnership.md`) — UNVERIFIED, flagged for cut-or-verify.** No trace in canonical or BRAIN. Resume Consultant verifies against the AERA Open / ECRQ publications or cuts the superlative (Lesson 7 / Pattern 11 discipline). Not registered here.
 
 ## Common App Verified Claims
 
@@ -127,7 +146,7 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - CNBC, "College admission applications spike" — https://www.cnbc.com/2023/03/23/college-admissions-application-volume-rises-30percent-since-pre-pandemic.html
 - Brookings, "Complex applications create barriers to college" — https://www.brookings.edu/articles/complex-applications-create-barriers-to-college-some-are-trying-to-change-that/
 - Slate, "I Have a Simple Solution to the College Essay Problem" — https://slate.com/human-interest/2023/09/college-essay-personal-statement-narrative-common-app.html
-- Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2021/11/15/common-app-sees-increase-minority-applicants
+- Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2022/09/26/common-app-sees-large-rise-minority-applicants (URL corrected 2026-06-13: the 2021/11/15 URL 404s; the live article — headline-exact, quotes "Preston Magouirk, data scientist at Common App," dated 2022-09-25 — is content-verified at this URL)
 - The 74 / Early Learning Nation, "The Path to Quality Child Care" — https://earlylearningnation.com/2021/06/the-path-to-quality-child-care-just-became-a-little-less-elusive-new-research-shows-star-rating-systems-can-drive-improvement-at-scale/
 
 Do not invent additional outlets. If a new media mention surfaces, the Strategist routes it through the canonical-update protocol (PROTOCOL.md § 4) before placing on site.
@@ -246,8 +265,8 @@ Locked URLs the Engineer agent emits in JSON-LD `sameAs` and renders in the foot
 
 - **LinkedIn:** https://www.linkedin.com/in/preston-magouirk-840aa757/ (locked 2026-05-23)
 - **GitHub:** excluded from the public site per Preston (2026-06-04). Do not emit a GitHub URL in JSON-LD `sameAs` or the footer, and do not re-run discovery for it. (Direction stands until Preston says otherwise.)
-- **Google Scholar:** discovery needed — Engineer searches scholar.google.com for "Preston Magouirk"; verifies via affiliation (UVA, Common App, DC CAP) and matching publications (AERA Open, ECRQ entries); locks the profile URL
-- **ORCID:** discovery needed — Engineer searches orcid.org for "Preston Magouirk"; verifies via UVA Educational Policy Studies affiliation; if no record exists, omits from sameAs rather than emit a dead link
+- **Google Scholar:** OMITTED (2026-06-12 discovery). The author-profile search (`scholar.google.com/citations?view_op=search_authors`) returned a CAPTCHA/anti-bot page with zero verifiable profile entries; no record content-verified against affiliation or publications. Per the discovery protocol, omitted from `sameAs` (no dead link, no guessed `user=` ID — Lesson 7). Re-run discovery next cycle.
+- **ORCID:** `https://orcid.org/0000-0003-1093-5312` (LOCKED 2026-06-12). Content-verified via the ORCID public API: record name "Preston Magouirk", education **University of Virginia (PhD)** (matches the canonical UVA Educational Policy Studies criterion), and the single registered work "Cross-Sector Program Selection, Quality Improvement, and System-Building in Early Childhood Education: Evidence from a Statewide Reform in Louisiana" (the Louisiana early-childhood QRIS / AERA Open study the UVA–LDOE partnership produced). URL resolves HTTP 200, visibility public. Emitted in the Person `sameAs` array.
 - **Calendly:** https://calendly.com/preston-magouirk (locked 2026-05-23; CTA destination, not sameAs)
 - **Email:** pmagouir@gmail.com (locked; footer + contact paths)
 

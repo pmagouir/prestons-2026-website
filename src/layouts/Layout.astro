@@ -2,6 +2,13 @@
 import "../styles/global.css";
 import Navigation from "../components/Navigation.astro";
 import Footer from "../components/Footer.astro";
+// Above-the-fold font faces, preloaded so they fetch in parallel with HTML
+// parse instead of waiting on the CSS. Importing the asset returns its built,
+// fingerprinted URL. Only the two faces that paint above the fold are
+// preloaded: the Inter variable latin file (body/UI/eyebrow) and the Lora 600
+// display face (the hero H1). Preloading every weight would defeat the purpose.
+import interLatin from "@fontsource-variable/inter/files/inter-latin-wght-normal.woff2";
+import loraDisplay from "@fontsource/lora/files/lora-latin-600-normal.woff2";
 
 interface Props {
 	title?: string;
@@ -23,6 +30,7 @@ const personSchema = {
 	name: "Preston Magouirk",
 	givenName: "Preston",
 	familyName: "Magouirk",
+	url: "https://prestonmagouirk.com",
 	jobTitle: "Chief Strategy and Analytics Officer",
 	worksFor: {
 		"@type": "Organization",
@@ -89,10 +97,39 @@ const personSchema = {
 	],
 	sameAs: [
 		"https://www.linkedin.com/in/preston-magouirk-840aa757/",
+		"https://orcid.org/0000-0003-1093-5312",
 	],
 	description:
 		"Strategy and analytics leader at DC CAP. Builds the systems behind 75–95% completion outcomes for first-generation, low-income college students.",
 };
+
+// BreadcrumbList: emitted on every page below the root so search engines render
+// the site position. The IA is currently one level deep (Home > Page), so each
+// non-home page gets a two-item trail; the current page (last item) omits `item`
+// per Google's documented convention. When nested routes (e.g. /projects/[slug])
+// ship, those pages extend this with their parent section as the middle item.
+const isHome = title === "Preston Magouirk";
+const breadcrumbSchema = isHome
+	? null
+	: {
+			"@context": "https://schema.org",
+			"@type": "BreadcrumbList",
+			itemListElement: [
+				{
+					"@type": "ListItem",
+					position: 1,
+					name: "Home",
+					item: new URL("/", Astro.site).href,
+				},
+				{
+					"@type": "ListItem",
+					position: 2,
+					name: title,
+				},
+			],
+		};
+
+const jsonLdBlocks = breadcrumbSchema ? [personSchema, breadcrumbSchema] : [personSchema];
 ---
 <!doctype html>
 <html lang="en">
@@ -100,9 +137,8 @@ const personSchema = {
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link rel="preload" href={interLatin} as="font" type="font/woff2" crossorigin="anonymous" />
+		<link rel="preload" href={loraDisplay} as="font" type="font/woff2" crossorigin="anonymous" />
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<link rel="canonical" href={canonicalURL} />
@@ -119,7 +155,9 @@ const personSchema = {
 		<meta name="twitter:title" content={pageTitle} />
 		<meta name="twitter:description" content={description} />
 		<meta name="twitter:image" content={ogImageURL} />
-		<script type="application/ld+json" set:html={JSON.stringify(personSchema)} />
+		{jsonLdBlocks.map((block) => (
+			<script type="application/ld+json" set:html={JSON.stringify(block)} />
+		))}
 		<title>{pageTitle}</title>
 	</head>
 	<body class="flex min-h-screen flex-col">
