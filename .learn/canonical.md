@@ -148,6 +148,7 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - Slate, "I Have a Simple Solution to the College Essay Problem" — https://slate.com/human-interest/2023/09/college-essay-personal-statement-narrative-common-app.html
 - Inside Higher Ed, "Common App Sees Rise in Minority Applicants" — https://www.insidehighered.com/admissions/article/2022/09/26/common-app-sees-large-rise-minority-applicants (URL corrected 2026-06-13: the 2021/11/15 URL 404s; the live article — headline-exact, quotes "Preston Magouirk, data scientist at Common App," dated 2022-09-25 — is content-verified at this URL)
 - The 74 / Early Learning Nation, "The Path to Quality Child Care" — https://earlylearningnation.com/2021/06/the-path-to-quality-child-care-just-became-a-little-less-elusive-new-research-shows-star-rating-systems-can-drive-improvement-at-scale/
+- NOTUS, "D.C. Gives High Schoolers More College Tuition Assistance Than Ever. Is It Enough?" — https://www.notus.org/metro/dc-college-tuition-assistance (added 2026-08-25, supplied by Preston; content-verified same day: quotes Preston Magouirk as DC CAP senior executive on net price vs. sticker price and DCTAG as one component of layered aid; byline Zara Norman, published 2026-08-20)
 
 Do not invent additional outlets. If a new media mention surfaces, the Strategist routes it through the canonical-update protocol (PROTOCOL.md § 4) before placing on site.
 
