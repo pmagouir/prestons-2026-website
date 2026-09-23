@@ -140,7 +140,7 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - **All-staff AI training (live on dccapinnovation.org):** the in-house AI course for all DC CAP staff, which is the instrument for two FY27 org-wide key results (`BRAIN/strategy.md`). Describe as live and in progress; no completion figures.
 - **FY26 Impact Report — public** at https://impact.dccap.org/ (live 2026-09-22, `BRAIN/projects/impact_report_fy26/final/DEPLOY_RECEIPT.md`). Attribution: "we" — Preston built the structure and shipped it; DC CAP Comms owns the design and copy. Link freely; cite only figures also registered here.
 - **DC Evidence Room — public** at https://dccapinnovation.org/data_insights/evidence_room.html (public 2026-09-13). Preston built it from the Partnership Data Project pipeline; every figure is gate-checked on rebuild. Approved content: the price, the payoff, and the work of college for DC students, in one public page with its sources. Do not quote its individual figures on the site unless registered here.
-- **Media spokesperson line (Preston, 2026-09-23):** name only verified outlets (CNBC, NPR Marketplace, Inside Higher Ed, Higher Ed Dive); NYT/Bloomberg stay off until Preston supplies links. **Direct admissions:** "Led Common App's side of a randomized trial of direct admissions" (he is acknowledged, not an author, on the Odle & Delaney EdWorkingPaper); no text-message trial claim. **Location:** About drops "I live in Washington, D.C."; the sidebar keeps "Based in Washington, DC" per the Berlin rule.
+- **Media spokesperson line (Preston, 2026-09-23):** name only verified outlets (CNBC, NPR Marketplace, Inside Higher Ed, Higher Ed Dive); NYT/Bloomberg REMOVED everywhere (Preston, 2026-09-23: "you can remove bloomberg and NYT"). **Direct admissions:** "Led Common App's side of a randomized trial of direct admissions" (he is acknowledged, not an author, on the Odle & Delaney EdWorkingPaper); no text-message trial claim. **Location:** About drops "I live in Washington, D.C."; the sidebar keeps "Based in Washington, DC" per the Berlin rule.
 - **Salesforce attribution (Preston, 2026-09-23):** Preston DESIGNED the scholar-lifecycle processes; the team implemented them in Salesforce. He is not the Salesforce implementer — never "I built/implemented in Salesforce" or "I designed the Salesforce architecture".
 - **Evidence Room framing (Preston, 2026-09-23):** a deeper exploration of the value of a college degree, how much the answer is local and varies by place, and that in D.C. a degree is decidedly worth it. Never reduce it to "what college costs."
 - **Wording rulings (Preston, 2026-09-23, post-launch):** never "on average" — 76% is the share of scholars in the flagship University Partnership program who graduated within five years (Class of 2021). Success Coaches do not "sit" on partner campuses; say they support scholars through graduation.
@@ -153,7 +153,7 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - Second member of founding research team
 - Built analytics environment from scratch (data environment, technical stack, research agenda, data sharing policies)
 - America's largest college application dataset
-- Spokesperson to NYT, Bloomberg, Board
+- Spokesperson to national media (CNBC, NPR Marketplace, Inside Higher Ed, Higher Ed Dive) and the Board
 - Partnerships profiled at NBER, Brookings, AEFP, Brown's Annenberg Institute (EdWorkingPapers)
 - Led RCTs on direct admissions and text-message information campaigns
 
