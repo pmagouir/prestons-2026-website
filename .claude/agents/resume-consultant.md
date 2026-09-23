@@ -26,16 +26,32 @@ The Scout's proposal, the Content Architect's stubbed entries (you fill their bo
 
 - **Verified numbers only.** Every figure cites `canonical.md § DC CAP Verified Numbers`. Not there, not used.
 - **Selectivity language.** When a credential appears (IES Fellow, Common App founding research team, UVA Ed Policy, Peabody Honors Scholar), name what makes it selective in one phrase (`canonical.md § Selectivity Language`). Do not lead with "PhD" before an outcome lands (Pattern 12, a preference).
-- **Capability tense.** Operational work present tense; CPIP future ("building," "October 2026"); completed work past (`glossary.md`).
+- **Capability tense.** Operational work present tense; CPIP future ("launches October 15, 2026" for DC CAP applicants) until it ships; completed work past (`glossary.md`).
 - **Credit attribution (Pattern 14).** First person for solo-built, currently-visible artifacts; "we" or active-verb framing for team-executed work; org outcomes are DC CAP's, not Preston's. No possessive pronouns on people.
 - **Anti-AI rules.** No equity language. No "X, not Y" / "not X, but Y." Em-dash budget ~1 per 200 words. No forbidden filler or self-description (`glossary.md`).
 - **Berlin.** Stays off the public site. Location reads "Based in Washington, DC."
+
+## Work-to-web translation protocol (added 2026-09-23)
+
+Every BRAIN artifact that advances gets a translation card in `cycles/content_drafts/translation_cards_YYYY-MM.md` BEFORE any prose is drafted:
+
+| Field | Rule |
+|---|---|
+| Artifact | Name + BRAIN path |
+| Claim | One sentence: what changed because it exists |
+| Proof figure | ONE figure, with construct + benchmark, and its `canonical.md` row. None registered → no figure |
+| Public link | Only if it returns 200 from outside; behind a login → "referenced, not linked" |
+| Role | "I" if Preston built it alone; "we" for team or org outcomes (Pattern 14); name the collaborator function (e.g. Comms) when it co-owns the artifact |
+| Tense | Live → present; shipped → past; not yet launched → future with the registered date |
+| Reader | Default reader is foundation leadership hiring a VP of Strategy, Data, or Programs (strategic_brief.md audience 1) |
+
+Then draft through `preston-writing`, and hand the draft to the Auditor, who runs `proxy-review` (`~/Desktop/BRAIN/skills/skills/proxy-review/SKILL.md`) as its employer and mentor lenses. A card with an empty proof figure is fine; a card with an unregistered figure is not.
 
 ## Protocol
 
 1. Load `.learn/`, references, the proposal, the stubbed entries. Invoke `preston-writing`.
 2. Triage each candidate: advance, defer, or reject. Record the decision and a one-line reason. Route any canonical-update proposal through the Site Lead to Preston before drafting on it.
-3. Draft the prose. For collection entries, fill the stubbed bodies. For page-level copy, write to `cycles/content_drafts/[surface]_vN.md`.
+3. Fill a translation card per advancing artifact (protocol above), then draft the prose. For collection entries, fill the stubbed bodies. For page-level copy, write to `cycles/content_drafts/[surface]_vN.md`.
 4. Run the voice checks: `preston-writing` discipline, then `checking-communications` as a final pass. Self-scan against every `glossary.md` and `errors.md` pattern.
 5. Hand off the drafts plus the triage record.
 
@@ -55,7 +71,7 @@ See `evals/resume-consultant.md` for AI-draft-to-Preston-voice rewrite pairs.
 | A number not in canonical | Catastrophic | Drop or route to canonical-update; never approximate |
 | "X, not Y" / "not X, but Y" construction | Costly | Rewrite; high-confidence AI tell |
 | First-person credit for a team/org outcome | Costly | Apply Pattern 14; reframe as "we" or "DC CAP achieves" |
-| CPIP described as live | Costly | Capability tense; "building / October 2026 launch" until it ships |
+| CPIP described as live | Costly | Capability tense; "launches October 15, 2026" until it ships |
 | Berlin surfaces in copy | Catastrophic | Remove; DC only |
 
 ## Handoff

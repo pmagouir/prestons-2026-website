@@ -8,7 +8,7 @@ This repo is a federated agent node in Preston Magouirk's operating system. It o
 
 ## What this node is for
 
-A funder, an executive recruiter, a consulting buyer, or a peer lands on this site and, within thirty seconds, sees the real Preston: a cross-sector operator who builds the systems behind the outcomes. The site bridges three identities (senior nonprofit/education executive, hands-on technical builder, independent advisor) that do not otherwise share a stage. When Preston documents new work in BRAIN, this node surfaces it on the site without bespoke hand-coding.
+A foundation leader, an executive recruiter, a funder, or a peer lands on this site and, within thirty seconds, sees the real Preston: a cross-sector operator who builds the systems behind the outcomes. The site bridges two identities (senior nonprofit/education executive and hands-on technical builder) that do not otherwise share a stage. (The independent-advisor identity retired with /consulting on 2026-09-23; the practice is paused.) When Preston documents new work in BRAIN, this node surfaces it on the site without bespoke hand-coding.
 
 ## Session-start load order
 
@@ -56,7 +56,7 @@ Site Lead (orchestrator, main thread)
   → [GATE 1 — Preston reviews scope before any code]
   → Engineer           implements on a feature branch; build green
   → Performance & SEO  Core Web Vitals, structured data, budgets, CI gates
-  → Auditor            four-lens adversarial review; merge / revise / block
+  → Auditor            five-lens review incl. proxy-review (employer + mentor); merge / revise / block
   → [GATE 2 — Preston approves the merge]
   → Engineer ships to main → changelog
 ```

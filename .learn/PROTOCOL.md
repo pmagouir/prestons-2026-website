@@ -49,7 +49,7 @@ Verifies Core Web Vitals against `lighthouserc.json`, completes structured data 
 
 ### Step 7 — Auditor (4-lens adversarial review)
 
-Reads all upstream handoffs + the preview. Runs four lenses (Executive Recruiter / Consulting Buyer / Brand & Voice / Performance & Accessibility). Runs axe-core + Lighthouse, validates JSON-LD, traces every claim to `canonical.md`, scans every changed surface against every `errors.md` pattern. Produces `cycles/audits/YYYY-MM-DD_audit.md` with a merge / revise / block verdict. Final authority on voice and accessibility.
+Reads all upstream handoffs + the preview. Runs five lenses (Executive Recruiter / Next Employer + Mentor via the `proxy-review` skill / Brand & Voice / Performance & Accessibility). Runs axe-core + Lighthouse, validates JSON-LD, traces every claim to `canonical.md`, scans every changed surface against every `errors.md` pattern. Produces `cycles/audits/YYYY-MM-DD_audit.md` with a merge / revise / block verdict. Final authority on voice and accessibility.
 
 ### GATE 2 — Preston approves merge
 

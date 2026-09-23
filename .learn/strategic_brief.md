@@ -8,13 +8,14 @@ This is the website's analog of `BRAIN/projects/development_office/strategic_bri
 
 ## Purpose
 
-The website is Preston Magouirk's primary public surface across three identities that don't yet have a common stage:
+The website is Preston Magouirk's primary public surface across two identities that don't yet have a common stage:
 
 1. **Senior nonprofit / education executive** (current role: CSAO, DC CAP)
-2. **Hands-on technical builder** (CPIP architect, Scholar Matching algorithm, AI Governance Framework, the broader BRAIN/Cowork agent OS)
-3. **Independent consulting practice** (limited engagements; expanding 2026–2027)
+2. **Hands-on technical builder** (CPIP architect, Scholar Matching algorithm, AI Governance Framework and in-house AI training, the Evidence Room)
 
-The site bridges these. A funder reading the about page should see the executive. An executive recruiter reading the experience page should see the operator. An advisory client reading the consulting page should see the technical credibility under the strategy. A board member or peer reading the writing page should see the analytic depth.
+The site bridges these. A foundation leader reading the about page should see the executive and the proof behind the outcomes. An executive recruiter reading the experience page should see the operator. A board member or peer reading the writing page should see the analytic depth.
+
+*(2026-09-23: the independent-consulting identity and the /consulting page retired. Consulting paused 2026-08-25 (`BRAIN/preston.md`); a hiring foundation reads a side practice as divided commitment. Restart is a future Preston decision.)*
 
 If the site fails any of these audiences, it is failing the brief.
 
@@ -22,13 +23,13 @@ If the site fails any of these audiences, it is failing the brief.
 
 | Priority | Audience | What they need to find in <30 seconds |
 |----------|----------|---------------------------------------|
-| 1 | Executive recruiters / board chairs evaluating Preston for senior strategy or AI-leadership roles | Title, scope, three load-bearing accomplishments, scale of operation, current location |
-| 2 | Foundation program officers / corporate funder execs evaluating DC CAP-adjacent work | Outcome metrics, theory of change, evidence of execution, named partners, published research |
-| 3 | Advisory / consulting clients (nonprofits, philanthropy intermediaries, AI governance advisory prospects) | Service areas, engagement models, prior outcomes, Calendly CTA, contact path |
+| 1 | Foundation leadership and senior recruiters evaluating Preston for a VP-level strategy, data, or programs seat (default proxy: `proxy-review` skill) | Title, scope, three load-bearing accomplishments, scale of operation, public proof |
+| 2 | Foundation program officers / corporate funder execs evaluating DC CAP-adjacent work | Outcome metrics, theory of change, evidence of execution, published research, public artifacts (Impact Report, Evidence Room) |
+| 3 | *(retired 2026-09-23: advisory / consulting clients)* | — |
 | 4 | Peer executives, researchers, journalists | Writing, public commentary, conference history, credentials |
 | 5 | DC CAP staff and current scholars | About + family + fitness — the human presence behind the work |
 
-The site must serve audiences 1–3 without alienating 4–5. Currently, it serves 4–5 well and 1–3 unevenly.
+The site must serve audiences 1–2 without alienating 4–5. Currently, it serves 4–5 well and 1–3 unevenly.
 
 ## Two Lanes
 
@@ -50,7 +51,7 @@ Preston is not the most prolific writer, the loudest LinkedIn presence, or the d
 
 The site loses its edge if it slides into AI-generic executive boilerplate (passionate / driven / on a mission). Voice discipline is not optional.
 
-## Current State (as of 2026-05-02)
+## Current State (as of 2026-05-02; see the 2026-09-23 note below)
 
 - Astro 5 + Tailwind 4 + TypeScript, deployed on Vercel.
 - Source: `/Users/prestonmagouirk/Desktop/prestons-2026-website`.
@@ -60,6 +61,8 @@ The site loses its edge if it slides into AI-generic executive boilerplate (pass
 - No JSON-LD Person schema. No content collections. No MDX-driven case studies.
 - No analytics beyond Vercel defaults.
 - Repo last commit: 2026-02-21 (last meaningful update; minimal activity since).
+
+**2026-09-23 refresh (`monthly-refresh-2026-09`):** completion figures rebased to the 76% student-level headline with range; Impact Report and Evidence Room added as public proof; AI training result added with its caveat; /consulting retired with a redirect; Auditor gains the proxy-review employer + mentor lenses; Resume Consultant gains the work-to-web translation protocol. Forward-state items 3–4 (consulting differentiation, /advisory) are parked with the practice.
 
 ## Forward State (12-month horizon)
 

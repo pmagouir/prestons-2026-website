@@ -68,7 +68,7 @@ This is a load-bearing component of the UVA period and must remain visible on th
 
 These are the four systems referenced as evidence of the full-stack-leader claim. Use exact framing.
 
-1. **Career Pathway Intelligence Platform (CPIP)** — research-grade recommendation engine matching DC CAP's 4,100+ students to career-connected college pathways. Synthesizes 15 federal data sources into ~400,000 ranked pathways. Solo-architected. 1,625 passing tests, 7/7 quality gates, 18 ADRs. Status: October 2026 soft launch (NOT yet live — capability-overstate risk). [Count corrected 19→15 on 2026-06-12: Product_Build canonical, `BRAIN/personal/fy2026_contributions.md` §3, and `BRAIN/decisions.md` all read 15; the "19" was an unverified internal-doc figure flagged in the 2026-06-05 Cowork verification signal.]
+1. **Career Pathway Intelligence Platform (CPIP)** — research-grade recommendation engine matching DC CAP's 4,100+ students to career-connected college pathways. Synthesizes 15 federal data sources into ~400,000 ranked pathways. Solo-architected. More than 6,000 automated tests (rebased 2026-09-23 from 1,625; source `BRAIN/projects/innovation_hub/cpip_case_2026-09/final/brief_cpip_2026-09-22.md:31`); 3,500+ institutions; career explorer covering 332 occupations. Status: the College Navigator (first CPIP product) **launches October 15, 2026, for DC high school students applying to DC CAP's programs**; the public release to every DC student is later, partner-funded work (brief:4,10). NOT yet live until Oct 15 — future tense; never say 'public'. [Count corrected 19→15 on 2026-06-12: Product_Build canonical, `BRAIN/personal/fy2026_contributions.md` §3, and `BRAIN/decisions.md` all read 15; the "19" was an unverified internal-doc figure flagged in the 2026-06-05 Cowork verification signal.]
 2. **Scholar Matching Algorithm** — empirically validated stable matching that allocates DC CAP's annual scholarship offers among ~700 applicants and 13 university partners in the 2026 cycle. 9,100 pairs tested, zero blocking pairs. **Partner count (registered 2026-06-12):** 14 partners signed; American University is the 14th (signed 2026-05-31), joins Fall 2026 recruitment, first cohort enrolls Fall 2027, and enters the matching algorithm in the 2027 cycle. So "13 partners" remains accurate for the 2026 match if framed to that cycle; "14 signed partners" is accurate for the portfolio. Do not reintroduce the scrubbed AU board-advisor reference (repo commit `01d95e2`). Currently in production (Phase 4 acceptance period as of April 2026). **Site framing rule (added 2026-05-05):** describe as "allocates scholarship offers among ~700 applicants" — never "places ~700 scholars" or similar phrasing that conflates applicants with placements. Drop the "Gale-Shapley" technical name from public copy; use "empirically validated matching algorithm" instead. The "Gale-Shapley" name and the Nobel Prize lineage stay in technical references and `BRAIN/projects/matching_2026/` documentation, not on the public site.
 3. **Enterprise AI Governance Framework** — DC CAP's 60-day AI pilot for 9 staff across 3 units. 19 interactive HTML pages on dccapinnovation.org. 4D fluency model (Delegation, Description, Discernment, Diligence). **Status corrected 2026-06-12:** the 60-day pilot ran April 6 – June 5, 2026 and is **complete** (past tense on the site); the framework itself remains operational. No pilot-outcome or results claim goes on the site until a BRAIN capstone artifact exists to cite (Lesson 7 discipline).
 4. **DC CAP Financial Scenarios Tool (added 2026-05-03)** — multi-scenario endowment / fundraising / spending model used in board meetings. Solo-built (Vite + React + TypeScript SPA, 88-test math audit, multi-phase audit-driven rebuild including a Brief tab redesigned for CEO use after a CEO-lens audit caught CFO-jargon failure modes). Live behind Cloudflare Access at dccapinnovation.org/financial_modeling/ (board / staff only; not public-linkable). Site treatment: **referenced, not linked.** Site copy may name dccapinnovation.org as the host but must not turn the URL into a hyperlink. Approved framing: understated capacity signal — names the artifact and its function, lets numbers carry the rest.
@@ -80,21 +80,22 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - Endowment: $100M+
 - Operating budget: $10M+ (registered 2026-06-12; `BRAIN/context.md:39`)
 - Scholars served: ~800 (FY26), 1,190 (FY25)
-- Scholarships disbursed: $5.4M (FY26), $7.2M (FY25)
+- Scholarships awarded: $5.3M (FY26; corrected from $5.4M 2026-08-11, `BRAIN/org_intelligence/README.md` § Current State), $7.2M (FY25) — never cross or cumulate
 - DCTAG: $15,000/year at public universities
 - FGLI completion baseline: 20–25% nationally, 23% DC-specific
 - Overall DC completion (any income): 37%
-- First-year retention: 90% (class of 2023), 85% (class of 2024)
-- Established partner graduation: 75–95% (established-partner band)
-- Completion at active/mature partner campuses: 67–100% (Class of 2021, five-year)
+- First-to-second-year retention series: 90% / 85% / 88% (HS classes of 2023 / 2024 / 2025), OFFICIAL per `BRAIN/org_intelligence/receipts/retention_series_2026-09-18_PRESTON_ATTESTATION.md`. Approved phrasing: "retained at 90%, 85%, and 88% over the past three years"
+- **Completion headline (rebased 2026-09-23):** 76% five-year completion at the student level across all reportable Class-of-2021 partner cohorts, always shown WITH its range: 57–100% (the 100% = West Chester, a former partner — label it) or 57–95% across active partners. Source: `BRAIN/org_intelligence/receipts/outcomes_intelligence_2026-09-17_STUDENT_LEVEL_RATE.md` + `outcomes_intelligence_2026-07-15.md`. Name the construct ("students who complete within five years"); never "average rate", never 81%. Same figure is public on impact.dccap.org.
+- ~~Established partner graduation: 75–95%~~ RETIRED from site copy 2026-09-23 (dated FY25 framing).
+- ~~Completion at active/mature partner campuses: 67–100%~~ SUPERSEDED 2026-09-23 by the 57–100% / 57–95% ranges above.
 - First-to-second-year retention: seven partners at 100% (AY2025–26)
-- Economic mobility multiplier: 1.77x partner portfolio over national
+- ~~Economic mobility multiplier: 1.77x~~ RETIRED 2026-09-17 (`BRAIN/org_intelligence/superseded_figures.yml`); never cite.
 - Earnings premium: $55,661 (BA $95,471 vs HS $39,810)
-- Leverage per DC CAP dollar: $4–7 in stacked aid
+- Leverage per DC CAP dollar: OFF the site this cycle (canon conflict: ~$44M/~1:7 in skills/README vs $41.2M/7x/$8.25 on impact.dccap.org; unresolved, 2026-09-23)
 - Pipeline: 1,750 low-income DC HS grads → 810 enroll → 140 DC CAP funded, 670 unfunded
 - Ward 3 vs Ward 8: 89% / 27% BA attainment, $174K / $64K median household income
 - Ward 7/8 persistence: BRAIN corrected this figure 2026-06-04 (commit `f17cf20`, `preston.md:142`) to **64% overall (72% within University Partnership cohorts)**; the earlier "38% → 72%" is superseded and must not be cited. (Stays OFF the public site per Preston, 2026-06-02; the registry value is kept accurate only so the offline essay and any internal use cite the corrected figure. Do not surface any Ward 7/8 framing in site copy.)
-- Tenure: 25 years (DC CAP founded 2000)
+- Tenure: OFF the site pending a founding-year ruling (1999 on impact.dccap.org vs 2000 here; flagged 2026-09-23)
 
 ### Operational Discipline Numbers (added 2026-05-23 from `BRAIN/personal/fy2026_contributions.md`)
 
@@ -103,11 +104,11 @@ These are the **only** DC CAP numbers permitted on the site. Pulled from `BRAIN/
 - Annual staff capacity recovered through digital transformation: $500K+ (derived from the two compression figures above; locked for use in consulting page "Results I've delivered" and Experience DC CAP body)
 - Philanthropic commitments contributed to since 2023: $50M+ (instrumental in; includes MacKenzie Scott / Yield Giving)
 - KPMG AI Impact Initiative grant: $600K (DC CAP's largest AI investment to date; FY26)
-- CPIP solo build: 15 federal data sources, ~400,000 ranked pathways, 1,625 passing tests, 7/7 quality gates, 18 ADRs (October 2026 launch — future tense) [count corrected 19→15, 2026-06-12]
+- CPIP solo build: 15 federal, state, and local data sources; 400,000+ scored pathways; 3,500+ institutions; 332 occupations; more than 6,000 automated tests; College Navigator launches October 15, 2026 for DC CAP applicants (future tense until then) [rebased 2026-09-23]
 - AI Governance Pilot: 9 staff × 3 units, 4 phases over 60 days, 19 interactive HTML pages on dccapinnovation.org (completed; ran April 6 – June 5, 2026) [status corrected to completed, 2026-06-12]
 - Scholar Matching 2026 cycle: 140 priority matches, 70 waitlist offers, 189 Ward 7/8 free-agent placements; 9,100 pairs stability-tested, zero blocking pairs
 - Financial Modeling Tool: 53/53 verification checks green; live behind Cloudflare Access at dccapinnovation.org/financial_modeling/
-- H3 Agentic Workflows: 2 production systems on a shared five-agent pattern (AI Development Office + Compensation Benchmarking)
+- H3 Agentic Workflows: the AI Development Office, a production five-agent pipeline (Compensation Benchmarking retired 2026-08-19, `BRAIN/decisions.md`) — say "a production agent pipeline", never "two"
 - FY2026 conferences led: UERU, CIO4Good, UVA IES Program Conference
 - FY2026 funder conversations led: Strada Education Foundation, Gates Foundation, Philip L. Graham Fund
 - Standards of Practice authored (FY26): 4 documents — disbursement protocols, renewal processes, programmatic FAQ, staff onboarding playbook
@@ -130,6 +131,16 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 **Consulting "$10M+ organization" figure (`consulting.astro:108`) — REGISTERED at Gate 1 (2026-06-12).** Content-verified verbatim at `BRAIN/context.md:39` ("Operating budget: $10M+"); now listed in § DC CAP Verified Numbers above. Approved for the consulting page as drafted.
 
 **"First statewide longitudinal study" (`experience.astro:101`, `uva-ldoe-partnership.md`) — UNVERIFIED, flagged for cut-or-verify.** No trace in canonical or BRAIN. Resume Consultant verifies against the AERA Open / ECRQ publications or cuts the superlative (Lesson 7 / Pattern 11 discipline). Not registered here.
+
+## 2026-09-23 Cycle — Preston-Approved Registrations (in-session, S202)
+
+- **/consulting RETIRED** (Preston, 2026-09-23). Consulting paused 2026-08-25 (`BRAIN/preston.md`). Page removed, nav + hero links removed, `/consulting` redirects to `/experience`. The strongest proof ("Results I've delivered") moves to Experience. Restart = future Preston decision.
+- **Proxy-review employer seat:** foundation leadership hiring a VP of Strategy, Data, or Programs (Preston, 2026-09-23). Skill: `BRAIN/skills/skills/proxy-review/`.
+- **AI training result — approved WITH caveat** (Preston, 2026-09-23). Source: `BRAIN/projects/innovation_hub/ai_fluency_prepost_2026-08/results.json` + `analysis_prepost.py` (runnable). Approved content: all nine DC CAP leaders who completed the leadership AI training improved on DC CAP's own AI fluency assessment, and all nine now assess at its top level. The instrument (DC CAP's own) and the N (nine) must be named in the same sentence or the next. Banned: effect sizes, "68 → 86" (superseded v1), any individual's score or name, any all-staff completion claim (no participation data exists yet). Preston designed and delivered the training in-house ("I").
+- **All-staff AI training (live on dccapinnovation.org):** the in-house AI course for all DC CAP staff, which is the instrument for two FY27 org-wide key results (`BRAIN/strategy.md`). Describe as live and in progress; no completion figures.
+- **FY26 Impact Report — public** at https://impact.dccap.org/ (live 2026-09-22, `BRAIN/projects/impact_report_fy26/final/DEPLOY_RECEIPT.md`). Attribution: "we" — Preston built the structure and shipped it; DC CAP Comms owns the design and copy. Link freely; cite only figures also registered here.
+- **DC Evidence Room — public** at https://dccapinnovation.org/data_insights/evidence_room.html (public 2026-09-13). Preston built it from the Partnership Data Project pipeline; every figure is gate-checked on rebuild. Approved content: the price, the payoff, and the work of college for DC students, in one public page with its sources. Do not quote its individual figures on the site unless registered here.
+- **Partner count:** 14 university partners (Preston ruling 2026-09-18, `BRAIN/org_intelligence/README.md` § Current State). The 2026 match ran with 13; keep "13" only in sentences tied to the 2026 match. No named 14-school list.
 
 ## Common App Verified Claims
 
@@ -194,7 +205,7 @@ This framing (Preston-authored) leads with his three verbs (design, build, lead)
 
 The site's positioning rests on three pillars, each pointing to a verifiable artifact:
 
-1. **Strategy that's tested** → the regional partnership pivot (75–95% partner graduation outcomes)
+1. **Strategy that's tested** → the regional partnership pivot (76% five-year completion, 57–100% range)
 2. **Analytics that's reproducible** → CPIP and Scholar Matching (1,625 tests; Gale-Shapley with zero blocking pairs)
 3. **AI that's governed** → the dccapinnovation.org governance framework (60-day pilot, 9 staff × 3 units, 4D fluency model)
 
@@ -218,9 +229,9 @@ Readers — including senior recruiters and program officers — under-rate non-
 When the site presents Preston's three load-bearing systems plus the Common App and UVA/LDOE work as case studies, the order should match what a 2026 buyer most needs to believe in this sequence: outcomes are real → systems behind the outcomes are real → AI-governance lane is real.
 
 1. **AI Governance Framework (dccapinnovation.org)** — the strongest single-artifact entry into the AI advisory lane in 2026. Public, implemented, novel conceptual contribution (4D model). Front-doors current buyer demand.
-2. **CPIP — Career Pathway Intelligence Platform** — proves the engineering-and-data-systems claim with hard numbers (19 federal sources, ~400K pathways, 1,625 tests, October 2026 launch). Status: building/scheduled; tense discipline applies.
-3. **Scholar Matching algorithm (Gale-Shapley)** — algorithmic-CS-meets-applied-research move (9,100 pairs tested zero blocking). Currently in production. Ties algorithm directly to the 75-95% completion outcomes.
-4. **Regional partnership strategic pivot** — pure-strategy case. Drove the 38%→72% Ward 7/8 swing and 75-95% completion outcomes. Reads as the strategist's signature move.
+2. **CPIP — Career Pathway Intelligence Platform** — proves the engineering-and-data-systems claim with hard numbers (15 data sources, 400K+ pathways, 6,000+ tests, October 15, 2026 launch). Status: building/scheduled; tense discipline applies.
+3. **Scholar Matching algorithm (Gale-Shapley)** — algorithmic-CS-meets-applied-research move (9,100 pairs tested zero blocking). Currently in production. Ties the algorithm to the completion outcomes (76% student-level, 57–100% range).
+4. **Regional partnership strategic pivot** — pure-strategy case. Drove the partner-model outcomes (76% five-year completion, 57–100% range). Ward 7/8 framing stays off the site. Reads as the strategist's signature move.
 5. **Common App founding research team + UVA/LDOE research-practice partnership** — career-arc credibility for recruiters and academic peers; spokesperson + board-communication proof. UVA section must surface the LDOE policy and accountability systems work (2017–2020), not only the QRIS publication (per `errors.md` Pattern 4).
 
 Sequencing logic: future-buyer-relevance descending. AI governance is the front-door 2026 demand; older work is the credibility that makes the new work trustworthy.

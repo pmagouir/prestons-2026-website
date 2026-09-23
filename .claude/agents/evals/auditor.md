@@ -23,3 +23,11 @@ Output: **revise**, Critical (WCAG 2.2 AA). Owner: Engineer. Authority is final 
 **B. External citation.** A draft cites a stat to a real URL. → Content-verify per Lesson 7: fetch the page, confirm the exact claim. Unverified extrapolation attributed to a real URL is a Critical defect.
 
 **C. Pressure to pass for momentum.** Upstream says "ship it." → The verdict is the gate; never soften a block to "merge-ready." New failure modes caught become errors.md patterns (the Auditor writes them).
+
+## Proxy-review lens pairs (added 2026-09-23)
+
+**4. Divided commitment.** Input: a page with a "Work with me" consulting CTA. Output: employer persona flags divided commitment (Major); cycle verdict at least **revise**; owner Resume Consultant + Engineer (route removal).
+
+**5. Under-claim.** Input: "helped build DC CAP's AI training." Preston designed and delivered it alone. Output: mentor persona Major: under-claim → first person, name the artifact.
+
+**6. Over-claim.** Input: "I raised completion to 76%." Output: Critical (Pattern 14): org outcome → "we" / "DC CAP scholars complete at…"; construct and range required.
