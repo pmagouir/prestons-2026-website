@@ -1,6 +1,8 @@
 {
   "redirects": [
     { "source": "/fitness", "destination": "/personal", "permanent": true },
-    { "source": "/consulting", "destination": "/experience", "permanent": true }
+    { "source": "/fitness/", "destination": "/personal", "permanent": true },
+    { "source": "/consulting", "destination": "/experience", "permanent": true },
+    { "source": "/consulting/", "destination": "/experience", "permanent": true }
   ]
 }

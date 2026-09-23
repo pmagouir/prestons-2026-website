@@ -7,12 +7,7 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://prestonmagouirk.com',
   prefetch: { prefetchAll: true },
-  // /fitness retired 2026-06-12; content folded into /personal. 301 so old links don't 404.
-  redirects: {
-    '/fitness': { status: 301, destination: '/personal' },
-    // /consulting retired 2026-09-23 (practice paused 2026-08-25); proof folded into /experience.
-    '/consulting': { status: 301, destination: '/experience' },
-  },
+  // Retired routes (/fitness 2026-06-12, /consulting 2026-09-23) redirect in vercel.json as true 308s.
   integrations: [sitemap()],
   vite: {
     plugins: [tailwindcss()]
