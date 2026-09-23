@@ -1,6 +1,6 @@
 ---
 outlet: "CNBC"
 title: "College admission applications spike"
-url: "https://www.cnbc.com/2023/03/23/college-admissions-application-volume-rises-30percent-since-pre-pandemic.html"
-date: 2023-03-23
+url: "https://www.cnbc.com/2021/12/07/college-admission-applications-spike-as-january-deadline-nears.html"
+date: 2021-12-07
 ---
