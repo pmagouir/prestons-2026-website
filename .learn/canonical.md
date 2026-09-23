@@ -140,6 +140,7 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - **All-staff AI training (live on dccapinnovation.org):** the in-house AI course for all DC CAP staff, which is the instrument for two FY27 org-wide key results (`BRAIN/strategy.md`). Describe as live and in progress; no completion figures.
 - **FY26 Impact Report — public** at https://impact.dccap.org/ (live 2026-09-22, `BRAIN/projects/impact_report_fy26/final/DEPLOY_RECEIPT.md`). Attribution: "we" — Preston built the structure and shipped it; DC CAP Comms owns the design and copy. Link freely; cite only figures also registered here.
 - **DC Evidence Room — public** at https://dccapinnovation.org/data_insights/evidence_room.html (public 2026-09-13). Preston built it from the Partnership Data Project pipeline; every figure is gate-checked on rebuild. Approved content: the price, the payoff, and the work of college for DC students, in one public page with its sources. Do not quote its individual figures on the site unless registered here.
+- **Evidence Room framing (Preston, 2026-09-23):** a deeper exploration of the value of a college degree, how much the answer is local and varies by place, and that in D.C. a degree is decidedly worth it. Never reduce it to "what college costs."
 - **Wording rulings (Preston, 2026-09-23, post-launch):** never "on average" — 76% is the share of scholars in the flagship University Partnership program who graduated within five years (Class of 2021). Success Coaches do not "sit" on partner campuses; say they support scholars through graduation.
 - **Gate 1 rulings (Preston, 2026-09-23):** 76% = the student-level average; 57–100% = the partner range (keep the West Chester label). Oct 15 is firm enough to print. Aid multiplier and founding year stay off; link the Impact Report and the Evidence Room instead ("we gotta show off the work").
 - **EXPIRY (Pattern 18): after 2026-10-15**, every "launches October 15" / "On October 15 we launch" line flips to past or present tense (about.astro, experience.astro:39, cpip.md, and cpip.md status → operational). Next cycle's Scout checks this first.
@@ -239,7 +240,9 @@ When the site presents Preston's three load-bearing systems plus the Common App 
 
 Sequencing logic: future-buyer-relevance descending. AI governance is the front-door 2026 demand; older work is the credibility that makes the new work trustworthy.
 
-## Approved Agent-OS / Operating-Cadence Framing (added 2026-05-03)
+## Approved Agent-OS / Operating-Cadence Framing (added 2026-05-03) — RETIRED 2026-09-23
+
+**Preston, 2026-09-23: "why would we include this sentence" — the clean-machine sentence is cut from About; do not reintroduce agent-stack / rebuild-from-clean-machine copy on the public site.**
 
 Preston's BRAIN/Cowork agent OS — the writing tools, audit pipelines, scheduled-task harness, and bridge contracts that run his work — is permissible on the About page as an **operating-discipline signal, not a productized claim**. The OS is internal infrastructure; it does not get its own page, its own case study, or its own service offer.
 
