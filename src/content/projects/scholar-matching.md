@@ -4,6 +4,6 @@ context: "DC CAP Analytics — Algorithm Design"
 lane: "B"
 order: 5
 status: "operational"
-summary: "I built the empirically validated matching algorithm DC CAP runs each year to allocate scholarship offers among its applicants and university partners. In the 2026 cycle it weighed roughly 700 applicants against 13 partner universities. An exhaustive stability audit tested 9,100 candidate pairs with zero blocking pairs, and fairness mechanisms add neighborhood priority and within-school normalization. That cycle produced 140 priority matches and 70 waitlist offers, and 83.5% of matched scholars landed their top-choice partner."
+summary: "I built the matching algorithm DC CAP runs each year to pair scholars with our partner universities based on mutual preferences: scholars rank the partners they want, partners rate their applicants, and the match runs student-first so each scholar gets the best placement available to them. It adds neighborhood priority and within-school GPA normalization. In the 2026 cycle an exhaustive stability audit of 9,100 candidate pairs found zero blocking pairs; the match produced 140 priority matches and 70 waitlist offers, and 83.5% of matched scholars landed their top-choice partner."
 tags: ["Algorithm Design", "Stable Matching", "Fairness Mechanisms", "Applied Research"]
 ---
