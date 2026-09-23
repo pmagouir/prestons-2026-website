@@ -140,6 +140,8 @@ Approved by Preston in-session 2026-06-12 for the correctness + record-capture c
 - **All-staff AI training (live on dccapinnovation.org):** the in-house AI course for all DC CAP staff, which is the instrument for two FY27 org-wide key results (`BRAIN/strategy.md`). Describe as live and in progress; no completion figures.
 - **FY26 Impact Report — public** at https://impact.dccap.org/ (live 2026-09-22, `BRAIN/projects/impact_report_fy26/final/DEPLOY_RECEIPT.md`). Attribution: "we" — Preston built the structure and shipped it; DC CAP Comms owns the design and copy. Link freely; cite only figures also registered here.
 - **DC Evidence Room — public** at https://dccapinnovation.org/data_insights/evidence_room.html (public 2026-09-13). Preston built it from the Partnership Data Project pipeline; every figure is gate-checked on rebuild. Approved content: the price, the payoff, and the work of college for DC students, in one public page with its sources. Do not quote its individual figures on the site unless registered here.
+- **Gate 1 rulings (Preston, 2026-09-23):** 76% = the student-level average; 57–100% = the partner range (keep the West Chester label). Oct 15 is firm enough to print. Aid multiplier and founding year stay off; link the Impact Report and the Evidence Room instead ("we gotta show off the work").
+- **EXPIRY (Pattern 18): after 2026-10-15**, every "launches October 15" / "On October 15 we launch" line flips to past or present tense (about.astro, experience.astro:39, cpip.md, and cpip.md status → operational). Next cycle's Scout checks this first.
 - **Partner count:** 14 university partners (Preston ruling 2026-09-18, `BRAIN/org_intelligence/README.md` § Current State). The 2026 match ran with 13; keep "13" only in sentences tied to the 2026 match. No named 14-school list.
 
 ## Common App Verified Claims
@@ -186,7 +188,7 @@ The live site hero is the canonical hero. Current shipped version (refreshed 202
 
 - **Eyebrow:** Chief Strategy and Analytics Officer · DC CAP
 - **H1:** I design systems, build tools, and lead teams that deliver for DC students.
-- **Subhead:** At DC CAP, we help scholars graduate from our partner universities, ready for D.C.'s workforce.
+- **Subhead:** At DC CAP, we help scholars graduate from our 14 partner universities, ready for D.C.'s workforce. *("14" added 2026-09-23 at Preston's Gate 1 approval, for scale above the fold; secondary CTA now "Read Our FY26 Impact Report" → impact.dccap.org, replacing "Work With Me" → /consulting.)*
 
 This framing (Preston-authored) leads with his three verbs (design, build, lead) over concrete objects (systems, tools, teams), and the subhead carries the career-connected outcome arc (graduate from partner universities, ready for D.C.'s workforce). It replaces the prior process-framed hero ("I design governance… we execute… processes"), which Preston flagged as understating the work. Earlier candidates A/B/C/D from 2026-05-02 remain archived in `lessons.md`.
 
