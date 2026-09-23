@@ -23,7 +23,7 @@ This file is the website's analog of `BRAIN/projects/development_office/.learn/c
 |--------|-------------|------|-------|
 | PhD, Educational Policy Studies | University of Virginia | 2020 | IES Fellow |
 | MPP | Vanderbilt University | 2015 | Peabody Honors Scholar |
-| BA, History | Tulane University | 2011 | |
+| BA, History (Magna Cum Laude, with Honors in History) | Tulane University | 2011 | Preston, 2026-09-23 |
 
 ## Career Trajectory (verbatim titles)
 
